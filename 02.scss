@@ -1,0 +1,26 @@
+.container{
+  background: #990;
+
+  //&代表container
+  &:after{
+    content: '';
+    display: block;
+    clear: both;
+  }
+  &{
+    width: 1000px;
+  }
+  h1{
+    color: #f00;
+    font-weight: 400;
+    border: 1px solid #eee;
+    line-height: 50px;
+    float: left;
+  }
+  p{
+    width: 500px;
+    color: #ff0;
+    line-height: 1.5;
+    float: left;
+  }
+}

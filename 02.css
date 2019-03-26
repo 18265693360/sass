@@ -1,0 +1,21 @@
+.container {
+  background: #990; }
+  .container:after {
+    content: '';
+    display: block;
+    clear: both; }
+  .container {
+    width: 1000px; }
+  .container h1 {
+    color: #f00;
+    font-weight: 400;
+    border: 1px solid #eee;
+    line-height: 50px;
+    float: left; }
+  .container p {
+    width: 500px;
+    color: #ff0;
+    line-height: 1.5;
+    float: left; }
+
+/*# sourceMappingURL=02.css.map */

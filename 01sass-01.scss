@@ -1,0 +1,14 @@
+$main-color: #ff0;
+$border:2px dashed #409eff;
+//dashed 和 dotted 都是指“虚线”，
+
+.parent {
+  background: $main-color;
+  //引入变量
+  width: 500px;
+  height: 300px;
+  border: $border;
+}
+h1{
+  background: $main-color;
+}

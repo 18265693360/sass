@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./05.css">
+</head>
+<body>
+    <div class="box"></div>
+</body>
+<script>
+    // vue做移动端适配,如果手动把px转换成rem,
+   //  rem是一个相对值，它相对于根元素html，所以我们在使用的时候需要设置html的font-size值，内容大小就相对该值进行设置大小，比如，html的font-size为100px，内容的font-size想设置为20px，这换算为rem单位就是20/100=0.2rem。不过在开发中，html的font-size值会动态变化的，这样才可以自适应各种手机端，但我们可以把100px设置为最大值。html的font-size不只限于px单位，有的还使用了%，我在开发中就遇到这个，一开始我还不是了解，后来我查了一下才知道百分之几会有对应的像素值，比如62.5%对应的像素值是10px，75%对应的像素值是12px，这个是怎么算出来的呢？我们都知道，浏览器的默认字体大小是16px，那么16px对应的百分比就是100%，其他像素的百分比就是除以16得到的。
+
+   // 在没有设置html的font-size值时，rem就相对浏览器的font-size值，即16px。
+
+   // 使用rem有什么好处呢？rem既然是一个相对值，那么我们就可以改变html的font-size值来动态改变页面内容的字体大小，宽高度，间距等等，这样就有了一个自由缩放的效果，在移动端就可以适配不同手机屏幕，所以在移动端就使用rem作为单位。
+
+    // 涉及到rem与px的换算，就想到与rem相似的em，em也是一个相对单位，不过它是相对于使用em单位的元素的字体大小，有一个普遍的误解，以为em是相对于父元素的字体大小，其实，这是因为继承的原因，父元素的字体大小才可以影响em的值。
+</script>
+</html>
