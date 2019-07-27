@@ -452,19 +452,9 @@
         <entry file="file://$PROJECT_DIR$/mobile suitable/06网易方案应用.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
-              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -482,6 +472,16 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -651,22 +651,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
-              <item name="数组去重" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -691,6 +675,22 @@
               <item name="数据库" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="跨域" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="http协议" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
+              <item name="数组去重" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -952,11 +952,12 @@
       <workItem from="1564059096637" duration="1698000" />
       <workItem from="1564067516711" duration="95000" />
       <workItem from="1564067642644" duration="601000" />
+      <workItem from="1564213806566" duration="316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2094259000" />
+    <option name="totallyTimeSpent" value="2094575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -968,14 +969,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="951" y="23" width="1150" height="1057" extended-state="0" />
+    <frame x="770" y="23" width="1150" height="1057" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5049365" side_tool="true" weight="0.27186146" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49506348" visible="true" weight="0.32063773" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49506348" visible="true" weight="0.34100974" />
       <window_info id="Structure" order="2" sideWeight="0.50364965" side_tool="true" weight="0.17707267" />
       <window_info id="npm" order="3" sideWeight="0.502994" side_tool="true" weight="0.2047083" />
       <window_info anchor="bottom" id="Debug" order="0" weight="0.69647056" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49828961" visible="true" weight="0.031088082" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" sideWeight="0.49828961" visible="true" weight="0.41450778" />
       <window_info anchor="bottom" id="Thumbnails" order="2" weight="0.3299595" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.23404256" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50171036" side_tool="true" weight="0.34241706" />
@@ -1202,6 +1203,19 @@
     <entry file="file://$PROJECT_DIR$/cloundb/config/dev.env.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/06网易方案应用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloundb/config/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1215,12 +1229,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloundb/src/components/input-change/index.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1230,18 +1238,11 @@
     <entry file="file://$PROJECT_DIR$/cloundb/config/prod.env.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloundb/src/store/user.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloundb/test post photo.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mobile suitable/06网易方案应用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/store/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
