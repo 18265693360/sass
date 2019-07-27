@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="item in arr">
+            <h1>{{item.title}}</h1>
+            <div>
+                {{item.contentText}}
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="axios.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            arr:[]
+        },
+        methods:{
+            getData(){
+                axios.get("http://didi.yaojunrong.com/api/article/get").then(res =>{
+                    console.log(res);
+                    this.arr = res.data.data;
+                })
+            }
+        },
+        created(){
+            // console.log("我执行了,是自动执行！");
+            this.getData();
+        }
+    })
+
+
+
+
+
+
+
+</script>
+</html>

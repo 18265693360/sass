@@ -1,0 +1,186 @@
+@import "../../globalCss/px2-rem.scss";
+
+
+.personal{
+//不用写padding=0 margin=0
+  .top-box{
+    padding: px-to-rem(18);
+    background: #1658bc;
+    //背景有模糊
+    box-shadow: 0 0 2px 2px #333333;
+
+    .login-box{
+      display: flex;
+      color: #f0f7ff;
+      justify-content: space-between;
+      //让下面的元素居中
+      align-items: center;
+
+      .top1-left{
+        margin-left: 30px;
+
+        h2{
+          font-size: 26px;
+        }
+        .desc{
+          color: #ffffff;
+          margin-top: 10px;
+          font-size: 12px;
+        }
+      }
+
+      .top1-right{
+        display: flex;
+        justify-content: space-between;
+        //让下面的元素相对于 下下 元素居中
+        align-items: center;
+
+        .iconfont{
+          font-size: 25px;
+          color: #ffffff;
+        }
+
+        img {
+        /*padding-right: 30px;*/
+        //display: flex;
+        //flex: 1;
+        width: 80px;
+        height: 80px;
+        /*一半的最短边就是圆*/
+        border-radius: 50%;
+      }
+    }
+    }
+
+    .user-box{
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+
+      .box1-left{
+        //margin-right: 20px;
+      }
+    }
+
+
+    .collection-data{
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      color: #ffffff;
+      font-size: 12px;
+      position: relative;
+
+
+
+
+      .collection-item{
+
+        &:nth-child(1){
+          width: 30%;
+        }
+
+        &:nth-child(2){
+          //width: 40px; 这应该是 40%
+          width: 40%;
+        }
+
+        &:nth-child(3){
+          width: 30%;
+        }
+        .title{
+          font-size: 18px;
+
+          .little-title{
+            font-size: 12px;
+          }
+        }
+
+        .desc{
+          font-size: 14px;
+          margin-top: 6px;
+        }
+
+      }
+
+      .col-line{
+        position: absolute;
+        right: 30%;
+        top: 50%;
+        height: 18px;
+        transform: translateY(-50%);
+        width: 1px;
+        background: #e0e0e0;
+
+        //确定竖线位置
+        &:nth-child(4){
+          left: 30%;
+        }
+        //确定竖线位置 这是right：30%
+        &:nth-child(5){
+          right: 30%;
+        }
+      }
+
+    }
+
+  }
+
+  .middle-box{
+    margin-top: 50px;
+
+    .box3-item{
+      padding: 10px;
+      align-items: center;
+      border-bottom:1px solid #888888;
+      height: 60px;
+      display: flex;
+      //这才是正确的
+      justify-content: space-between;
+
+      .item1{
+        //这俩属性可以让让后面的在中间
+        display: flex;
+        align-items: center;
+        span{
+          color: #333333;
+          font-size: 20px;
+          margin-left: 10px;
+
+        }
+        .icon-xiugaigerenxinxi{
+          color: #1658bc;
+          font-size: 50px;
+        }
+
+        .icon-jiazhi{
+          color: #ff6600;
+          font-size: 50px;
+        }
+
+        .icon-aihao-{
+          color: goldenrod;
+          font-size: 50px;
+        }
+
+      }
+      .item2{
+        color: #333333;
+        margin-right: 10px;
+
+        .icon-xiayizhang{
+          color: #888888;
+          font-size: 30px;
+          font-weight: 100;
+        }
+
+      }
+    }
+  }
+
+  .logout{
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 60px;
+  }
+}

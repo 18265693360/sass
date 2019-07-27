@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // function Movies(){
+    //     Array.apply(this,arg)
+    // }
+
+    class Movies extends Array{
+        constructor(...arg){
+            super(...arg)
+            let date = new Date();
+            this.name = '今日电影排行榜';
+            this.desc= `${date.getFullYear()}年${date.getMonth()}月${date.getDate()}日电影排行榜`
+    }
+    getTop(){
+            return this.sort((prev,curr) => curr.numbers - prev.numbers)//倒序
+            return this.sort((prev,curr) => curr.numbers - prev.numbers)//正序
+    }
+    // getTop3(){
+    //          return this.getTop().slice(0,3);//得到排行榜前三
+    //     }
+    }
+
+    const movie = new Movies({
+        name:'reverngers',
+        numbers:234324
+    },
+    {
+         name:'流浪地球',
+        numbers:2342
+    },
+    {
+         name:'缝纫机乐队',
+        numbers:234
+    },
+    {
+        name:'肖申克的救赎',
+        numbers:54376
+    });
+   console.log(movie.getTop());//得到排行榜
+   console.log(movie.getTop3());//得到前三名
+</script>
+</html>

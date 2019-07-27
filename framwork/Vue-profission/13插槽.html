@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 800px;
+            height: 600px;
+            border: 1px solid #000;
+        }
+        header{
+            height: 100px;
+            background: #f00;
+        }
+        .content{
+            overflow: hidden;
+        }
+        .content .aside{
+            float: left;
+            width: 200px;
+            height: 400px;
+            background: #ff0;
+        }
+        .content .main{
+            float: left;
+            width: 500px;
+            height: 400px;
+            background: deeppink;
+        }
+        .content .article{
+            float: left;
+            width: 100px;
+            height: 400px;
+            background: green;
+        }
+        .footer{
+            height: 100px;
+            background: #00ffff;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <layout>
+            <template slot="header">
+                <h1>我的网站</h1>
+            </template>
+            <template slot="aside">
+                <h2>我的侧边栏</h2>
+            </template>
+            <template slot="main">
+                <h2>我的主题内容</h2>
+            </template>
+            <template slot="">
+                <h2>我的文章页</h2>
+            </template>
+            <template slot="footer">
+                我的页脚
+            </template>
+        </layout>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="13插槽.js"></script>
+<script>
+    //插槽用来分发内容
+    //同样的样式可以借用插槽 插入不同内容
+    new Vue ({
+        components:{
+            "layout": layout
+        },
+        el:'#app',
+        data:{}
+    })
+</script>
+</html>

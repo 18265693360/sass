@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //class 实现构造器函数功能 更加容易继承
+
+    //传统构造器函数
+    //es5之前的继承
+    // function MakeChinese(name,id){
+    //     this.name = name;
+    //     this.id = id;
+    //
+    // }
+    // MakeChinese.prototype.nation = '中国人';
+    // function MakeTeacher(name,id){
+    //     MakeChinese.call(this,name,id);
+    // }
+    // MakeTeacher.prototype.nation = MakeChinese.prototype.nation;
+    // console.log( new MakeTeacher('于景波', 23453254365));
+    // let person1 = new MakeChinese("姚明",1243243245);
+    // console.log(person1);
+
+    //class直接接类名 不用接函数
+    //ES6之后的继承e
+    // class MakeChinese{
+    //     constructor(name,id){
+    //         this.name = name;
+    //         this.id = id;
+    //     }
+    // }
+    //
+    // MakeChinese.prototype.nation = ('中国人');
+    // let person1 = new MakeChinese('姚明',234324);
+    // console.log(person1)
+    //
+    // class MakeTeacher extends MakeChinese {
+    //     constructor(name,id){
+    //         super(name,id);
+    //     }
+    // }
+    //
+    // let teacher1 = new MakeTeacher ('苍老师',234325345);
+    // console.log(teacher1);
+
+
+
+</script>
+</html>

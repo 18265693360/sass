@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>s
+getElementById:
+语法： document.getElementByIdx(id)
+参数： id :必选项为字符串(String)
+返回值：对象; 返回相同id对象中的第一个,如果无符合条件的对象，则返回 null
+example：document.getElementByIdx("id1").value;
+getElementsByName:
+语法： document.getElementsByName(name)
+参数： name :必选项为字符串(String)
+返回值：数组对象; 如果无符合条件的对象，则返回空数组
+example：document.getElementsByName("name1")[0].value;
+document.getElementsByName("name1")[1].value;
+
+getElementsByTagName:
+语法： object.getElementsByTagName_r(tagname) object可以是document或event.srcElement.parentElement等
+参数： tagname:必选项为字符串(String)
+返回值：数组对象; 如果无符合条件的对象，则返回空数组
+example：document.getElementsByTagName_r("p")[0].childNodes[0].nodue;
+document.getElementsByTagName_r("p")[1].childNodes[0].nodue;
+&#45;&Xz#45;------------------------------------------------------------------------------
+getElementsByTagName_r() 不只是用在全局，更多的用法是：
+obj.getElementsByTagName_r();
+obj可以是任何对象。
+--------------------------------------------------------------------------------
+var all = document.getElementsByTagName_r('div')[0].getElementsByTagName_r('*');
+就是取document.getElementsByTagName_r('div')[0]这个节点下边的所有。
+准确的说应该是所有Element类型的节点，不包括TextNode类型的节点。
+getElementsByTagName_r('*') *就像通配符一样，表示所有的TagName。
+--------------------------------------------------------------------------------
+document.getElementsByTagName_r('ul')[0].childNodes就是li的数组
+它的长度就是li的个数
+</body>
+</html>

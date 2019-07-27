@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>v v6 tg7 y y    7y 7  ynttymnt
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>今天气不错</h1>
+<button>按钮</button>
+</body>
+<script>
+    var btn = document.querySelector("button");
+
+    function doOne() {
+        console.log("今天天气有风")
+    }
+
+    btn.addEventListener("click",doOne)
+    //匿名函数可以解绑  非匿名函数不可解绑
+    detachEvent()
+    //对IE移除
+
+    setTimeout(()=>{
+        btn.removeEventListener('click',doOne)
+    },5000)
+    //五秒后解绑
+
+    //IE 标准流解绑如下
+    function removeHandler(ele,type,handler){
+        if (ele.removeEventListener){
+            ele.removeEventListener(type,handler);
+        } else if(ele.detachEvent){
+            ele.detachEvent('on'+type, handler);
+        }else{
+            ele['on'+type] = null;
+        }
+    }
+
+</script>
+</html>

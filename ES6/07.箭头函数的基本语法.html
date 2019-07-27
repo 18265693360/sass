@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var arr = [2,4,6,8,10]
+    // //普通函数
+    // arr.forEach(function(va1){
+    //     console.log(va1)
+    // })
+    //
+    // //箭头函数
+    //
+    // arr.forEach((va1)=>{
+    //     console.log(val)
+    // })
+    //
+    // var arr = [2,4,6,8,10]
+    // arr.forEach(va1=>{
+    //     console.log(va1)
+    // })
+    //
+    // var arr = [2,4,6,8,10]
+    // var doubleArr = arr.map(va1=>{
+    //     return va1*2
+    // })
+    //
+    // var arr = [2,4,6,8,10]
+    // var doubleArr = arr.map(va1 => va1*2)
+
+    // this值的绑定
+    // var boy1 = {
+    //     name:"徐硕",
+    //     food:['烤鸭','烤鸡','涮羊肉'],
+    //     printFood:function(){
+    //         this.foods.forEach(function(food){
+    //             console.log(`${this.name}爱吃$(food)`);
+    //         })
+    //     }
+    // }
+    // boy1.printFood()//显示不出来
+
+    const boy1 = {
+        name:"徐硕",
+        foods:['烤鸭','涮羊肉','卤煮火烧'],
+        printFood:function(){
+            this.foods.forEach(food =>{
+                console.log(`${this.name}爱吃$(foods)`);
+            })
+        }
+    }
+    boy1.printFood()
+    //箭头函数不能使用的三大场景
+    //1.构造函数 2.事件处理函数 3.在需要使用argument对象的时候
+    const Person = (name,age)=>{
+        this.name = name
+        this.age = age
+    }
+    const boy3 = new Person("大鸟",10)
+
+    //2.事件处理函数
+    var btn = document.getElementById("btn")
+    btn.onclick = ()=>{
+        this.className = 'active'
+    }
+    //3.在需要使用argument对象的时候
+    const sum = () =>{
+        let end = 0
+        for(let i = 0; i< arguments.length;i++){
+            end+=arguments[i]
+        }
+        return end
+    }
+    sum(1,2,3)
+</script>
+</html>

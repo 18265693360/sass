@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--V 层-->
+    <div id="app">
+      <p>{{msg}}</p>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    // VM层
+    var vm = new Vue({
+        el:'#app',
+        // M层 前端中的数据层
+        data:{
+            msg:'我爱黑马'
+        }
+    })
+</script>
+<script>
+    // 1.如何定义一个基本的Vue代码结构
+    // 2.插值表达式 和 v-text
+    // 3.v-cloak
+    // 4.v-html
+    // 5.v-bind  Vue提供的属性绑定机制  缩写是 :
+    // 6.v-on    Vue提供的事件绑定机制  缩写是@
+
+
+
+</script>
+</html>

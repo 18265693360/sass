@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--&lt;!&ndash;传统表单上传      value值 up-load network中的data-->
+<!--ectype= 编码格式-->
+<!--虽然文档写的是 upload_token 但实际上就是 token-->
+<!--&ndash;&gt;-->
+<!--<from actio="https://upload-z1.qiniup.com" method="post"-->
+<!--enctype="multipart/form-data">-->
+  <!--<input type="file" name="file">-->
+  <!--<input type="hidden" name="token"-->
+
+  <!--value= "hiaSMM1QqBT-0Q0KywiDrpp_tXbgBz8p1mFXkoil-->
+  <!--:XT0VHOupPREHRmId8E6OibYrznU=:eyJyZXR1cm5Cb2R5Ijoie1wia2V5XCI6ICQoa2V5KSwgXCJoYXNoXCI6ICQoZXRhZyksIFwidXJsXCI6IFwiaHR0cDovL3BibC55YW9qdW5yb25nLmNvbS8kKGtleSlcIn0iLCJzY29wZSI6InB1YmxpYyIsImRlYWRsaW5lIjoxNTU0Nzc3NTM4fQ==">-->
+  <!--<button>提交</button>-->
+<!--</from>-->
+
+
+<!--使用ajax上传图片-->
+<from action="#" id="from">
+  <input type="file" id="file">
+</from>
+<img  alt="" id="img">
+<button id="btn">上传</button>
+</body>
+<script src="./axios.js"></script>
+<script>
+  var from = document.querySelector('#from');
+  var file = document.querySelector('#file');
+  var token = "";
+  var img = document.querySelector('#img')
+   // var btn = document.querySelector('#btn');
+
+  // ajax获取图片 先用七牛获取token
+  axios.get('http://upload.yaojunrong.com/getToken').then(res =>{
+    token = res.data.data
+  })
+
+  file.onchange = function (event) {
+    console.log(event.target.files);
+    var file = event.target.files[0];
+    var form = new FormData()
+    //错了应该是form from.append('file',file)
+    form.append('file',file)
+    form.append('token',token)
+
+    // 上传文件的地址需要填入
+    // axios.post('https://upload-z1.qiniup.com', 这里也是form from).then(res =>{
+    axios.post('https://upload-z1.qiniup.com', form).then(res =>{
+      var url = res.data.url
+      img.src=url
+    })
+  }
+</script>
+</html>
+

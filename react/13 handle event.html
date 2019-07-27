@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <demo/>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+   // 事件处理函数 不能传参
+//    var btn = document.getElementById('btn')
+//    btn.onclick = function (e, a) {
+//        console.log(e.target);
+//        console.log(a);
+//    }
+//    btn.click(123,256)
+
+   const demo = {
+       template:`
+        <div>
+             <button @click="handleClick($event,123)">我是按钮</button>
+        </div>
+        `,
+       methods:{
+           handleClick($event, num){
+               console.log($event, num);
+               console.log(this);
+           }
+       }
+   }
+
+   // vue中的事件处理函数可以传参 但是不会指向事件源
+   var vm = new Vue({
+       el:'#app',
+       components:{
+           demo
+       },
+       data:{
+
+       }
+   })
+
+
+
+    // 事件函数 指向事件源 传参
+    const fn = this.handleClick;
+   var btn = document.getElementById('btn');
+   const _this = this;
+   btn.onclick=function (e) {
+       fn.call(_this,e,123)
+   }
+</script>
+</html>

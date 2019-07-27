@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <label>Id:
+                <input type="text" v-model="id">
+            </label>
+            <label>Name:
+                <input type="text" v-model="name">
+            </label>
+
+            <input type="button" value="添加" @click="add">
+        </div>
+
+        <!--注意：v-for 在循环时，key属性只能使用 number获取string-->
+        <!--注意：key 在使用时候，必须使用 v-bind 属性绑定形式，指定 key 的值-->
+        <!--在组件中，使用v-for循环的时候，或者在一些特殊情况下 如果v-for有问题-->
+        <!--必须在使用v-for的同时 指定唯一的字符串/数字 类型：key值-->
+        <p v-for="item in list" :key="item">
+            <input type="checkbox">{{item.id}}---{{item.name}}
+        </p>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            id:'',
+            name:'',
+            list:[
+                {id:1, name:'嬴政'},
+                {id:2, name:'赵高'},
+                {id:3, name:'韩非子'},
+                {id:4, name:'项羽'},
+                {id:5, name:'墨眉无锋'},
+            ]
+        },
+        methods:{
+            add(){//添加方法
+                //加在尾巴
+                // this.list.push({id:this.id, name: this.name})
+                //加在开头 导致bug 下面的元素无法继续保持自身id值
+                //用key
+                this.list.unshift({id:this.id, name: this.name})
+            }
+        }
+    })
+</script>
+</html>

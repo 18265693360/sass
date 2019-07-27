@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <h4>{{msg}}</h4>
+
+        <!--v-bind 只能实现数据的单向绑定 从M自动绑定到 V  无法事项数据的双向绑定-->
+        <!--<input type="text" v-bind:value="msg" style="width: 100%;">-->
+
+        <!--使用v-model 指令 可以实现 表单元素和MOdel中数据的双向数据绑定-->
+        <!--注意 v-model 只能运用在表单元素中-->
+        <!--input(radio, text, address, email....)select  checkbox textarea-->
+        <input type="text" v-model:value="msg" style="width: 100%;">
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+     // v-model可以实现双向数据绑定 吧别的指令不可以
+    //创建Vue 实例 得到 ViewModel
+     //vm.msg="事项数据的单向绑定" （M到v） （v-model （v-bind属性绑定不可以）绑定可以实现 从v到M的单向数据绑定）
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'对酒当歌，人生几何'
+        },
+        methods:{
+             // this//就可以访问
+        }
+    });
+
+
+
+
+</script>
+</html>

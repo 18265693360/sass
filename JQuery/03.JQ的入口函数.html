@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        .active{
+            background: #f00;
+        }
+    </style>
+    <script src="JQuery.js"></script>
+</head>
+<body>
+    <div class="box"></div>
+    <button>切换背景色</button>
+    <img src="./meimei.png" alt="">
+</body>
+<script>
+    window.onload = function () {
+        var box = document.querySelector(".box");
+        var btn = document.querySelector("button");
+        console.log(btn)
+        btn.onclick = function () {
+            box.classList.toggle("active")
+        }
+    }
+    // 1.在dome元素加载完成后去执行
+    // $(function () {
+    //
+    // })
+
+    /*
+    * 1.jquery在选择元素时，如果元素不存在,不会报错
+    * 2.我们如果将jquery写在头部的话。要写在入口函数里面。写法是$()
+    */
+
+    console.log($("button"));
+    $("button").click(function () {
+        $(".box").toggleClass("active");
+    })
+    window.onload = function () {
+        console.log("我是原生js")
+    }
+
+    $(function () {
+        console.log("我是jquery")
+        $("button").click(function () {
+            $(".box").toggleClass("active");
+        })
+    })
+</script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="http://www.baidu.com">百度一下你就知道</a><br>
+<span id="btn">点击span,也跳转到百度</span>
+</body>
+<script>
+    var btn = document.getElementById('btn');
+    btn.onclick = function () {
+        window.location.href = "http://www.baidu.com";
+    }
+</script>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--计算属性 vs 侦听属性-->
+<!--命令式且重复的-->
+<div id="demo">{{fullName}}</div>
+
+
+
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    // var vm = new Vue({
+    //     el:'#demo',
+    //     data:{
+    //         firstName:'Foo',
+    //         lastName:'Bar',
+    //         fullName:'Foo Bar'
+    //     },
+    //     watch:{
+    //         firstName: function (val) {
+    //             this.fullName = val + '' + this.lastName
+    //         },
+    //         lastName:function () {
+    //             this.fullName = this.firstName + ' ' + val
+    //         }
+    //     }
+    // })
+
+    //计算属性
+    var vm = new Vue({
+        el:'#demo',
+        data:{
+            firstName: 'Foo',
+            lastName:'Bar'
+        },
+        computed:{
+            fullName:function () {
+                return this.firstName + '' + this.lastName
+            }
+        }
+    })
+
+
+</script>
+</html>

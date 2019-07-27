@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red{
+            color: #FF0000;
+        }
+        .thin{
+            font-weight: 200;
+        }
+        .italic{
+            font-style: italic;
+        }
+        .active{
+            /*中文间距*/
+            letter-spacing: 0.5em;
+            /*英文间距
+            word-spacing:0.5em;
+            */
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--普通用法C3-->
+    <!--<h1 class="red thin">很大很大很大的一个一级标签</h1>-->
+
+    <!--(了解即可)第一种方式 直接传递一个数组 注意 这里的class 需要使用 V-bind做数据绑定-->
+    <!--<h1 :class="['thin','italic']">很大很大很大的一个一级标签</h1>-->
+
+    <!--数组中使用三元表达式-->
+    <!--定义flag true可以显示 false 不可以-->
+    <!--<h1 :class="['thin','italic' ,flag?'active':'']">很大很大很大的一个一级标签</h1>-->
+
+    <!--在数组中使用对象替代三元表达式 提高代码的可读性-->
+    <!--<h1 :class="['thin','italic' ,{'active':flag}]">很大很大很大的一个一级标签</h1>-->
+
+    <!--在为 class 使用 v-bind 绑定对象的时候，对象的属性是类名 由于对象的属性可带引号，也可不带引号-->
+    <!--所以没写 属性的值是一个标识符-->
+    <!--<h1 :class="{red:true, thin:true, italic:false, active:false}">很大很大很大的一个一级标签</h1>-->
+    <h1 :class="classObj">很大很大很大的一个一级标签</h1>
+
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            flag:true,
+            classObj:{red:true, thin:true, italic:false, active:false}
+        },
+        methods:{}
+    })
+
+
+
+
+    
+</script>
+</html>

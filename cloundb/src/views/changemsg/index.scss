@@ -1,0 +1,123 @@
+@import "../../globalCss/px2-rem.scss";
+
+*{
+  padding: 0;
+  margin: 0;
+}
+.container{
+  box-sizing: border-box;
+  .nav{
+    color: #ffffff;
+    font-weight: 800;
+    justify-content: space-between;
+    padding: px-to-rem(32);
+    display: flex;
+    align-items: center;
+    .nav-item{
+      display: flex;
+
+      .back{
+        background: #2196f3;
+        color: #ffffff;
+        font-weight: 800;
+
+        .mint-button{
+          font-size: 36px;
+
+          .mintui mintui-back{
+            font-size: 36px;
+          }
+        }
+
+
+      }
+      //.icon-fanhui1{
+      //  font-size: 20px;
+      //}
+      //.desc{
+      //  font-size: 19px;
+      //  display: flex;
+      //  padding-right: 5px;
+      //}
+      //.back{
+      //  font-size: 16px;
+      //  display: flex;
+      //  margin-top: 3px;
+      //}
+    }
+    .change{
+      text-align: center;
+      //margin-top: 15px;
+      font-size: 20px;
+      margin-right: 108px;
+    }
+
+  }
+
+
+  .msg{
+    align-items: center;
+
+    .msg-item{
+      margin-top: 20px;
+      font-size: 16px;
+      color: #333333;
+      display: flex;
+      background: #ffffff;
+      justify-content: space-between;
+
+    .head{
+      margin-top: 20px;
+    }
+    .detail{
+      margin-left: 10px;
+    }
+    .icon1{
+      margin-top: 20px;
+    }
+    .item{
+      margin-right: 5px;
+      display: flex;
+
+
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+    }
+
+
+    }
+
+    .item-name{
+      text-align: center;
+
+        .item-content{
+          font-size: 16px;
+          margin: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .item-password{
+      text-align: center;
+
+        .item-content{
+          font-size: 16px;
+          margin: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    .liner{
+      margin-top: 20px;
+      height: 2px;
+      background: #d3d4d6;
+    }
+  }
+}
+
+

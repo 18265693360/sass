@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+<script>
+
+    var box = document.querySelector(".box");
+
+
+    //事件都是小写的 不用驼峰命名法 onkeypress
+    document.onkeydown = function (e) {
+    // document.onkeyup = function (e) {
+    // document.onkeydown = function (e) {
+    // document.onkeypress = function (e) {
+        console.log(e.keyCode)
+        if (e.keyCode == 37){
+            box.style.left = box.offsetLeft - 10 + "px";
+        }else if (e.keyCode == 38){
+            box.style.top = box.offsetTop - 10 + "px";
+        } else if (e.keyCode == 39){
+            box.style.left = box.offsetLeft + 10 + "px";
+        }else if(e.keyCode == 40){
+            box.style.top = box.offsetTop + 10 + "px";
+        }
+    }
+
+
+</script>
+</html>

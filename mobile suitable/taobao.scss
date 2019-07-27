@@ -1,0 +1,19 @@
+$rem: 1rem;
+@function px-to-rem($n){
+  @return 10/750 * $n*$rem;
+};
+
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.box{
+  width: px-to-rem(375);
+  height: px-to-rem(100);
+  background: #f00;
+}

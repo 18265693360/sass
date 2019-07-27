@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./element-ui.css">
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        .active {
+            background: #f00;
+        }
+        .width {
+            width: 200px;
+        }
+
+        .btn {
+            height: 40px;
+            line-height: 40px;
+            border-radius: 4px;
+            border: 1px solid #888;
+            background: #fff;
+            color: #333;
+        }
+        .primary {
+            background: #409eff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+   <!--<dy-checkbox></dy-checkbox>-->
+    <!--<el-checkbox-group v-model="arr">-->
+        <!--<el-checkbox label="复选框 A"></el-checkbox>-->
+        <!--<el-checkbox label="复选框 B"></el-checkbox>-->
+        <!--<el-checkbox label="复选框 C"></el-checkbox>-->
+        <!--<el-checkbox label="禁用" disabled></el-checkbox>-->
+        <!--<el-checkbox label="选中且禁用" disabled></el-checkbox>-->
+    <!--</el-checkbox-group>-->
+    <dy-checkbox v-model="arr" @give-value="getValue"></dy-checkbox>
+</div>
+</body>
+<script src="node_modules/vue/dist/vue.js"></script>
+<script src="./element-ui.js"></script>
+<script src="./dyCheckbox.js"></script>
+<script>
+    // 自定义事件
+    // 子组件向父组件传值的步骤
+    //1. 子组件内部的值发生变化
+    // 2. 通过触发一个$emit("自定义事件名", "自定义事件需要传出的值")
+
+    // 父组件向子组件传值
+
+    // 1. 在子组件内部声明props
+    // props: {
+    //     "传入的值": String(类型声明)
+    // }
+    // 2. 父组件通过在组件的标签的属性传值 例如: <button type="primary"></button>那么这个type就是传入的属性名
+
+
+
+
+    var vm = new Vue({
+        el: "#app",
+        components: {
+            "dy-checkbox": dyCheckbox
+        },
+        data: {
+            isActive: false,
+            isWidth: false,
+            arr: []
+        },
+        methods: {
+            addClass() {
+                this.isActive = !this.isActive;
+            },
+            getValue(value) {
+                console.log("子组件触发的事件", value)
+            }
+        },
+        created() {
+        }
+    })
+</script>
+</html>

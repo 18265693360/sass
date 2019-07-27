@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>期望利用一个函数去计算输入固定汇率和一定的金额之后。出现对应的金额</h1>
+</body>
+<script>
+   //  求和方法
+   //  function sum() {
+   //      var result = 0;
+   //      for(var i = 0; i < arguments.length; i++){
+   //          result += arguments[i];
+   //      }
+   //      return result;
+   //  }
+   //
+   //  console.log(sum(2, 4, 4));
+   // 箭头函数不能和arguments搭档
+   //  let sum= () => {//会报错 所以用剩余参数
+   //      var result = 0;
+   //      for(var i = 0; i < arguments.length; i++){
+   //          result += arguments[i];
+   //      }
+   //      return result;
+   //  }
+   //
+   //  console.log(sum(2, 4, 4));
+
+    // 剩余参数 arg
+    let sum= (...arg) => {
+        var result = 0;
+        for(var i = 0; i < arg.length; i++){
+            result += arg[i];
+        }
+        return result;
+    };
+
+    console.log(sum(2, 4, 4));
+
+    function covert(rate,...arg){
+        console.log(arg,'arg')
+        return arg.map(item => item*rate)
+    }
+
+    console.log(covert(0.9,10,1000,134,800))
+    covert(0.6,20,100)
+
+    function covert(rate,...arg) {
+        console.log(arg,'arg');
+        return arg.map(item => item*rate)
+    }
+
+    console.log(covert(0.4, 123, 545, 643));
+
+    function covert(rate,...arg) {
+        console.log(arg,'arg')
+        return arg.map(item => item*rate)
+    }
+
+    console.log(covert(0.34, 3425, 23423, 54234));
+</script>
+</html>

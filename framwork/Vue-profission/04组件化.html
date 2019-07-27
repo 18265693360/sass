@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--组件应用-->
+<!--GitHub   element-ui
+             element.eleme.io-->
+<!--安装 npm install element-ui-->
+<div id="app">
+    <!--<e-button type="primary">按钮</e-button>错了-->
+    <!--第一个组件-->
+    <el-button type="primary">按钮</el-button>
+    <!--第二个组件-->
+    <el-tabs v-model="activeName2" type="card">
+        <el-tab-pane label="用户管理" name="first">用户管理
+            <img src="pic1.jpg" alt="">
+        </el-tab-pane>
+        <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
+        <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
+        <el-tab-pane label="定时任务补偿" name="fourth">定时任务补偿</el-tab-pane>
+    </el-tabs>
+
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js"></script>
+<script>
+    var vm = new  Vue({
+        // el:"#app" 后面有逗号
+        el:"#app",
+        data:{
+            activeName2:''
+        }
+    })
+
+
+</script>
+</html>

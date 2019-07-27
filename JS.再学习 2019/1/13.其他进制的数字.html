@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    var a = 123
+    /*
+    * 在JS中，如果需要表示16进制的数字，则需要以0X开头
+    *        8进制 需要以0开头
+    *        2 进制需要0b开头
+    * */
+   // 十六进制
+   //  a = 0x+10
+    a = 0xff
+    a = 0xcafe
+   //   （都不太用 最主要还是10进制）
+    //     八进制
+    // a = 0 +70
+
+    // 二进制
+    // a = 0b+10
+
+    // 比如"070"这种字符串，有些浏览器会当成8进制，有些会当成10进制解析
+    a = "070"
+
+    // 可以在parsInt()中传递一个第二个参数，来指定数字进制 比如：
+    // a = parseInt(a,8)
+    // a = parseInt(a,2)
+    // a = parseInt(a,16)
+    a = parseInt(a,10)
+
+    console.log(typeof a)
+    console.log(a)
+</script>
+</html>

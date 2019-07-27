@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+
+<form>
+    <label>
+        Name:
+        <input type="text" name="name" />
+    </label>
+    <input type="submit" value="Submit" />
+</form>
+
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+  class NameForm extends React.Component{
+      constructor(props){
+          super(props);
+          this.state = {value: ''};
+
+          this.handleChange = this.handleChange.bind(this);
+          this.handleSubmit = this.handleSubmit.bind(this);
+      }
+
+      handleChange(event){
+          this.setState({value: event.target.value});
+      }
+      //限制输入都是大写字母
+      // handleChange(event){
+      //     this.setState({value: event.target.value.toUpperCase()})
+      // }
+
+      handleSubmit(event){
+          alert('A name was submitted: ' + this.state.value);
+          event.preventDefault();
+      }
+
+      render(){
+          return(
+              <form OnSubmit={this.handleSubmit}>
+                  <label>
+                      Name:
+                      <input type="text" value={this.state.value} onChange={this.handleChange} />
+                  </label>
+                  <input type="submit" value="Submit" />
+              </form>
+          )
+      }
+  }
+
+
+
+
+
+</script>
+</html>

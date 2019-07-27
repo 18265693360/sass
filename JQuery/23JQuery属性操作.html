@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1 title="标题属性">我是标题</h1>-->
+<form action="https://www.baidu.com"></form>
+<form action="">
+    性别：
+    <label>
+        <input type="checkbox" name="sex" value="1">男人
+    </label>
+    <label>
+        <input type="checkbox" name="aex" value="0">女人
+    </label>
+    <button>打印值</button>
+</form>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //原生 getAttribute() 方法返回指定属性名的属性值
+    //setAttribute() 方法添加指定的属性，并为其赋指定的值。
+    // var h1 = document.querySelector('h1')
+    // console.log(h1.getAttribute("title"));
+    // h1.setAttribute("title","新设置的属性值")
+
+    // console.log($("h1").attr("title"));//获取
+    // $("h1").attr("title","新设置的属性")
+
+    $("form").submit(function (ev) {
+        ev.preventDefault();//阻止默认事件
+        // console.log($("input").eq(0).attr("value"))
+        // console.log($("input").eq(0).attr("checked"))
+        // console.log($("input").eq(0).prop("checked",true))
+        // console.log(document.querySelector("input").getAttribute("checked"))
+        // console.log(document.querySelector("input").checked)
+        console.log($("input").eq().val())
+    })
+
+
+
+
+</script>
+</html>

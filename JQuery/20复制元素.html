@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>今天温度很高1</li>
+    <li>今天温度很高2</li>
+    <li>今天温度很高3</li>
+    <li>今天温度很高4</li>
+    <li>今天温度很高5</li>
+    <li>今天温度很高6</li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // .clone
+    // 复制选中的元素，已存在的元素是主导元素
+
+    $("li").click(function () {
+        console.log(this)
+    })
+
+    // 多复制出一份  注意语法
+    var $li = $("li").eq(4).clone(true);
+    $("ul").append($li)
+</script>
+</html>

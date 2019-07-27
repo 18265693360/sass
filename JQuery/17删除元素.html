@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1><span>我是即将被删除的标题</span></h1>
+<div class="container">我是容器</div>
+<button>remove连根删除</button>
+<button>empty清空内容留壳子</button>
+<button>detach解开连接</button>
+<button>添加</button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    var title = null
+
+    $("h1").click(function () {
+        console.log($(this).text())
+    })
+    $("button").eq(0).click(function () {
+        title = $("h1").remove();
+    })
+    $("button").eq(1).click(function () {
+        title = $("h1").empty();
+    })
+    // $("button").eq(1).click(function () {
+    //     $("h1").text("")
+    // })
+    $("button").eq(2).click(function () {
+        title = $("h1").detach();
+        console.log(title)
+    })
+    $("button").eq(3).click(function () {
+        $("h1").appendTo(".container")
+    })
+
+
+
+
+
+
+</script>
+</html>

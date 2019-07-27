@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //创建一类对象 的简便方法--渐变函数
+    //不能总var
+    // var person1 = {
+    //     name:'王力宏', //需要后面是逗号
+    //     age:'18',
+    //     height:'180'
+    // }
+    // var person2 = {
+    //     name:'柳岩',
+    //     age:'19',
+    //     height: '165'
+    // }
+
+
+    //工厂函数
+    // function makePerson(name,age,height){
+    //     return{
+    //         name:name,
+    //         age:age,
+    //         height:height
+    //     }
+    // }
+    //
+    // var person1 = makePerson('王力宏','18','180')
+    // var person2 = makePerson('柳岩','19','165')
+    //
+    // console.log(person1)
+    // console.log(person2)
+
+
+    //构造器函数 的一些约定
+    //1.首字母大写 MakePerson  虽然不大写也可以但是约定俗成都是大写
+    function MakePerson(name,sex,height){
+        this.name = name;
+        this.sex = sex;
+        this.height = height;
+    }
+
+    var person1 = new MakePerson('王力宏','1','189')
+    var person2 = new MakePerson('柳岩','0','160')
+    console.log(person1)
+    console.log(person2)
+</script>
+</html>

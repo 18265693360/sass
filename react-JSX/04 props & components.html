@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+//simple component
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>
+    }
+
+
+    // ES6定义组件
+    class Welcome extends React.Component{
+        render(){
+            return <h1>Hello, {this.props.name} </h1>
+        }
+    }
+
+   const element = <div />
+
+    // 用户自定义
+    const element = <Welcome name="Sara" />
+
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>
+    }
+
+    const element = <Welcome name="Sara" />;
+
+    ReactDOM.render(element, document.getElementById('root'));
+
+// 我们对<Welcome name="Sara" />元素调用了ReactDOM.render()方法。
+// React将{name: 'Sara'}作为props传入并调用Welcome组件。
+// Welcome组件将<h1>Hello, Sara</h1>元素作为结果返回。
+// React DOM将DOM更新为<h1>Hello, Sara</h1>。
+    //组件 开头必须为大写字母开头
+    // <Welcome />
+
+    // 组合组件
+
+    function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
+    }
+
+    function App() {
+        return (
+            <div>
+                // 组件的返回值只有一个根元素
+                这是用一个<div></div> 包裹所有组件的原因
+                <Welcome name="Sara"/>
+                <Welcome name="Ben" />
+                <Welcome name="Edite" />
+            </div>
+        );
+    }
+
+    ReactDOM.render(element, document.getElementById('root'));
+
+
+//提取组件
+function Comment(props){
+    return(
+        <div className="Comment">
+            <div class="UserInfo">
+                <img className="Avatar"
+                     src={props.author.avatarUrl}
+                     alt={props.author.name}
+                />
+                <div className="UserInfo-name">
+                    {props.author.name}
+                </div>
+            </div>
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date">
+                {formatName(props.data)}
+            </div>
+        </div>
+    )
+}
+
+    //提取组件 为了便于复用 为了便于更改维护
+
+    //1. 提取avatar 为了更通用 改author 为 user
+    function Avatar(props) {
+        return(
+            <img className="Avatar"
+                 src={props.user.avatarUrl}
+                 alt={props.user.name}
+            />
+        )
+    }
+
+//源代码改为如下
+// <img className="Avatar"
+//      src={props.author.avatarUrl}
+//      alt={props.author.name}
+// />
+function Comment(props){
+    return(
+        <div className="Comment">
+            <div class="UserInfo">
+
+                <Avatar user={props.author} />
+                <div className="UserInfo-name">
+                    {props.author.name}
+                </div>
+            </div>
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date">
+                {formatName(props.data)}
+            </div>
+        </div>
+    )
+}
+
+//提取UserInfo 组件，用来渲染Avatar旁边的用户名
+    function UserInfo(props) {
+        return(
+            <div className="UserInfo">
+                <Avatar user={props.user} />
+                <div className="UserInfo-name">
+                    {props.user.name}
+                </div>
+            </div>
+        )
+    }
+
+//代码变为
+function Comment(props){
+    return(
+        <div className="Comment">
+            <UserInfo user={props.author} />
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date">
+                {formatName(props.data)}
+            </div>
+        </div>
+    )
+}
+
+</script>
+</html>

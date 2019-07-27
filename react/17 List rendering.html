@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <!--{-->
+<!--arr.map((item,index) =>(-->
+<!--<li key={index}>-->
+    <!--<h2>-->
+        <!--{item.title}-->
+    <!--</h2>-->
+    <!--<p>{item.num}</p>-->
+<!--</li>-->
+<!--))-->
+<!--}-->
+
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    const {Component} = React;
+
+    const arr = [
+        {
+            title:'星期一',
+            num:'22号'
+        },
+        {
+            title:'星期二',
+            num:'23号'
+        },
+        {
+            title:'星期三',
+            num:'24号'
+        },
+        {
+            title:'星期四',
+            num:'25号'
+        }
+    ]
+
+    const arr1 = [1,2,3]
+    class Container extends Component{
+        constructor(props){
+            super()
+        }
+        render(){
+            return(
+                <div>
+                    <h1>周历</h1>
+                    <ul>
+                        {
+                            arr.map((item, index)=>(
+                                <LiItem key={index}>
+                                    <h2>{item.title}</h2>
+                                    <p>对应的日期是:{item.num}</p>
+                                </LiItem>
+                            ))
+                        }
+                    </ul>
+
+                    {arr1}
+                </div>
+            )
+        }
+    }
+
+    class LiItem extends Component{
+        constructor (props){
+            super(props)
+        }
+        render(){
+            return(
+                <li>{this.props.children}</li>
+            )
+        }
+    }
+
+    ReactDOM.render(<Container/>, document.getElementById('root'))
+</script>
+</html>

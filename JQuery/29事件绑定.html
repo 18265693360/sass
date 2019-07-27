@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<button>按钮</button>-->
+<button id="add">添加</button>
+<ul class="ul">
+    <li>我是文字1 <button>删除</button></li>
+</ul>
+
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //事件监听
+    // document.querySelector("button").onclick =
+
+    //事件绑定
+    // document.querySelector("button").addEventListener()
+
+    //JQuery默认.click为事件绑定 不会覆盖事件
+    // $("button").click(function () {
+    //     console.log(1)
+    // })
+    // $("button").click(function () {
+    //     console.log(2)
+    // })
+
+    //原生会覆盖事件
+    // document.querySelector("button").onclick = function () {
+    //     console.log(111)
+    // }
+    // document.querySelector("button").onclick = function () {
+    //     console.log(444)
+    // }
+
+    //添加bind方法 bind捆绑 约束 订装
+    //bind(事件类型 + 事件处理函数)
+    // $("button").bind("click",function () {
+    //     console.log(1)
+    // })
+    // $("button").bind("click",function () {
+    //     console.log("明天是你的生日")
+    // })
+    // //事件解绑
+    // $("button").unbind("click")
+
+    //on()就可以绑定
+    // $("button").on("click",function () {
+    //     console.log(111)
+    // })
+    // $("button").on("click",function () {
+    //     console.log(333)
+    // })
+
+    var index = 1
+    $("#add").click(function () {
+        index++;
+        $(`<li>我是文字${index} <button>删除</button></li>`).appendTo($(".ul"));
+    })
+
+
+    //添加删除事件  事件委托
+    //原生
+    // document.querySelector(".ul").onclick = function (e) {
+    //     e = e||window.event
+    //     if (e.target.nodeName == "BUTTON"){
+    //         e.target.parentNode.remove();
+    //     }
+    // }
+
+    //jquery
+    // parent() 方法返回被选元素的直接父元素。
+    $(".ul").on("click","button",function () {
+        $(this).parent().remove();
+    })
+
+
+</script>
+</html>

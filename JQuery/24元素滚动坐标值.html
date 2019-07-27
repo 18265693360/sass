@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            width: 300px;
+            height: 400px;
+            border: 1px solid #000;
+            overflow-y: scroll;
+        }
+        p{
+            line-height: 1.5;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+        <p>今天天气不错</p>
+    </div>
+    <!--<button id="btn1">打印scrollTop</button>-->
+    <button id="btn2">打印offset</button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // scrollTop() 方法返回或设置匹配元素的滚动条的垂直位置。
+// scroll top offset 指的是滚动条相对于其顶部的偏移。
+// 如果该方法未设置参数，则返回以像素计的相对滚动条顶部的偏移
+    //scrollLeft
+    // $("#btn").click(function () {
+    //     console.log($(".container").scrollTop());
+    // })
+    // $("#btn2").click(function () {
+    //     console.log($(".container").offset())
+    // })
+
+    //scrollTop获取坐标值 是相对滚动条顶部的偏移
+    $(".container").scroll(function (e) {
+        console.log(e.target.scrollTop)
+    })
+</script>
+</html>

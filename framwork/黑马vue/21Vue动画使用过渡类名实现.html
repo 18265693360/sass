@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*v-enter 【这是一个时间点是进入之前元素的起始状态 此时还没有开始进入*/
+        /*v-leave-to[这是一个时间点]是动画离开之后，离开的终止状态，此时元素动画已经结束*/
+     .v-enter,
+        .v-leave-to{
+         /*淡入淡出*/
+         opacity: 0;
+         /*滑入滑出*/
+         transform: translateX(80px);
+     }
+        /*v-enter-active [入场动画的时间段]*/
+        /*v-leave-active [离场动画的时间段]*/
+        .v-enter-active,
+        .v-leave-active{
+            /*动画 过渡状态*/
+            transition: all 2s ease;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="toggle" @click="flag=!flag">
+    <!--需求：点击按钮让h3显示再点击让h3隐藏H3-->
+    <!--使用 transition 元素,把需要被控制的元素，包裹起来-->
+    <!--transition 元素，是 Vue 官方提供的-->
+    <transition>
+        <h3 v-if="flag">这是一个H3</h3>
+    </transition>
+
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //创建 Vue实例 得到 ViewModel
+    var vm = new Vue ({
+        el:'#app',
+        data:{
+            flag:false
+        },
+        methods:{},
+    });
+</script>
+</html>

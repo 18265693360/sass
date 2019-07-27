@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*[v-cloak]{*/
+            /*display: block;*/
+        /*}*/
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: #409eff;
+        }
+    </style>
+</head>
+<body>
+<!--  v-cloak 避免差值表达式 闪烁问题 属性选择器 -->
+<!--  <div id="app" v-cloak="">  -->
+      <!--<h1>{{msg}}}</h1>  -->
+<!--   </div>  -->
+<!--  IE9以上版本用VUE  -->
+
+<div id="app">
+    <div class="box1" v-if="isShow"></div>
+    <div class="box2" v-else></div>
+    <!--<div class="box" v-if="isShow"></div>-->
+    <button v-on:click="toggle">切换显示</button>
+</div>
+/*
+v-if/v-show
+v-if因为会重新创建或删除dom所以，在性能上不如v-show块
+当里面的值为false时，会移除dom元素，当是true的时候会创造dom元素移入
+*/
+/*
+v-else必须要有v-if打头
+
+
+*/
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            isShow:true
+        },
+        methods:{
+            toggle:function () {
+                this.isShow = !this.isShow;
+                console.log(this.isShow)
+            }
+        }
+    })
+
+
+</script>
+</html>

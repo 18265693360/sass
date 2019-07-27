@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        li:nth-child(1){
+            /*display: none;*/
+            /*既隐藏又不占空间*/
+
+            /*隐藏元素还占据空间*/
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    $("li:hidden").html("我是隐藏的元素")
+    $("li:visible").html("我是显示的元素")
+</script>
+</html>

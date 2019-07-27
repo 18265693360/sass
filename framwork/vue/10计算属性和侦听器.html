@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--对于任何复杂逻辑，你都应当使用计算属性-->
+<!--#基础例子-->
+<div id="example">
+    <p>Original message:"{{message}}"</p>
+    <p>Computed reversed message:"{{reversedMessage}}"</p>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js" ></script>
+<script>
+    var vm = new Vue({
+      el:'#example',
+        data:{
+          message:'hello'
+        },
+        computed:{
+          //计算属性的 getter
+            reversedMessage:function () {
+                //'this'指向 vm 实例
+                return this.message.split('').reverse().join('')
+            }
+        }
+    })
+
+
+
+
+</script>
+</html>

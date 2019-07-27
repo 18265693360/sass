@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--提交表单到百度-->
+<form action="https://www.baidu.com">
+    用户名：<input type="text">
+    <br>
+    密码：<input type="password">
+    <br>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+</form>
+
+</body>
+<script>
+    var form = document.querySelector("form");
+    var inputs = document.querySelector("input")
+    var btns = document.querySelector('button')
+
+    form.onreset = function () {
+        console.log("表单重置")
+    }
+
+    inputs.change = function () {
+        console.log("输入")
+    }
+
+    btns.submit = function () {
+        console.log("按钮")
+    }
+
+
+</script>
+</html>

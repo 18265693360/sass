@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="btn">触发自定义事件事件</button>
+   <div class="box"></div>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // on监听的  on(里面随意事件 任何事件 自定义)后面加事件处理函数
+    $(".box").on("anything",function () {
+        console.log("自定义事件被触发了1")
+    })
+    //可以监听多次事件
+    $(".box").on("anything",function () {
+        console.log("第二件被触发的事件")
+    })
+
+    // trigger() 方法触发被选元素的指定事件类型。
+    $("#btn").click(function () {
+        $('.box').trigger("anything")
+                          //上面是anything下面也是anything
+    })
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<script src="JQuery.js"></script>
+<body>
+    <div class="box">我是文字</div>
+</body>
+<script>
+    // $(".box").css("width","300px")
+    // $(".box").css({
+    //     heigth:200,
+    //     "width":200,
+    //     "backgroudColor":"skyblue",
+    //     fontSize:30
+    // })
+    // console.log($(".box").css("width"));
+    console.log(getComputedStyle(document.querySelector(".box")).width);
+</script>
+</html>

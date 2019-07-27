@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>我是内容1</li>
+    <li>我是内容2</li>
+    <li>我是内容3</li>
+    <li>我是内容4</li>
+    <li>我是内容5</li>
+</ul>
+<!--允许重复声明-->
+<!--function scope函数的作用域-->
+<!--声明后的变量允许重复修改-->
+<!--编译时会变量提升-->
+
+<!--let 和const 声明的变量不允许重复声明-->
+<!--let 和 const 是块级作用域，block scoped-->
+</body>
+<script>
+console.log(teacher)
+    var lis = document.querySelectorAll('li')
+
+    for(var i = 0; i<lis.length;i++){
+        lis[i].onclick = function(){
+            console.log(i);
+        }
+    }
+    console.log(i)
+
+    let str = "这是第一个字符串"
+    let str = "这是第二个字符串"
+
+{
+    let str = "这是代码块中的字符串"
+    console.log(str)
+}
+console.log(str)
+
+    var str = "全局变量"
+    function logStr(){
+        var str1 = "局部变量"
+        console.log(str1)
+    }
+    if(true){
+        var num1 = 998
+    }
+
+    console.log(num1)
+    logStr()
+    const str = '这是秘钥'
+    str = "我不知道为啥就改了"
+    console.log(str)
+
+    const obj = {
+        name:"王力宏"
+        sex:'0'
+    }
+    obj.sex = '1'
+    console.log(obj)
+    let teacher = '黑猫警长'
+</script>
+</html>

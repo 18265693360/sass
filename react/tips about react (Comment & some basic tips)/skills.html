@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+ <p style={{fontSize : '60px', color:'#00f'}}>{this.props.attr}</p>
+          // 外层的{}表示按照js方式解析执行
+          // 内层{}js中对象的表示方法
+          // 属性值必须要加引号
+          // 原来的 font-size 必须改成小驼峰命名法
+
+    // comment 注释问题
+    // xml外 可以使 // /**/
+
+    // 如果是xml中 具体来书欧 就是render 方法中的return中
+ // 要加注释只能 外面加上  {}
+ return(
+        <div>{
+            {/* this.props */}
+            <img src={this.props.pic}/>
+            <p className="content">{this.props.content}</p>
+            <p><a href="">评论</a> <span>2019年4月24日</span> </p>
+            <label form="">标签</label>
+            <p style={{fontSize:'6px', color:'#f00'}}>{this.props.attr}}</p>
+        </div>
+    )
+
+    // 定义组件
+    // 格式
+    var 组件名 React.createClass({属性1： 值1, 属性2: 值2})
+
+    // createClass 这个方法的参数是一个对象 其中最重要的就是render方法
+    // 作用 返回组件内容 通常就是 JSX 或者 null
+
+    Render : function arr() {
+        return(
+            <div>
+
+            </div>
+        )
+    }
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src = 'https://cdn.bootcss.com/jquery/3.3.1/jquery.js'></script>
+<script>
+    // async function doSomeThing(){
+    //     await console.log(1);
+    //     await console.log(2);
+    //     await console.log(3);
+    //     await console.log(4);//1 2 3 4同步打印
+    // }
+    //
+    // doSomeThing();
+
+    // async function doSomeThing(){
+    //     await console.log(1);
+    //     await console.log(2);
+    //     await console.log(3);
+    //     await console.log(4);//1 2 3 4同步打印
+    // }
+    //
+    // doSomeThing().then(()=>{
+    //     console.log('前面所有的步骤都做完了')
+    // })
+
+    //完成后需求
+    // var step1 = new Promise((resolve) => {//获取图书Id
+    //     $.ajax({
+    //         url:"https://m.yaojunrong.com/book",
+    //         success(res){
+    //             let book = res.data[154];
+    //             let bookId = book._id;
+    //             resolve(bookId)
+    //         }
+    //     })
+    // });
+    // let step2 = new Promise(resolve => {//获取所有的目录的id
+    //         $.ajax({
+    //             url:`https://m.yaojunrong.com/title/${bookId}`,
+    //             success(res) {
+    //                 let title = res.data[14];
+    //                 let titleId = res.data[14]._id;
+    //                 resolve(titleId)
+    //             }
+    //         })
+    //     })
+    // })
+    // let step3 = step2.then(titleId => {
+    //     return new Promise(resolve => {
+    //         $.ajax({
+    //             url:`http://m.yaojunrong.com/article/${titleId}`,
+    //             success(res){
+    //                 resolve(res.data.article.content)
+    //             }
+    //         })
+    //     })
+    // })
+    // step3.then(content =>{
+    //     console.log(content)
+    // })
+
+    //async & await 完成取书的功能
+    // var step1 = new Promise((resolve) => {//获取图书Id
+    //     $.ajax({
+    //         url:"https://m.yaojunrong.com/book",
+    //         success(res){
+    //             let book = res.data[154];
+    //             let bookId = book._id;
+    //             resolve(bookId)
+    //         }
+    //     })
+    // });
+
+    // async function getBook(){
+    //     let bookId = await step1;
+    //     console.log(bookId);
+    // }
+    // getBook();//有他才执行
+    //加入ajax对象
+
+    async function getBook(){
+        let bookId = await new Promise((resolve) => {//获取图书Id
+            $.ajax({
+                url:"https://m.yaojunrong.com/book",
+                success(res){
+                    let book = res.data[154];
+                    let bookId = book._id;
+                    resolve(bookId)
+                }
+            })
+        });
+        let titleId = await new Promise(resolve => {//获取所有的目录的id
+             $.ajax({
+                url:`https://m.yaojunrong.com/title/${bookId}`,
+                success(res) {
+                    let title = res.data[14];
+                    let titleId = res.data[14]._id;
+                    resolve(titleId)
+                }
+            })
+        })
+        let content = await new Promise((resolve) => {//具体文章页
+             $.ajax({
+                url:"https://m.yaojunrong.com/book",
+                success(res){
+                let book = res.data[154];
+                let bookId = book._id;
+                resolve(bookId)
+            }
+        })
+    })
+        console.log(content)
+
+        getBook()
+
+</script>
+</html>

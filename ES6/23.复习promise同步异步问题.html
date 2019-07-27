@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // var str = '字符串';
+    // console.log('同步代码开始')
+    // setTimeout(() =>{//异步代码
+    //     console.log(str);
+    // },0);
+    // console.log('同步代码结束');
+    //
+    // //promsise面试题
+    // console.log('代码开始');
+
+    //js单线程语言 任务分为宏任务和微任务
+    //script 算宏任务 setTimeout ,setInterval
+    //微任务 promise
+
+    //执行顺序 1.script 宏任务
+    //2.同步任务 console.log('1')
+    //3.异步任务 宏任务 = setTimeout【'console.log(2)'】推入任务队列等待返回
+    //4.构造器函数 同步代码 var promise = new Promise()
+    //5.微任务放入任务队列 异步代码promise.then(res => {console.log('4')})
+    //6.执行同步代码 console.log('5')
+    //7.返回任务队列 此时执行优先执行 任务队列中的 微任务
+    //结果 1 3 5 4 2
+    // console.log('1');
+    // setTimeout(() => {
+    //     console.log('2');
+    // });
+    //
+    // var promise1 = new Promise(function(resolve,reject){
+    //     console.log('3');
+    //     resolve();
+    // });
+    //
+    // promise1.then(res =>{
+    //     console.log('4');
+    // });
+    //
+    // console.log('5')
+
+    //promise有两种状态 resolve reject
+    //执行状态 三种 1.pedding('进行中')
+    //2.success('成功状态')
+    //3.fail('失败')
+
+    var promise = new Promise((resolve,reject ) => {
+        setTimeout(()=>{
+            // resolve('咱们结婚吧，亲爱的')
+             reject('对不起，给不了你想要的，我也很难过')
+            resolve('转身就中大奖1000')//reject 后的 resolve 不好使
+        },1000)
+    })
+    promise.then(res =>{//结果也有两种 .then成功 .catch失败
+        console.log(res)
+    }).catch(err =>{
+        console.log(err)
+    })
+
+</script>
+</html>

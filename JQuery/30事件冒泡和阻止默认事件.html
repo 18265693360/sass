@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            border: 1px solid #000;
+        }
+        .child{
+            width: 100px;
+            height: 100px;
+            background: #409eff;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="child"></div>
+</div>
+<form action="https://www.taobao.com">
+    <input type="text" name="username" value="admin">
+    <button>不提交</button>
+
+
+</form>
+</body>
+<script src="JQuery.js"></script>
+<script>
+
+    // 因为事件冒泡 点击child会出两个 子事件+父事件
+    //  $('.child').click(function () {
+    //      console.log("子元素事件")
+    //  })
+    //  $(".container").click(function () {
+    //      console.log("爸爸对爷爷来说也是个孩子")
+    //  })
+    //
+    //
+    // 阻止冒泡事件 e 事件对象
+    //  $('.child').click(function (e) {
+    //
+    //      e = e||window.event;
+    //      e.stopPropagation()
+    //
+    //      console.log("子元素事件")
+    //  })
+    //  $(".container").click(function () {
+    //      console.log("爸爸对爷爷来说也是个孩子")
+    //  })
+    //
+    // https://www.taobao.com/?username=admin 默认事件(点击提交自动跳转到淘宝)
+    // 阻止默认事件 1.return false
+    //  $("form").submit(function (e) {
+    //      return false
+    //  })
+    // 2.事件对象
+    $("form").submit(function (e) {
+        e = e || window.event;
+        e.preventDefault();
+    })
+
+
+
+
+</script>
+</html>

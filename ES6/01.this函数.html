@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">按钮</button>
+</body>
+<script>
+    var btn = document.querySelector("#btn")
+    btn.onclick = function(){
+        console.log(this);
+    }
+    // console.log(this);
+    // "use strict"
+    // //在事件处理函数当中，this指向事件源
+    //
+    // //1.this的值永远指向函数的调用者
+    // //2.在严格函数模式下，匿名函数的this指向undefined
+    var name = "吴京"
+
+    var obj = {
+        name:"王力宏",
+        logName:function () {
+            console.log(this.name)
+        }
+    }
+        function logName() {
+        console.log(this.name)
+    }
+    window.logName()//吴京 对应全局 window指向window
+    obj.logName()//王力宏 对应事件源 obj 指向 obj
+    //
+    // obj.logName()
+    // var btn = document.querySelector("#btn")
+    // btn.onclick = function(){
+    //     console.log(this)
+    // }
+    //
+    // var fun1 =function(){
+    //     console.log(thid)
+    // }
+    //
+    // window.fun1()
+    // setTimeout(function(){
+    //     console.log(this)
+    // },300)
+    // (function () {
+    //     console.log(this)
+    // })()
+
+
+    //匿名函数
+    var fun1 = function () {
+        console.log(this)
+    }
+    window.fun1()
+
+    setTimeout(function () {
+        console.log(this)
+    },300)
+
+
+</script>
+</html>

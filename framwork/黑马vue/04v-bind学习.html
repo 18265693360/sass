@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="Vue.css">
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--v-bind 是Vue中，提供的用于绑定属性的指令-->
+    <!--v-bind = ： v-on = @-->
+    <input type="button" value="按钮" v-bind:title="mytitle + '123'">
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js" ></script>
+<script>
+    // 指令全部都是 v-.....
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'123',
+            msg2:'<h1>三等奖各位哦火锅配无人化工</h1>',
+            mytitle: '这是一个自己定义的title'
+        }
+    })
+</script>
+</html>

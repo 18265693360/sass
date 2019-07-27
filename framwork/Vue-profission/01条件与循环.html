@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--<ul>-->
+        <!--<li v-for="item in arr">-->
+            <!--<h2>{{item.title}}</h2>-->
+            <!--<div>-->
+                <!--{{item.data}}-->
+            <!--</div>-->
+            <!--<div>-->
+                <!--{{item.author}}-->
+            <!--</div>-->
+        <!--</li>-->
+    <!--</ul>   -->
+    <!--添加序号-->
+    <ul>
+        <li v-for="(item,index) in arr">
+            <h2>{{item.title}}</h2>
+            <div>
+                {{item.data}}
+            </div>
+            <div>
+                {{item.author}}
+            </div>
+            <div>
+                这是第{{index+1}}条新闻
+                <!--index+1 因为从0 开始-->
+            </div>
+        </li>
+    </ul>
+</div>
+
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //渲染新闻到页面
+    var arr = [
+        {
+            title:"新闻标题1",
+            data:"2019-12-03",
+            author:"阮一峰"
+        },
+        {
+             title:"新闻标题2",
+             data:"2019-4-4",
+             author:"小强"
+        }
+    ]
+
+    var vm = new Vue({
+        el:"#app",
+        data:{
+            isShow:true,
+            arr
+        },
+        methods:{
+            toggle:function () {
+                this.isShow = !this.isShow;
+                console.log(this.isShow)
+            }
+        }
+    })
+
+
+
+</script>
+</html>

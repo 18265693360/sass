@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //reduce 数组的累加器
+    var arr = [2,4,6,8]
+    arr.reduce(function (prev,curr,index) {//第一个值prev 第二个值curr
+        console.log(prev,'prev')
+        console.log(curr,'curr');
+        return prev + curr
+    },0) //指定初始值  传初始值时 prev=初始值 不传初始值时 prev=数组第一个值
+</script>
+</html>

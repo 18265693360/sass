@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //  set数组去重
+    // var arr = [1,1,5435,3543,5,5];
+    // var set = [...new Set(arr)];
+    // console.log(set);
+
+    // var arr = [1,433,45646,66,66,3,3,3,0];
+    // var set = [...new Set(arr)];
+    // console.log(set);
+
+    //for循环去重
+    // 可以利用对象属性的不允许重负出现的特性
+    // var arr = [1,2,4,4,5346,64,6,7,64,64];
+    // var obj = {};
+    // var arr1 = [];
+    //
+    // for(var i=0; i<arr.length;i++){
+    //     if(!obj[arr[i]]){
+    //         obj[arr[i]] = 1;
+    //         arr1.push([arr[i]])
+    //     }
+    // }
+    // console.log(arr1);
+
+    //indexOf去重
+    var arr = [1,2,4,4,66,66,345,33];
+    arr1 = [];
+    arr.forEach(item =>{
+        if(arr1.indexOf(item)==-1){
+            arr1.push(item)
+        }
+    })
+    console.log(arr1);
+
+
+</script>
+</html>

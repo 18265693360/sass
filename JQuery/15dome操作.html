@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            width: 500px;
+            height: 300px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>标题第一级</h1>
+    <div class="container">
+        <p>我是第一行</p>
+        <p class="second">我是第二行</p>
+        <p class="three">我是第三行</p>
+    </div>
+    <button>container追h1</button>
+    <button>h1追进去container</button>
+    <button>加在最前</button>
+    <button>追加到指定元素内部的最前面</button>
+    <button>.before</button>
+    <button>.insertBefor</button>
+    <button>.after</button>
+    <button>insertAfter</button>
+    <button></button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //append 追加
+    $("button").eq(0).click(function () {
+        // 父元素主导
+        $(".container").append($("h1"))
+
+    });
+    // 将新创建的元素追加到一个指定元素内部的最后。这里面新创建的元素是主导，已存在的元素是参数
+    $("button").eq(1).click(function () {
+     $("h1").appendTo(".container")
+    });
+    // 在指定元素内部的最前追加一个新元素，已存在的元素的主导
+    $("button").eq(2).click(function () {
+        $(".container").prepend("h1")
+    });
+    // 将新创建的元素追加到一个指定元素内部的最前面。新元素是主导，已存在的元素是参
+    $("button").eq(3).click(function () {
+        $("h1").prependTo(".container")
+    })
+    // 在指定元素的前面紧挨着的同级插入（已存在元素做主导，新元素作为参数）
+    $("button").eq(4).click(function () {
+        $(".second").before("h1")
+    })
+    // 将新元素插入到指定元素同级的紧挨着的前面。（新元素做主导，已存在元素作为参数）
+    $("button").eq(5).click(function () {
+        $("h1").insertBefore(".second")
+    })
+    $("button").eq(6).click(function () {
+        $(".second").after("h1")
+    })
+    $("button").eq(7).click(function () {
+        $("h1").insertAfter(".second")
+    })
+
+
+
+</script>
+</html>

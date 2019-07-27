@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .inner{
+            height: 150px;
+            background: deeppink;
+        }
+        .outer{
+            padding: 40px;
+            background: #409eff;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--<div class="inner" @click="div1Handler">-->
+                                                <!--.stop阻止冒泡事件-->
+            <!--<input type="button" value="盘他" @click.stop="btnHandler">-->
+
+        <!--</div> 使用.prevent阻止默认事件-->
+        <!--<a href="http://www.baidu.com" @click.prevent="linkClick">我是百度</a>-->
+
+        <!--使用 .capture 实现了捕获事件的机制-->
+        <!--<div class="inner" @click.capture="div1Handler">-->
+            <!--<input type="button" value="盘他" @click="btnHandler">-->
+        <!--</div>-->
+
+        <!--使用 .self 实现只有点击当前元素才会触发事件-->
+        <!--<div class="inner" @click.self="div1Handler">-->
+            <!--<input type="button" value="盘他" @click="btnHandler">-->
+        <!--</div>-->
+        <!-- .once只触发一次事件处理含税可以串联 修饰符 .1.2.3....-->
+        <!--<a href="http://www.baidu.com" @click.prevent.once="linkClick">我是百度</a>-->
+
+        <!--.self只会阻止自己身上冒泡行为的触发，并不会真正阻止 冒泡的行为 .stop真的阻止冒泡行为-->
+        <div class="outer" @click="div2Handler">
+            <div class="inner" @click.self="div1Handler">
+                <input type="button" value="盘他" @click="btnHandler">
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //babel thing .stop可以阻止
+    var vm = new Vue({
+        el:'#app',          //指定vm控制的元素
+        data:{},            //指定vm中要展示的数据
+        methods:{           //vm中要触发的方法
+            div1Handler(){
+                console.log('这是触发了 inner div 的点击事件')
+            },
+            btnHandler(){
+                console.log('这是触发了 btn 按钮 的点击事件')
+            },
+            linkClick(){
+                console.log('触发了连接的点击事件');
+            },
+            div2Handler(){
+                console.log('这是触发了 outer div 的事件')
+            }
+        }
+    })
+</script>
+</html>

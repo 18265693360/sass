@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<span>Message:{{msg}}</span>
+<span v-once>这个将不会改变:{{mag}}}</span>
+
+<p>Using mustaches:{{rawHtml}}}</p>
+<p>Using v-html directive: <span v-html="rawHtml"></span></p>
+
+<div v-bind:id="dynamicId"></div>
+<button v-bind:disabled="isButtonDisabled">Button</button>
+
+
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+
+
+    // 插值
+    // 文本
+    // 数据绑定最常见的形式就是使用“Mustache”语法 (双大括号) 的文本插值：
+  //本来 msg 改变会和双括号中的同步改变 但是 v-once 可以扼杀这一特性
+
+    // 原始HTML
+    // 双大括号会将数据解释为普通文本，而非 HTML 代码。为了输出真正的 HTML，你需要使用 v-html 指令：
+
+    // 特性
+    // {{msg}}语法不能作用在 HTML 特性上，遇到这种情况应该使用 v-bind 指令：
+    // 如果isButtonDisabled 的值是 null undefined false  则 disabled 不会被渲染
+</script>
+</html>

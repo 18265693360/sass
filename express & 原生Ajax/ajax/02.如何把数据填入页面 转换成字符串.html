@@ -1,0 +1,71 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!--移动端加一个视口 viewport-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<ul class="list">
+    <!--<li class="item">-->
+        <!--<h2>新闻标题</h2>-->
+        <!--<div>-->
+            <!--<span class="author">我是作者</span>-->
+            <!--<span class="time">2019-02-23</span>-->
+        <!--</div>-->
+    <!--</li>-->
+    <!--上面的已经获取 可以剔除了-->
+</ul>
+<form action="" method="post" enctype=""></form>
+<!--from表单 需要post请求-->
+</body>
+<script>
+    // var ul = document.querySelector(".list");//提到页面
+    var path = 'http://didi.yaojunrong.com/api/article/get';
+    var xhr = new XMLHttpRequest();//创建ajax对象
+    xhr.open ("GET",path,true);//确定请求方式 地址 同步异步 默认异步
+    //xhr.open ("POST",path,true);//确定请求方式 地址 同步异步 默认异步
+    //post请求需要设置请求头
+    // xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded" );
+    xhr.onreadystatechange = function(){//做一个事件监听 监听状态
+        if(xhr.readyState == 4&&xhr.status == 200){
+            //console.log(JSON.parse(xhr.response))
+            let res = JSON.parse(xhr.response);
+            console.log(res);
+            let str = "";
+            //let template = `模板字符串`
+            //获取所有项
+            res.data.forEach(item => {
+                let date = new Date(item.createtime*1000);//js中以毫秒来计时 unix时间戳
+                let year = date.getFullYear();
+                let month = date.getMonth()+1;
+                let day = date.getDate();
+                //ES6
+                let formatTime = `${year}-${month}-${day}`
+                let template = `
+        <li class="item">
+        <a href="details.html?id=${item.id}>
+            <h2>${item.title}</h2>
+            <div>
+                <span class="author">${item.author}</span>
+                <span class="time">${formatTime}</span>
+             </div>
+        </a>
+
+    </li>`;
+                str+=template;
+            });
+            console.log(str);
+            // ul.innerText = str;//提到页面
+        }
+    };
+    xhr.send();//发送请求
+
+</script>
+</html>

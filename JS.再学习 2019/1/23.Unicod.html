@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!--在body 中应用 既网页中应用Unicode编码-->
+<!--编码格式为 ：-->
+<!--&# + 编码；这里的编码需要的是10进制-->
+<!--eg:-->
+    <h1 style="font-size: 500px;">&#9670;</h1>
+
+
+</body>
+<script>
+
+    /*
+    *在字符串中使用转义字符输入Unicode编码
+    * \u + 四位编码  且都是16进制的
+    * body中只认十进制 所以body中的码不能用unicode
+    * */
+    console.log("\u2620")
+
+
+</script>
+</html>

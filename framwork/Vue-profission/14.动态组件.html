@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background: deeppink;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <component v-bind:is="some"></component>
+    <button @click="toggleComponent">切换组件</button>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var comA = {
+        template:`
+            <div class="box1">我是组件A</div>
+        `
+    }
+    var comB = {
+        template:`
+            <div class="box2">我是组件B</div>
+        `
+    }
+
+
+    new Vue({
+        el:"#app",
+        components:{
+            'com-a': comA,
+            'com-b': comB
+        },
+        data:{
+            some:"com-a"
+        },
+        methods:{
+            toggleComponent(){
+                this.some = this.some == "com-a"? 'com-b':"com-a";
+            }
+        }
+
+    })
+
+
+
+
+</script>
+</html>

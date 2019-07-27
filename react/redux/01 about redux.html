@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+     <div>
+         <ul>
+             <li>
+                 1. reducer reducer是一个纯函数，不能在里面操作外部数据，而是应该根据传入的action的不同，去返回新的数据，reducer不一定要用switch的语法
+             </li>
+             <li>
+                 2.action action是指一个动作，唯一改变store当中数据的方法，是dispatch出发一个action 那么action 在代码当中是一个纯对象
+                 const action = {type: "INCREMENT"}
+             </li>
+         </ul>
+     </div>
+</body>
+<script>
+
+    //三个api
+    // 创建一个状态容器
+    const store = createStore(reducer);
+
+    // subscribe 去订阅数据更新
+    store.subscribe(function () {
+
+    })
+
+    // 获取数据更新  返回store当中的数据更新
+    store.getState()
+
+    //dispatch
+    // dispatch 是在 store 对象上
+    // 通过 store.dispatch(action)去更改store当中的数据
+    store.dispatch(action)
+
+
+</script>
+</html>

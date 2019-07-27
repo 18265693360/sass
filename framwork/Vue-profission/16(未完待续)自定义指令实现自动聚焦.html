@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <com-a v-if="isShowDom"></com-a>
+        <button @click="addDom"></button>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var comA = {
+        template:`
+            <input type="text" :class="input" v-focus />
+        `,
+        directives:{
+            "focus":{
+                inserted(el){
+                    el.focus();
+                }
+            }
+        }
+    }
+
+    new Vue ({
+        components:{
+            'com-a':comA
+        },
+        el:'#app',
+        data:{
+            isShowDom:false
+        },
+        methods:{
+            addDom(){
+                this.isShowDom = true
+            }
+        }
+    })
+
+
+</script>
+</html>

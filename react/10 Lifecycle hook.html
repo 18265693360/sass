@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--componentWillMont 组件将要挂载-->
+
+<!--定义组件一定使用类的方式定义组件 不要使用函数组件 没有生命周期-->
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+// 组件挂载时 会有那些钩子
+//     componentWillMount 组件将要挂载
+//     componentDidMont 组件已经挂载 （可以执行原生js的一些方法）
+
+// 组件更新，会有那些钩子
+//        compontWillUpdate 组件将要更新
+//        compontDidUpdate  组件已经更新
+
+// 组件卸载时会执行的钩子
+//           componentWillUnMount 组件将要卸载 （执行一些清空定时器，或者是移除事件绑定的绑定功能）
+    const {Component} = React;
+    class Container extends  Component{
+        constructor (props) {
+            super(props)
+            this.state = {
+                str:'我是传入的参数'
+            }
+        }
+        componentWillMount(){
+            console.log(document.querySelector('#btn'), 'componentWillMount');
+        }
+        componentDidMount(){
+            console.log(document.querySelector('#abtn'), 'componentDidMount');
+        }
+        changeStr(){
+            this.setState({
+                str:'修改后的参数'
+            })
+        }
+        render(){
+            return(
+                <div>
+                    <h1>生命周期</h1>
+                    <button id="btn" onClick={this.changeStr.bind(this)}>点我</button>
+                    <ul>
+                        <li><Title text={this.state.str}/> </li>
+                    </ul>
+                </div>
+            )
+        }
+    }
+    class Title extends  Component{
+            constructor (props){
+                super(props)
+            }
+            componentWillUpdate(){
+                console.log(this.props.text, 'componentWillUpdate');
+            }
+            componentDidUpdate(){
+                console.log(this.props.text, 'componentDidUpdate');
+            }
+            render(){
+                return(
+                    <div>
+                        <h2>{this.props.text}</h2>
+                    </div>
+                )
+            }
+    }
+    ReactDOM.rendre(<Container/>, document.getElementById('root'))
+</script>
+</html>

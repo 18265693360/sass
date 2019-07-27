@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--this永远指向调用他的函数 -->
+<!--this的指向只有在调用的时候才能知道-->
+<!--箭头函数的this的指向是在定义的时候就已经绑定了this的指向-->
+<button id="btn">点我</button>
+</body>
+<script>
+    // bind 改变this的指向 同时返回一个新的函数
+    // call 改变this 的指向 同时执行改变后的函数
+    // apply 需要以数组的形式展开
+
+    var name = 'window 的name';
+
+    var obj = {
+        name:'王力宏',
+        printName(a,b,c){
+            console.log(this.name);
+            console.log(this);
+            console.log(a, b, c);
+        }
+    }
+
+    var girl = {
+        name:'赵素素',
+        sex:'women'
+    }
+
+    //obj.printName()
+    const fn = obj.printName; //引用数据类型个
+    window.fn();
+    const fn = obj.printName.bind(girl,'第一个参数','第二个参数','第三个参数');
+    obj.printName.call(girl,'第一个参数','第二个参数','第三个参数');
+    obj.printName.apply(girl,['第一个参数','第二个参数','第三个参数']);
+    fn();
+
+    var name = 'window 的 name';
+
+    class Demo {
+        constructor(){
+            this.name  = '我是demo';
+            this.dom = document.getElementById('btn');
+            const _this = this;
+            const fn = _this.printElementById('btn');
+            this.dom.onclick = function () {
+                fn.bind(_this)();
+            }
+        }
+        printSome = () =>{
+            console.log(this);
+            console.log(this.name);
+            console.log(this.name);
+        }
+    }
+    const obj = new Demo();
+</script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    const obj1 = {
+        name:'刘佳丽',
+        sex:'不男不女'
+    }
+
+    const person = {
+        nation:'Dutch'
+    }
+
+    // 将obj1放入 person
+    // 两种方案
+
+    //原生
+    // for (let key in obj1){
+    //     person[key] = obj1[key]
+    // }
+    //
+    // console.log(person);
+
+
+    //方案一 Object.assign(person, obj1)
+    console.log(Object.assign(person, obj1));
+    console.log(Object.assign(obj1,person));
+    //方案二
+    console.log({
+        ...obj1,
+        ...person
+    })
+    //二者顺序不同 加入的顺序也不同
+    console.log({
+        ...person,
+        ...obj1,
+    })
+
+</script>
+</html>

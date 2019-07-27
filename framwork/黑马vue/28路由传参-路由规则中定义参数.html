@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<!--1.引入包-->
+<script src="vue-router%20v3.0.2.js"></script>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //2.创建组件
+    var login = {
+        template:'<h1>登录</h1>>'
+    }
+
+    var register = {
+        template:'<h1>注册</h1>>'
+    }
+
+    //创建路由对象 3.创建路由规则
+    var router = new VueRouter({
+        routes: [
+            {path:'/login',component:login},
+            {path:'/register',component:register},
+        ]
+    })
+
+    //4.挂载
+    var vm = new Vue({
+        el:'#app',
+        data:{},
+        methods:{},
+       // 把路由对象挂载到 vm 实例中
+       //  router:router
+        router
+    });
+
+</script>
+</html>

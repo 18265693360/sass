@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+    // component 1  函数方法
+    function Welcome(props){
+        return <h1>Hellow, {props.name}</h1>
+    }
+
+    //ES6 class
+    class Welcome extends React.Component{
+        render(){
+            return <h1>Hellow, {this.props.name}</h1>
+        }
+    }
+
+    //组件
+    const element = <div/>;
+
+    //自定义组件
+    const element = <Welcome name="Sara" />;
+
+
+
+
+    function Welcome(props) {
+        return <h1>Hello,{props.name}</h1>
+    }
+
+    const element = <Welcome naem="Sara" />;
+    ReactDOM.render(
+        element,
+        document.getElementById('root')
+    );
+
+
+
+</script>
+</html>

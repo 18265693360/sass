@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/静态页面 &amp; 项目/html233/12.表单.html" line="107" mnemonic="7" />
+    <bookmark url="file://$PROJECT_DIR$/JS.再学习 2019/1/08、Number.html" line="13" />
+    <bookmark url="file://$PROJECT_DIR$/JS.再学习 2019/1/22.关系运算符.html" line="64" />
+    <bookmark url="file://$PROJECT_DIR$/JS.再学习 2019/1/25.条件运算符.html" line="22" />
+    <bookmark url="file://$PROJECT_DIR$/ES6/29.运用class来继承原生构造器.html" line="30" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a4efaf86-8450-4c12-bf92-ae34b5f59c26" name="Default Changelist" comment="Merge branch 'master' of https://github.com/dyyaoGit/cloud-book-html-teach&#10;&#10;# Conflicts:&#10;#&#9;config/index.js&#10;#&#9;src/components/dy-input/index.scss&#10;#&#9;src/components/dy-input/index.vue&#10;#&#9;src/main.js&#10;#&#9;src/router/index.js&#10;#&#9;src/store/index.js&#10;#&#9;src/utils/api.js&#10;#&#9;src/utils/index.js&#10;#&#9;src/views/login/index.scss&#10;#&#9;src/views/login/index.vue&#10;#&#9;src/views/person/index.scss&#10;#&#9;src/views/person/index.vue&#10;#&#9;src/views/register/index.vue">
+      <change afterPath="$PROJECT_DIR$/Bootstrap/01 install.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/02 初体验.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/03 view port css and git normalize.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Bootstrap/viewport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS.再学习 2019/new/04 99表.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JS.再学习 2019/new/position.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VUe-cli/01脚手架.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/CSS + CSS3/css.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/ES6/es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/HTML/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/JS/js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/MongDB/mongdb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/Node-js/node-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/React/react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/Vue/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/express/express.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/git/git.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/jQuery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/npm &amp; yarn/npm &amp; yarn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/sass/sass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/catagory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/msg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/getData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/catagory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/msg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/article.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/book.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/catagory.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/collection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/msg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/swiper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/title.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/user.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/msgutils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-book-backside/cloundb-background/model/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-book-backside/getbook.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/assets/avatar1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/liu-header/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/axios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/fortruth.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/lovelifereading.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/pic2spirtfood.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/components/Logo/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/components/liu-input/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/components/liu-input/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/components/my-swiper/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/components/tab-bar/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/globalCss/init.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/globalCss/px2-rem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/demo_index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/utils/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/utils/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/article/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/article/markdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/changemsg/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/details/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/details/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/empty/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/contentItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/layout/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/login/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/login/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/personal/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/personal/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/register/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/study/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/study/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test post photo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/nightwatch.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/runner.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/specs/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/jest.conf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/setup.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framwork/vue/14 v-bind.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/framwork/黑马vue/28路由传参-路由规则中定义参数.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/components/Count.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/components/ReduxWithCount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/reducer/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/views/todoList/components/TodoHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/views/todoList/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/01移动端适配起源.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/02设备像素比.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/03iPhone 3gs为例.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/04 iphone如何适配.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/05适配多个设备.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/06网易方案应用.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/07淘宝方案.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/taobao.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mobile suitable/视口.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/practice/03.Vue 中的 jsx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/01 what is JSX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/02 Element rendering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/03 poney.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/js/babel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/js/react-dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react-JSX/js/react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/02 dataset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/03 jsx in Vue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/04 the native of jsx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/06 if in jsx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/07 element render.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/09 similar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/js/babel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/js/react-dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/js/react.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/react/js/vue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repaire-system/src/components/upload/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repaire-system/src/components/upload/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/骰子/01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01sass-01.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01sass-01.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01sass-01.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/01sass初始.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02嵌套规则.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/03子元素选择器.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/04sass的模块化.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/05函数.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/catagory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/catagory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/msg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/catagory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/catagory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/msg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/@alicloud/pop-core/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/@alicloud/pop-core/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/@alicloud/pop-core/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/@alicloud/pop-core/node_modules/ms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/jsonwebtoken/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/jsonwebtoken/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/jsonwebtoken/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/jsonwebtoken/node_modules/ms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/build/build.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/build/test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/cli.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/cli.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/mime.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/mime.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mime/types.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mongoose/node_modules/ms/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mongoose/node_modules/ms/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mongoose/node_modules/ms/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/mongoose/node_modules/ms/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/ms/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/send/node_modules/.bin/mime" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/node_modules/send/node_modules/.bin/mime" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/book.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/catagory.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/catagory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/msg.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/msg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/swiper.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/title.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/title.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/user.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/routes/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/utils/msgutils.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/msgutils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/dy-input/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/dy-input/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/dy-input/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/dy-input/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/article/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/article/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/details/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/details/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/login/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/login/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/login/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/person/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/person/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/person/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/person/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/register/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/register/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/titles/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/views/titles/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/utils/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/utils/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/views/article/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/article/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/views/details/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/details/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloundb/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-by-yourself/01.formData.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-by-yourself/01.formData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/CustomerCenter/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/CustomerCenter/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/Layout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router-learn/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router-learn/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router-learn/src/views/NotFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router-learn/src/views/NotFound/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/utils/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/views/Layout/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/views/Layout/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/views/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/views/Layout/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/yarn.lock" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Unnamed">
+      <favorite_root url="file://$PROJECT_DIR$/CSS/03.Css语法.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Unnamed1">
+      <favorite_root url="file://$PROJECT_DIR$" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/CSS" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/CSS/03.Css语法.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/13.长度单位.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/14.字体相关.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/03.Css语法.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/044.导入样式.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/05.标签选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/07.ID选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/09.分组选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/10.后代选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/11.伪类选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/secondCss.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/08.通配符选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/12.颜色的表示法.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/Css.完成圣杯布局.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/html01.圣杯布局.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/04.为什么用外联样式表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/06.类Class选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/.idea" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/.idea/misc.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/modules.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/encodings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/untitled folder 2.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/image" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/image/百度.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/map.jpg" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/王力宏.jpg" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/pic3.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/01.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/课程表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/百度制作.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/03.段落.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/06.图片.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/11.表格.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/12.表单.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/第五章框架.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/04.超链接.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/iframe.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/02.标题标签.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/07.图片映射.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/08.无序列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/09.有序列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/10.自定义列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/05.第二个超链接.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+    <favorites_list name="Unnamed2">
+      <favorite_root url="file://$PROJECT_DIR$" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/CSS" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/CSS/03.Css语法.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/13.长度单位.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/14.字体相关.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/03.Css语法.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/044.导入样式.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/05.标签选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/07.ID选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/09.分组选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/10.后代选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/11.伪类选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/secondCss.css" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/08.通配符选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/12.颜色的表示法.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/Css.完成圣杯布局.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/html01.圣杯布局.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/04.为什么用外联样式表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/CSS/06.类Class选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/.idea" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/.idea/misc.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/modules.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/encodings.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/.idea/untitled folder 2.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/image" module="untitled folder 2" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/image/百度.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/map.jpg" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/王力宏.jpg" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/image/pic3.png" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/01.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/uil.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/课程表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/百度制作.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/03.段落.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/06.图片.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/11.表格.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/12.表单.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/第五章框架.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/04.超链接.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/iframe.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/02.标题标签.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/07.图片映射.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/08.无序列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/09.有序列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/10.自定义列表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/05.第二个超链接.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      </favorite_root>
+    </favorites_list>
+    <favorites_list name="Unnamed3">
+      <favorite_root url="file://$PROJECT_DIR$/CSS/13.长度单位.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/04.为什么用外联样式表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/08.通配符选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/11.伪类选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/05.标签选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/12.颜色的表示法.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/09.分组选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/07.ID选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/14.字体相关.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/CSS/10.后代选择器.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+    <favorites_list name="Unnamed4">
+      <favorite_root url="file://$PROJECT_DIR$/CSS/04.为什么用外联样式表.html" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="165">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mobile suitable/06网易方案应用.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/config/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/store/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/components/input-change/index.vue">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/package.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/config/prod.env.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/test post photo.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloundb/src/store/user.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="XHTML File" />
+        <option value="HTML4 File" />
+        <option value="XSLT Stylesheet" />
+        <option value="Sass File" />
+        <option value="SCSS File" />
+        <option value="react" />
+        <option value="react-view" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>td</find>
+      <find>td bgcolor=&quot;#fff&quot; bgcolor=&quot;#fff&quot;</find>
+      <find>th&gt;</find>
+      <find>&lt;t</find>
+      <find>&lt;th</find>
+      <find>&lt;td</find>
+      <find>&gt;&gt;</find>
+      <find>pointcircle</find>
+      <find>nav-main</find>
+      <find>bannerr</find>
+      <find>left</find>
+      <find>right</find>
+      <find>part3</find>
+      <find>icon-xiegang</find>
+      <find>form</find>
+      <find>..images/headphoto.jpg</find>
+      <find>avatar1</find>
+      <find>var</find>
+      <find>main</find>
+      <find>ul</find>
+      <find>box</find>
+      <find>id</find>
+      <find>p</find>
+      <find>name</find>
+      <find>call</find>
+      <find>user</find>
+      <find>itm</find>
+      <find>falsem</find>
+      <find>cate</find>
+      <find>alias</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>td bgcolor=&quot;#fff&quot;</replace>
+      <replace>&lt;td bgcolor=&quot;</replace>
+      <replace>&gt;</replace>
+      <replace>Square</replace>
+      <replace>banner</replace>
+      <replace>left</replace>
+      <replace>item3</replace>
+      <replace>icon-xiaohongdian</replace>
+      <replace>res</replace>
+      <replace>../images/headphoto.jpg</replace>
+      <replace>headphoto</replace>
+      <replace>const</replace>
+      <replace>li</replace>
+      <replace>child</replace>
+      <replace>cata</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/mobile suitable" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/m-repair-react/src/views/Layout/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/Layout/index.css" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.css" />
+        <option value="$PROJECT_DIR$/m-repair-react/src/views/Login/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/PersonalCenter/index.js" />
+        <option value="$PROJECT_DIR$/learn-by-yourself/01.formDate.html" />
+        <option value="$PROJECT_DIR$/learn-by-yourself/01.formData.html" />
+        <option value="$PROJECT_DIR$/../Desktop/前端视频/新东西/html5代码/14百度地图获取当前位置.html" />
+        <option value="$PROJECT_DIR$/JS.再学习 2019/new/position.html" />
+        <option value="$PROJECT_DIR$/boot/package.json" />
+        <option value="$PROJECT_DIR$/Bootstrap/02 初体验.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/01 install.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/345.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/dist/3.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/viewport.html" />
+        <option value="$PROJECT_DIR$/Bootstrap/03 view port css and git normalize.html" />
+        <option value="$PROJECT_DIR$/repaire-system/src/utils/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/Layout/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/router/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/AllRecord/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/components/upload/index.css" />
+        <option value="$PROJECT_DIR$/repaire-system/src/components/upload/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.js" />
+        <option value="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.css" />
+        <option value="$PROJECT_DIR$/repaire-s/package.json" />
+        <option value="$PROJECT_DIR$/repaire-s/src/App.vue" />
+        <option value="$PROJECT_DIR$/repaire-s/src/views/index.vue" />
+        <option value="$PROJECT_DIR$/repaire-s/src/router/index.js" />
+        <option value="$PROJECT_DIR$/repaire-s/src/views/index/index.vue" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/CSS + CSS3/css.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/ES6/es6.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/express/express.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/flex/fflex.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/git/git.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/HTML/html.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/jQuery/jquery.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/JS/js.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/MongDB/mongdb.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/Node-js/node-js.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/React/react.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/sass/sass.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develomen/Vue/vue.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develoment/npm &amp; yarn/npm &amp; yarn.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develoment/JS/js.js" />
+        <option value="$PROJECT_DIR$/World  List of Web Develoment/CSS + CSS3/css.js" />
+        <option value="$PROJECT_DIR$/JS.再学习 2019/new/0499表.js" />
+        <option value="$PROJECT_DIR$/JS.再学习 2019/new/04 99表.html" />
+        <option value="$PROJECT_DIR$/JS.再学习 2019/01.百钱买百鸡.html" />
+        <option value="$PROJECT_DIR$/VUe-cli/01脚手架.html" />
+        <option value="$PROJECT_DIR$/clound-background/cloundb-back/model/swiper.js" />
+        <option value="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="770" />
+    <option name="y" value="23" />
+    <option name="width" value="1150" />
+    <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="untitled folder 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="untitled folder 2" type="462c0819:PsiDirectoryNode" />
+              <item name="数组去重" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="untitled folder 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="untitled folder 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="数据库" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="untitled folder 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="数据库" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="跨域" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="untitled folder 2" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="数据库" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="跨域" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="http协议" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Angular2Html&#10;CSS" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Bootstrap" />
+      <recent name="$PROJECT_DIR$/react/tips about react (Comment &amp; some basic tips)/js/image" />
+      <recent name="$PROJECT_DIR$/cloundb/src" />
+      <recent name="$PROJECT_DIR$/cloundb/src/components" />
+      <recent name="$PROJECT_DIR$/cloundb/src/views/img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sass-use" />
+      <recent name="$PROJECT_DIR$/react/redux" />
+      <recent name="$PROJECT_DIR$/react/learn-router/src" />
+      <recent name="$PROJECT_DIR$/my-app/src/component/Header" />
+      <recent name="$PROJECT_DIR$/react/tips about react (Comment &amp; some basic tips)/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.uploadUtil.js">
+    <configuration name="11.表格.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/untitled folder 2/静态页面/html233/11.表格.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="build.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cloundb/build/build.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev.env.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cloundb/config/dev.env.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="getData.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/clound-background/cloundb-back/getData.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/cloundb/config/index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="uploadUtil.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.uploadUtil.js" />
+        <item itemvalue="Node.js.build.js" />
+        <item itemvalue="Node.js.dev.env.js" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="Node.js.getData.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a4efaf86-8450-4c12-bf92-ae34b5f59c26" name="Default Changelist" comment="" />
+      <created>1545729301549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1545729301549</updated>
+      <workItem from="1545729305118" duration="29744000" />
+      <workItem from="1545873169822" duration="1778000" />
+      <workItem from="1545877370232" duration="12889000" />
+      <workItem from="1545901205114" duration="11388000" />
+      <workItem from="1545959206193" duration="18122000" />
+      <workItem from="1546002142731" duration="305000" />
+      <workItem from="1546044912777" duration="261000" />
+      <workItem from="1546046381307" duration="751000" />
+      <workItem from="1546047528461" duration="845000" />
+      <workItem from="1546048405220" duration="293000" />
+      <workItem from="1546050327186" duration="855000" />
+      <workItem from="1546051352926" duration="24748000" />
+      <workItem from="1546408583329" duration="18628000" />
+      <workItem from="1546477613526" duration="20923000" />
+      <workItem from="1546563906766" duration="27473000" />
+      <workItem from="1546655616538" duration="46178000" />
+      <workItem from="1546862724122" duration="170000" />
+      <workItem from="1546863077278" duration="2399000" />
+      <workItem from="1546909851978" duration="16956000" />
+      <workItem from="1546996092508" duration="19241000" />
+      <workItem from="1547034509230" duration="223000" />
+      <workItem from="1547082406889" duration="804000" />
+      <workItem from="1547100223289" duration="269000" />
+      <workItem from="1547101221403" duration="14220000" />
+      <workItem from="1547168050862" duration="19207000" />
+      <workItem from="1547211453599" duration="3000" />
+      <workItem from="1547211465336" duration="1000" />
+      <workItem from="1547262494629" duration="13287000" />
+      <workItem from="1547358418361" duration="9759000" />
+      <workItem from="1547426570930" duration="1723000" />
+      <workItem from="1547428728174" duration="4000" />
+      <workItem from="1547428773968" duration="18753000" />
+      <workItem from="1547463289872" duration="11761000" />
+      <workItem from="1547531427352" duration="44609000" />
+      <workItem from="1547686355271" duration="35180000" />
+      <workItem from="1547776530712" duration="6689000" />
+      <workItem from="1547789176731" duration="2000" />
+      <workItem from="1547789180562" duration="14703000" />
+      <workItem from="1547857581744" duration="16335000" />
+      <workItem from="1548030308287" duration="18617000" />
+      <workItem from="1548117643337" duration="28031000" />
+      <workItem from="1548204082237" duration="16743000" />
+      <workItem from="1548290581699" duration="24530000" />
+      <workItem from="1548376683024" duration="11834000" />
+      <workItem from="1548465572794" duration="8743000" />
+      <workItem from="1548566947208" duration="15188000" />
+      <workItem from="1550027464815" duration="15778000" />
+      <workItem from="1550104448848" duration="6110000" />
+      <workItem from="1550142608013" duration="11630000" />
+      <workItem from="1550191484601" duration="16698000" />
+      <workItem from="1550277646256" duration="6776000" />
+      <workItem from="1550285612601" duration="733000" />
+      <workItem from="1550398226575" duration="943000" />
+      <workItem from="1550399397008" duration="9563000" />
+      <workItem from="1550450364850" duration="19851000" />
+      <workItem from="1550536467069" duration="23186000" />
+      <workItem from="1550622710911" duration="14447000" />
+      <workItem from="1550709169722" duration="1060000" />
+      <workItem from="1550712239292" duration="28910000" />
+      <workItem from="1550796032923" duration="5265000" />
+      <workItem from="1550883636368" duration="17572000" />
+      <workItem from="1550979586752" duration="6526000" />
+      <workItem from="1550988759699" duration="1182000" />
+      <workItem from="1550989988353" duration="2543000" />
+      <workItem from="1550995396259" duration="2727000" />
+      <workItem from="1551055457734" duration="11963000" />
+      <workItem from="1551079666392" duration="15590000" />
+      <workItem from="1551099650267" duration="2649000" />
+      <workItem from="1551142392034" duration="1987000" />
+      <workItem from="1551144750832" duration="7066000" />
+      <workItem from="1551227834402" duration="31000" />
+      <workItem from="1551234298624" duration="931000" />
+      <workItem from="1551238163762" duration="563000" />
+      <workItem from="1551243553946" duration="843000" />
+      <workItem from="1551256829654" duration="257000" />
+      <workItem from="1551259786143" duration="24154000" />
+      <workItem from="1551426659209" duration="22988000" />
+      <workItem from="1551524047790" duration="24304000" />
+      <workItem from="1551659669385" duration="27338000" />
+      <workItem from="1551756112045" duration="30768000" />
+      <workItem from="1551864340455" duration="8938000" />
+      <workItem from="1551919477991" duration="9422000" />
+      <workItem from="1551941629469" duration="15024000" />
+      <workItem from="1552267576445" duration="25966000" />
+      <workItem from="1552380892400" duration="211000" />
+      <workItem from="1552381145391" duration="10000" />
+      <workItem from="1552381183710" duration="2640000" />
+      <workItem from="1552389047701" duration="11382000" />
+      <workItem from="1552458126989" duration="15393000" />
+      <workItem from="1552531732064" duration="48243000" />
+      <workItem from="1552799238855" duration="56131000" />
+      <workItem from="1553049069604" duration="10088000" />
+      <workItem from="1553127260663" duration="59980000" />
+      <workItem from="1553402000091" duration="65708000" />
+      <workItem from="1553647140645" duration="13915000" />
+      <workItem from="1553694387260" duration="36432000" />
+      <workItem from="1553780699702" duration="4105000" />
+      <workItem from="1553821695041" duration="1044000" />
+      <workItem from="1553823158299" duration="21726000" />
+      <workItem from="1553915361921" duration="2309000" />
+      <workItem from="1553927450578" duration="10462000" />
+      <workItem from="1553943078544" duration="62702000" />
+      <workItem from="1554166632715" duration="756000" />
+      <workItem from="1554168089838" duration="60626000" />
+      <workItem from="1554345198125" duration="43200000" />
+      <workItem from="1554534444195" duration="3610000" />
+      <workItem from="1554635934849" duration="16635000" />
+      <workItem from="1554726050366" duration="38574000" />
+      <workItem from="1554900419718" duration="4583000" />
+      <workItem from="1554905323198" duration="49708000" />
+      <workItem from="1555121954289" duration="10052000" />
+      <workItem from="1555142255561" duration="2061000" />
+      <workItem from="1555156781354" duration="12000" />
+      <workItem from="1555159158300" duration="31647000" />
+      <workItem from="1555314644033" duration="1323000" />
+      <workItem from="1555319258708" duration="23038000" />
+      <workItem from="1555410702884" duration="9398000" />
+      <workItem from="1555484795230" duration="1531000" />
+      <workItem from="1555488117723" duration="36425000" />
+      <workItem from="1555638369373" duration="33803000" />
+      <workItem from="1555852366207" duration="4296000" />
+      <workItem from="1555898848609" duration="10911000" />
+      <workItem from="1555939521325" duration="317000" />
+      <workItem from="1555980640982" duration="82476000" />
+      <workItem from="1556364443989" duration="19364000" />
+      <workItem from="1556540438066" duration="22668000" />
+      <workItem from="1557103429238" duration="8284000" />
+      <workItem from="1557128489372" duration="9733000" />
+      <workItem from="1557190276831" duration="34654000" />
+      <workItem from="1557320520866" duration="47402000" />
+      <workItem from="1557563792168" duration="4839000" />
+      <workItem from="1557623028347" duration="3790000" />
+      <workItem from="1557650035182" duration="2000" />
+      <workItem from="1557651256017" duration="2000" />
+      <workItem from="1557651500451" duration="378000" />
+      <workItem from="1557652113985" duration="16000" />
+      <workItem from="1557652294568" duration="854000" />
+      <workItem from="1557658118774" duration="5709000" />
+      <workItem from="1557709550406" duration="18259000" />
+      <workItem from="1557749278172" duration="17000" />
+      <workItem from="1557753186173" duration="51000" />
+      <workItem from="1557758092109" duration="105000" />
+      <workItem from="1557796696959" duration="28000" />
+      <workItem from="1557817372425" duration="7192000" />
+      <workItem from="1557901127980" duration="308000" />
+      <workItem from="1557901616801" duration="26000" />
+      <workItem from="1557925875971" duration="9000" />
+      <workItem from="1559051727078" duration="13000" />
+      <workItem from="1559737397664" duration="178000" />
+      <workItem from="1562921958742" duration="48000" />
+      <workItem from="1563327474779" duration="939000" />
+      <workItem from="1563348074027" duration="1000" />
+      <workItem from="1563368355861" duration="120000" />
+      <workItem from="1563414461594" duration="3880000" />
+      <workItem from="1563419883737" duration="165000" />
+      <workItem from="1563586829155" duration="33000" />
+      <workItem from="1563761256704" duration="63000" />
+      <workItem from="1563766193109" duration="429000" />
+      <workItem from="1563768395973" duration="3152000" />
+      <workItem from="1563876301068" duration="1840000" />
+      <workItem from="1563891544025" duration="522000" />
+      <workItem from="1563926042343" duration="130000" />
+      <workItem from="1563926254418" duration="45000" />
+      <workItem from="1564059096637" duration="1698000" />
+      <workItem from="1564067516711" duration="95000" />
+      <workItem from="1564067642644" duration="601000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2094259000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="951" y="23" width="1150" height="1057" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" order="0" sideWeight="0.5049365" side_tool="true" weight="0.27186146" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49506348" visible="true" weight="0.32063773" />
+      <window_info id="Structure" order="2" sideWeight="0.50364965" side_tool="true" weight="0.17707267" />
+      <window_info id="npm" order="3" sideWeight="0.502994" side_tool="true" weight="0.2047083" />
+      <window_info anchor="bottom" id="Debug" order="0" weight="0.69647056" />
+      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.49828961" visible="true" weight="0.031088082" />
+      <window_info anchor="bottom" id="Thumbnails" order="2" weight="0.3299595" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.23404256" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50171036" side_tool="true" weight="0.34241706" />
+      <window_info anchor="bottom" id="Version Control" order="5" weight="0.32765958" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3253886" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Find" order="8" weight="0.45906734" />
+      <window_info anchor="bottom" id="TypeScript" order="9" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Express/express 初体验/06.利用promise封装ajax.html</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Express/express 初体验/06.利用promise封装ajax.html</url>
+          <line>29</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/mongoose/跨域/03.Cookie.html</url>
+          <line>25</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/clound-book-html-teach/src/components/my-swiper/index.vue</url>
+          <line>17</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/mobile suitable/01移动端适配起源.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/02设备像素比.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/03iPhone 3gs为例.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/04 iphone如何适配.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/05适配多个设备.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-497" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/07淘宝方案.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/build/webpack.dev.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/build/webpack.prod.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/27.class.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/22.promise.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="21" column="14" lean-forward="true" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/02.箭头函数.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/11.对象和数组的结构.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JS.再学习 2019/02.排序.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/14.map方法.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/16.对象字面量.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/17.新增数组方法 对象方法 Object开头.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/17.新增数组方法和对象方法.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/18.剩余参数.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/19.document.getElementByTagName...用法.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/19.innerText &amp; innerHtml.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ES6/23.复习promise同步异步问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/静态页面 &amp; 项目/html233/CSS3">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/utils/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/axios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/.postcssrc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/.babelrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/test/unit/setup.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/test/unit/jest.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/test/unit/.eslintrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/test/unit/specs/HelloWorld.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#434#461#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/dist/.project">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="181" column="8" selection-start-line="181" selection-start-column="8" selection-end-line="181" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/utils/api.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/views/article/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="86" column="31" selection-start-line="86" selection-start-column="31" selection-end-line="86" selection-end-column="31" />
+          <folding>
+            <element signature="e#1010#1042#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/config/dev.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/config/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="7" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/views/changeName/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/components/input-change/index.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/src/store/user.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloundb/test post photo.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mobile suitable/06网易方案应用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="21" column="34" lean-forward="true" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

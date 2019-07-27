@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--对象就是无序键值对的集合            font-weight 就要加上双引号-->
+    <!--<h1 :style="{color:'red','font-weight':200}">天气不错</h1>-->
+    <h1 :style="[styleObj1,styleObj2]">天气不错</h1>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            styleObj1:{color:'red','font-weight':200},
+            styleObj2:{'font-style':'italic'}
+        },
+        methods:{}
+    });
+
+
+</script>
+</html>

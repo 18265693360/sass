@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//懂多少就会用多少
+尤雨溪
+可以用npm install vue
+在下载目录中获取
+-->
+     DOM（数据和DOM已经绑定）
+
+<div id="app">
+
+<h1>{{msg}}</h1>
+    <!--数据双向同步-->
+    <input type="text" v-model="msg">
+</div>
+
+<div id="app-2">
+    <span v-bind:title="message">
+        it is goona be right
+    </span>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    // //var app实例对象 + 构造器函数 传参（对象）
+    // var app = new Vue({
+    //     el:"#app",//有逗号
+    //     //就监管对应的 app div
+    //     //data:function{}
+    //     数据
+    //
+    //     data:{
+    //         msg:"hellow world"
+    //         //动态更新
+    //     }
+    // })
+
+
+// app.msg="dger;ojg"
+
+    var app2 = new Vue({
+        el:'#app-2',
+        data:{
+            message:'you loaded this page on' + new Date()
+        }
+    })
+
+
+</script>
+</html>

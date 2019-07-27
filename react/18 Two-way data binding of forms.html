@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    const {Component} = React;
+
+    class Container extends Component{
+        constructor (props){
+            super(props)
+            this.state = {
+                formData:{
+                    userNmae:'',
+                    password:'110'
+                }
+            }
+        }
+        handleChange = (e) => {
+            const name = e.target.name;
+            const value = e.target.value;
+            this.setState({
+                fomrData:{
+                    ...this.state.formData,
+                    [name]: value
+                }
+            },function () {
+                console.log(this.state);
+            })
+        }
+        handleClick = () =>{
+            this.setState({
+                formData:{
+                    ...this.state.formData,
+                    // 用小写
+                    username:'我是用户名'
+                }
+            })
+        }
+        render(){
+            const formData = this.state.formData;
+            return(
+                <div>
+                    用户名：<input type="text" value={formData.usernmae} name="username" onChange={this.handleChange}/>
+                    <br/>
+                    密码：<input type="password" value={formData.password} onChange={this.handleChange} name="password"/>
+                    <button onClick={this.handleClick}>点我改变数据</button>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Container/>, document.getElementById('root'))
+</script>
+</html>

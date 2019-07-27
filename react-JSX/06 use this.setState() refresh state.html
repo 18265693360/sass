@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+    //更新组件局部状态
+    // tick(){
+    //     this.setState({
+    //         date: new Date()
+    //     })
+    // }
+
+    class Clock extends React.Component{
+        constructor(props){
+            super(props);
+            this.state = {date: new Date()}
+        }
+
+        componentDidMount(){
+            this.timerID = setInterval(
+                () => this.tick(),
+                1000
+            )
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.timerID)
+        }
+
+        tick(){
+            this.setState({
+                date: new Date()
+            })
+        }
+
+        render(){
+            return(
+                <div>
+                    <h1></h1>
+                    <h2>It is {this.state.date.toLocaleTimeString()}</h2>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Clock />, //逗号
+        document.getElementById('root') //后面没有 ;
+    );
+
+
+    class Clock extends  React.Component(){
+        constructor(props){
+            super(props);
+            this.state = {date: new Date()}
+        }
+
+        componentDidMount(){
+            this.timerID = setInterval(() => this.tick(), 1000)}
+
+        componentWillUnmount(){
+            clearInterval(this.timerID)
+        }
+
+        tick(){
+            this.setState({
+                date: new Date()
+            })
+        }
+
+        render(){
+            return(
+                <div>
+                    <h1></h1>
+                    <h2>It is {this.state.date.toLocaleDateString()}</h2>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Clock />,
+        document.getElementById('root')
+    );
+
+    // class Clock
+    //
+    //   componentDidMount()
+    //   componentWillUnmount()
+    //   tick()
+    //   render(){
+    //     return(
+    //
+    //     )
+    // }
+    // ReactDOM.render
+
+
+
+    //注意 不要直接更新状态
+    // this.state.comment = 'Hello'
+
+    //使用setState()
+    this.setState({comment: 'Hello'})
+
+    // 构造函数是唯一能够初始化  this.state
+
+    // this.props & this.state
+    //wrong
+    this.setState({
+        counter: this.state.counter + this.props.increment
+    })
+
+    // correct 引入 setState 两个参数 prevState/props
+    this.setState((prevState, props) =>({
+        counter: prevState.counter + props.increment
+    }));
+
+    //普通函数
+    this.setState(function(prevState, props){
+        return{
+            counter: prevState.counter + props.increment
+        }
+    })
+
+
+    class Clock extends React.Component(){
+        constructor(props){
+            super(props);
+            this.state = {date: new Date()}
+        }
+
+        componentDidMount(){
+            this.timerID = setInterval(()=>this.tick(),1000)
+        }
+
+        componentWillUnmount(){
+            clearInterval(this.timerID)
+        }
+
+        tick(){
+            this.setState({
+                date: new Date()
+            })
+        }
+
+        render(){
+            return(
+                <div>
+                    <h1></h1>
+                    <h2>It is {this.state.date.toLocaleDateString()}</h2>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(
+        <Clock />,
+        document.getElementById('root')
+    )
+
+    // upsate state
+
+    constructor(props){
+        super(props);
+        this.state={
+            posts:[],
+            comment: []
+        }
+    }
+    //调用 setState()独立更新
+    componentDidMount(){
+        fetchPosts().then(response =>{
+           this.setState({
+               posts: response.posts
+           });
+        });
+
+        fetchComments().then(response =>{
+            this.setState({
+                comments: response.comments
+            })
+        })
+    }
+
+</script>
+</html>

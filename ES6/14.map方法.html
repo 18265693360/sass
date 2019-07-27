@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>我是内容1</li>
+    <li>我是内容2</li>
+    <li>我是内容3</li>
+    <li>我是内容4</li>
+    <li>我是内容5</li>
+</ul>
+</body>
+<script>
+    // 定义和用法
+    //
+    // map() 方法返回一个新数组，数组中的元素为原始数组元素调用函数处理后的值。
+    //
+    // map() 方法按照原始数组元素顺序依次处理元素。
+    //
+    // 注意： map() 不会对空数组进行检测。
+    //
+    // 注意： map() 不会改变原始数组
+    //语法
+    // array.map(function (currentValue,index,arr),thisValue)
+
+    //返回一个数组，数组中元素为原始数组的平方根
+    // var numbers = [4,9,16,25];
+    //
+    // function myFunction(){
+    //     x = document.getElementById('demo');
+    //     x.innerHTML = numbers.map(Math.sqrt);
+    // }
+
+     //带有length属性。构造器却不是Array的对象就叫做 类数组对象。
+     //Array.from()来将类数组对象直接转换成数组对象。
+
+    // var lis = document.querySelectorAll('li');
+    // var arr = Array.from(lis);
+    // console.log(arr);
+    // arr.map(item=>{
+    //   console.log(item)
+    // })
+    //
+    // var lis = document.querySelectorAll('li');
+    // var arr = Array.from(lis);
+    // console.log(arr);
+    // arr.map(item=>{
+    //     console.log(item);
+    // })
+    //排序 变成倒序
+    var lis = document.querySelectorAll('li');
+    var ul = document.querySelector('ul');
+   //  错了 from var arr = Array.form(lis);
+    var arr = Array.from(lis);
+    arr = arr.sort((prev,curr,index)=>{
+        var currText = curr.innerText;
+        var prevText = prev.innerText;
+        return (currText[currText.length - 1] - prevText[prevText.length - 1])
+    });
+    arr.map(item => {
+        ul.appendChild(item);
+    })
+    console.log(arr);
+
+
+
+</script>
+</html>

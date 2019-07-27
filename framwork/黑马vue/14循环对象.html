@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="app">
+        <!--注意：遍历对象身上的键值对的时候，除了有 val key 在第三个位置还有一个索引-->
+        <p v-for="(val,key,i) in user">值是:{{val}} --- 键是:{{key}} -- 索引:{{i}}</p>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            user:{
+                id:1,
+                name:'绿巨人',
+                gender:'男'
+            }
+        },
+        methods:{}
+    })
+
+
+
+
+</script>
+</html>

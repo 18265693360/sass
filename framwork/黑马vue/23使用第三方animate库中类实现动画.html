@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="animate.css">
+</head>
+<body>
+<div id="app">
+    <input type="button" value="toggle" @click="flag=!flag">
+    <!--需求：点击按钮让h3显示再点击让h3隐藏H3-->
+    <!--<transition enter-active-class="animated bounceIn" leave-active-class=" animated bounceOut">-->
+
+    <!--使用 :duration='毫秒值'来统一设置入场和离场时候的动画时长-->
+    <!--<transition enter-active-class="bounceIn" leave-active-class=" bounceOut"> -->
+
+    <!--使用 ：duration="{enter:200,leave:400}"来分别设置  入场时长 和 离场时长-->
+        <transition
+                enter-active-class="bounceIn"
+                leave-active-class=" bounceOut"
+                :duration="{ enter:200, leave:400}">
+        <!--放到元素上面也可以-->
+        <h3 v-if="flag" class="animated">这是一个H3</h3>
+        </transition>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //创建 Vue实例 得到 ViewModel
+    var vm = new Vue ({
+        el:'#app',
+        data:{
+            flag:false
+        },
+        methods:{},
+    });
+</script>
+</html>

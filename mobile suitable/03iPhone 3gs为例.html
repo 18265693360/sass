@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            width: 320px;
+            height: 50px;
+            background: #ff233a;
+        }
+        /*因为iphone4的物理像素是640 ，逻辑像素是320（css能够控制的像素）。
+              那么640/320  = 2 就称之为iphone4的设备像素比。*/
+
+         /*<strong>device-width = 物理像素/设备像素比。</strong>*/
+
+        /*所以,iphone4的css一行的宽度刚好为320像素，
+        完美适配以前为iphone3gs设计的网页。*/
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

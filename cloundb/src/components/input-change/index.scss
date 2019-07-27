@@ -1,0 +1,21 @@
+.input-change{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #0099ff;
+  margin-bottom: 20px;
+
+  .input-item{
+    //全占满 flex=1
+    flex: 1;
+    outline: none;
+    border:none;
+    font-size: 16px;
+    color: #333333;
+    padding: 10px 10px;
+  }
+  .title{
+    color: #555555;
+    font-size: 14px;
+  }
+}

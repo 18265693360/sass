@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="time"></h1>
+</body>
+<script>
+    // var title = document.querySelector('#title')//取一个东西
+    //
+    // function fixedZero(number) {     //补零
+    //     if(number < 10){
+    //         return'0' + number
+    //     }else{
+    //         return'' + number
+    //     }
+    // }
+    // //iconfont 可以视为一个字 i span 标签
+    //
+    // // confirm('是否删除此项')//弹出确认框
+    //
+    // // open('','mywindow', 'width=400, height=300')//打开一个新窗口
+    //
+    // //实例化一个Data对象
+    // function getDate(){
+    //     var dl = new Date()
+    //     var res = ''
+    //     var y = dl.getFullYear()
+    //     var m = dl.getMonth() + 1 //不然月份就会从0开始
+    //     var d = dl.getDay()
+    //     var h = dl.getHours()
+    //     var i = dl.getMinutes()
+    //     var s = dl.getSeconds()
+    //     res = '今天是' + y + '年' + fixedZero(m) + '月' + fixedZero(d) + '日' + fixedZero(h) + ':' + fixedZero(i) + ':' + fixedZero(s)
+    //     document.getElementById('time').innerHTML = res
+    // }
+    // getDate()
+    // setInterval(getDate,1000)//多次执行
+    // setTimeout（(定时器) => {
+    //      console.log('两秒过去了')
+    // } ，2000 毫秒数）
+
+    var title = document.querySelector('#title')
+
+    function fixedZero(number) {
+          if (number < 0){
+              return'0' + number
+          } else {
+              return'' + number
+          }
+    }
+    function getData() {
+        var T = new Date()
+        var res = ''
+        var y = T.getFullYear()
+        var m = T.getMonth() + 1
+        var d = T.getDay()
+        var h = T.getHours()
+        var i = T.getMinutes()
+        var s = T.getSeconds()
+        // var mi = T.getMilliseconds()
+
+    res = '今年是' + y + '年' + fixedZero(m) + '月' + fixedZero(d) + '日' + fixedZero(h) + ':'
+        + fixedZero(i) + ':' + fixedZero(s)
+        document.getElementById('time').innerHTML = res
+    }
+    getData()
+    setInterval(getData ,1000)
+
+</script>
+</html>

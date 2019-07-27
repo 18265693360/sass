@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .btn{
+            /*width: 100px;*/
+            height: 40px;
+            line-height: 40px;
+            background: #fff;
+            color: #409eff;
+            font-size: 20px;
+            -webkit-appearance: none;
+            /*删除默认样式*/
+        }
+        .btn:active{
+            background: #409eff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<!--组件应用-->
+<!--GitHub  element-ui
+element.eleme.io-->
+<!--安装 npm install element-ui-->
+
+<div id="app">
+    <dy-button>第一个按钮</dy-button>
+    <dy-button>第二个按钮</dy-button>
+
+    <!--<dy-button>第二个按钮</dy-button>-->
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js"></script>
+<script>
+    //组件注册两种方法 1.局部注册 2.全局
+    //组件就是一个普通的对象
+    // 1.定义组件
+//     var obj = {
+//         template: `<button class="btn">按钮</button>`
+//     }
+// //局部注册
+//     var vm = new  Vue({
+//         components:{      //是components 不是 component
+//           "dy-button":obj //注册组件
+//         },
+//         // el:"#app" 后面有逗号
+//         el:"#app",
+//         data:{
+//             activeName2:''
+//         }
+//     })
+
+
+
+
+//     var obj = {
+//         template: `<button class="btn" v-on:click="handelClick">按钮</button>`,
+//         data(){
+//             return{
+//                 msg:"我是按钮"
+//             }
+//         },
+//         methods:{
+//             handelClick(){
+//                 console.log("做一些事情")
+//             }
+//
+//         },
+//         created(){
+//             console.log("按钮初始化完成")
+//         }
+//     }
+// //局部注册
+//     var vm = new  Vue({
+//         components:{      //是components 不是 component
+//           "dy-button":obj //注册组件
+//         },
+//         // el:"#app" 后面有逗号
+//         el:"#app",
+//         data:{
+//             activeName2:''
+//         }
+//     })
+
+
+
+
+    //灵活组件
+    var obj = {
+        template: `<button class="btn" v-on:click="handelClick">
+        <!--//slot插槽-->
+<slot></slot>
+</button>`,
+        data(){
+            return{
+                msg:"我是按钮"
+            }
+        },
+        methods:{
+            handelClick(){
+                console.log("做一些事情")
+            }
+
+        },
+        created(){
+            console.log("按钮初始化完成")
+        }
+    }
+//局部注册
+    var vm = new  Vue({
+        components:{      //是components 不是 component
+          "dy-button":obj //注册组件
+        },
+        // el:"#app" 后面有逗号
+        el:"#app",
+        data:{
+            activeName2:''
+        }
+    })
+
+
+</script>
+</html>

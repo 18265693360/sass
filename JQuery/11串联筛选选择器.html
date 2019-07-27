@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+    <li class="spw">敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+    <li>敢问路在何方 路在脚下</li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //链式调用  .end返回破坏之前的状态 .end之前和之后不一样 之前是.next 之后是eq(2)
+    // $("li").eq(2).next().css("color","#f00").css("background","skyblue").end().css("font-size","30px").css("background","#ff0")
+    //add.back可以加到自身既eq(2)也会变
+    // $("li").eq(2).next().addBack().css("color","#f00")
+
+    //找出索引值 排第几
+    console.log($("li").index($(".spw")));
+
+</script>
+</html>

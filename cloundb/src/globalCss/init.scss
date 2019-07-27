@@ -1,0 +1,39 @@
+//这里是去除默认样式的地方
+//引入淘宝方案
+@import './px2-rem.scss';
+
+body {
+  font-size: 14px !important;
+}
+
+li{
+  list-style: none;
+}
+//touch-action: none;
+img{
+  display: block;
+  width: 100%;
+}
+
+h1,h2,h3,h4{
+  margin: 0px;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+.container{
+  padding: px-to-rem(30);
+}
+
+label{
+  text-decoration: none;
+}
+
+//去除 ul上的默认样式
+ul{
+  padding: 0;
+  margin: 0;
+}

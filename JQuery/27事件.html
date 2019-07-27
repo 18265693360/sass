@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>按钮</button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //所有事件都是小写 没有驼峰
+    //mousedown 鼠标按下去时触发
+    /*
+    * mouseover:（鼠标移动上去触发）经过子元素时触发
+    *mouseenter 鼠标进入的时候触发 只触发一次 进入的时候
+    * */
+
+    $("button").mousedown(function () {
+        console.log("鼠标按下")
+    })
+    $("button").mouseup(function () {
+        console.log("鼠标抬起")
+    })
+    $("button").mousemove(function () {
+        console.log("鼠标移动")
+    })
+
+
+
+
+</script>
+</html>

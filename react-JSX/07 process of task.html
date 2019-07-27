@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+    // 如果采用 JSX 的语法你需要传入一个函数作为事件处理函数，而不是一个字符串(DOM元素的写法)
+   //tradition
+   //  onclick= ""      false
+
+    //react
+    // onClick= {}      preventDefault
+
+
+    // return()  return 后面就是小括号
+
+
+
+    // function ActionLink() {
+    //     function handleClick(e){
+    //         e.preventDefault();
+    //         console.log('The link was clicked');
+    //     }
+    //     return(
+    //         <a href="#" onClick={handleClick}>
+    //             Click me
+    //         </a>
+    //     )
+    // }
+    //
+    //
+    // // 用户切换开关状态的按钮
+    // class Toggle extends React.Component{
+    //     constructor(props){
+    //         super(props);
+    //         this.state = {isToggleOn: true};
+    //         this.handleClick = this.handleClick.bind(this);
+    //     }
+    //
+    //     handleClick(){
+    //         this.setState(prevState =>({
+    //             isToggleOn: !prevState.isToggleOn
+    //         }))
+    //     }
+    //
+    //     render(){
+    //         return(
+    //             <button onClick={this.handleClick}>
+    //                 {this.state.isToggleOn ? 'ON' : 'OFF'}
+    //             </button>
+    //         )
+    //     }
+    // }
+    //
+    // ReactDOM.render(
+    //     <Toggle />,
+    //     document.getElementById('root')
+    // )
+
+    //类组件的监听函数 事件对象e要排在所传递参数的后面
+    class Popper extends React.Component{
+        constructor(){
+            super();
+            this.state = {name:"Hello world!"};
+        }
+
+        preventPop(name, e){//事件对象要放到最后
+            e.preventDefault();
+            alert(name);
+        }
+
+        render(){
+            return(
+                <div>
+                    <p>Hello</p>
+                    {/* Passs params via bind() method,*/}
+                    <a href="https://reactjs.org" onClick = {this.preventPop.bind(this,this.state.name)}>Click</a>
+                </div>
+            )
+        }
+    }
+
+</script>
+</html>

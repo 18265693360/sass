@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <ul>
+        <li>今天天气真好</li>
+        <li>今天天气真好</li>
+        <li>今天天气真好</li>
+        <li class="spe">今天天气真好</li>
+        <li title="meimei">今天天气真好</li>
+        <li>今天天气真好</li>
+        <li>今天天气真好</li>
+        <li>今天天气真好</li>
+    </ul>
+</div>
+<div class="container">
+
+</div>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //注意里面是数组 还是对象符号
+    // $("li").filter("[title]").css("color","#f00")
+    var arr = [
+        {
+            id:0,
+            name:'王力宏',
+            sex:1
+        },
+        {
+            id:1,
+            name:'柳岩',
+            sex:0
+        },
+        {
+            id:2,
+            name:'岳云鹏',
+            sex:1
+        }
+    ]
+    //原生代码
+    // var arr1 = [];
+    // for (var i = 0; i<arr.length;i++){
+    //     if (arr[i].sex == 1){
+    //         arr1.push(arr[i])
+    //     }
+    // }
+    // console.log(arr1)
+
+    //ES6
+    // var arr1= arr.filter(function(item,index){
+    //     if (item.sex == 1){
+    //         return true
+    //     }
+    // })
+    // console.log(arr1) 箭头函数
+    // var arr1 = arr.filter(item => item.sex == 1 )
+    // console.log(arr1)
+    
+    //获取索引值 获取属性
+    // $("li").filter(function (index,item) {
+    //     console.log(index,item)
+    // })
+    // $('li').filter(function (index,item) {
+    //     //过滤 奇数改变
+    //     if (index%2 == 0){
+    //         return true
+    //     }
+    // }).css("color","#ff0")
+    //取反 只有第二项没变
+    // $("li").not(":eq(1)").css("color","#f00")
+    //slice筛除中间段
+    // console.log($("li").slice(2, 4));
+
+    //判断选中的有没有这个属性
+    // console.log($("li:eq(4)").is("[title]"));
+
+    // 判断eq(3有没有类名)
+    // console.log($("li:eq(3)").hasClass("spe"));
+//原生实现代码如下
+//     document.querySelector("li:nth-child(3)").classList.contains("spe")
+
+    //parent选父元素
+// $('.spe').parent().css("border","2px solid #000")
+    //选出子元素添加
+    // $("ul").children().css("border","2px solid #f00")
+
+    //选出兄弟姐妹亲同胞 除了自己 就像.not取非元素
+    // $(".spe").siblings().css("color","#f00")
+    //选中相临元素 .next
+    // $(".spe").next().next().next().css("color","#f00")
+    //所有下面相邻
+    // $(".spe").nextAll().css("color","#ff0")
+
+    //找子元素 还可再继续接找根深的子元素 事件链
+    $(".container").eq(0).find(".spe").css("color","#409eff")
+
+</script>
+</html>

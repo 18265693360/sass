@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*实现高亮的两种方法*/
+        /*1原生提供的类  添加高亮样式*/
+        /*2.自己定义的类 在构造器函数VueRouter中传一个属性linkActiveClass 搭配自己激活类*/
+        .router-link-active,.myactive{
+            color: #f00;
+            font-size: 80px;
+            font-weight: 800;
+            font-style: italic;
+            text-decoration: underline;
+            background: deeppink;
+        }
+
+        /*为路由切换添加动画 增加用户流畅体验感 iOS就是这样*/
+        .v-enter,
+        .v-leave-to{
+            opacity: 0;
+            transform: translateX(140px);
+        }
+
+        .v-enter-active,
+        .v-leave-active{
+            transition: all 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="app">
+        <!--<a href="#/login">登录</a>-->
+        <!--<a href="#/register">注册</a>-->
+
+
+        <!--路由 router-link 的使用-->
+        <!--router-link 默认渲染为一个a标签-->
+        <!--<router-link to="/login" tag="span">登录</router-link>-->
+        <!--被渲染成span标签-->
+        <router-link to="/register">注册</router-link>
+        <router-link to="/login">登录</router-link>
+        <!--不管渲染成什么标签 都能跳转-->
+
+
+
+        <!--Vue-router提供元素 专门用来当做占位符 将来路由规则匹配到组件，就会展示到这个 router-View 中去-->
+        <!--所以可以把 router-view 认为是一个占位符-->
+
+        <!--登录注册都在router-view中展示 添加动画就要用标签包裹-->
+        <!--如果觉得动画不好看那就添加模型 mode=" " -->
+        <transition mode="out-in">
+        <!--<transition mode="in-out">-->
+            <router-view></router-view>
+        </transition>
+
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<!--只要导入这个包就会在地址栏末尾有一个"#"-->
+<script src="vue-router%20v3.0.2.js"></script>
+<!--第一步：引入包-->
+<script>
+    //创建登录组件
+    var login = {
+        template:`<h1>登录组件</h1>>`
+    }
+    var register = {
+        template: `<h1>注册组件</h1>>`
+    }
+
+    // 点击注册触发URL地址的改变
+    // 路由监听到
+    // 路由规则匹配 path
+
+    // 第一步点击链接改变url 地址
+    // URL地址改变 触发路由的监听事件
+    // 路由规则匹配
+    // 匹配到展示对应的组件
+    // 最终组件放到
+    // router-View这个坑中
+    // 实现路由切换
+    //
+    //
+
+
+
+
+
+    // Vue.component('login',{
+    //     template:`<h1>登录组件</h1>>`
+    // })
+
+    // 创建一个路由对象 当导入 vue-router 包之后，在window全局对象中，就有了一个路由构造函数 叫做 VueRouter
+    // 在 new 路由对象的时候，可以为构造函数传递一个配置对象
+    var routerObj = new VueRouter({
+        // route 这个配置对象的route 表示【路由匹配规则的意思】
+        routes:[//路由匹配规则
+            //每个路由规则都是一个对象 这个规则对象上必有两个属性
+            //属性1 path 表示监听哪一个路由链接的地址
+            //属性2 component 表示如果路由是前面匹配到的path 则展示component 属性对应的那个组件
+            //注意：component的属性值，必须是一个组件的模板对象 不能是组件的引用名称
+            //重定向 redirect 功能默认请求后是登录页面
+            {path:'/',redirect:'login'},
+            // 这里的redirect 和 Node  中的 redirect 完全是两码事
+            {path:'/login',component:login},
+            {path:'/register',component:register},
+        ],
+        linkActiveClass:'myactive'
+        
+    })
+
+    var vm = new Vue({
+        el:'#app',
+        data:{},
+        methods:{},
+        router: routerObj //将路由规则对象，注册到vm实例上 用来监听 URL 地址的变化 然后展示对应的组件
+    })
+
+</script>
+</html>

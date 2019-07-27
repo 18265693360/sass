@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 12px;
+  line-height: 1.5; }
+
+.box {
+  width: 5rem;
+  height: 1.3333333333rem;
+  background: #f00; }
+
+/*# sourceMappingURL=taobao.css.map */

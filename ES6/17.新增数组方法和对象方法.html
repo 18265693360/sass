@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+  // ES6新增的数组方法。
+  // find();查找数组某个元素
+  // findIndex();查找某个元素的索引值
+  // some();数组中是否有元素符合条件
+  // every();数组中是否所有的元素都符合条件
+
+    // var arr = [
+    //     {
+    //         name:'名人',
+    //         sex:'男',
+    //         desc:'下忍'
+    //         age:'18',
+    //     },
+    //     {
+    //         name:'小樱',
+    //         sex:'女人',
+    //         desc:'中忍',
+    //         age:'16'
+    //     },
+    //     {   name:'自来也',
+    //         sex:'男人',
+    //         desc:'仙人',
+    //         age:'19'
+    //     }
+    // ]
+    //find
+  // es5 找到其中的女孩项
+    // let findItem;
+    // arr.forEach(item =>{
+    //     if(item.sex == '女人'){//forEach 不能用break跳出 不能中断
+    //         findItem = item;
+    //     }
+    // })
+    // console.log(findItem);
+
+  //es6代码 find功能
+    // let findItem = arr.find(function(item){
+    //     return item.sex == '女人';
+    // })
+    //
+    //  console.log(findItem)
+    //甚至更加简短箭头函数
+    // console.log(arr.find(item => item.sex == '女人'));
+    // arr.find(item =>item.sex == '女人') //+.log 即可生成以上形式
+
+  //ES5 查找索引值 index
+    // let findIndex;
+    // arr.forEach((item,index) => {
+    //     if(item.desc == '仙人'){
+    //         findIndex = index;
+    //     }
+    // });
+    // console.log(findIndex);
+
+    //es6
+  //console.log(arr.findIndex(item => item.desc == '仙人'));
+
+    //some 其中一个满足就返回frue
+  var arr = [
+      {
+          name:'Tom',
+          age:'19'
+      },
+      {
+        name:'Rose',
+        age:'18'
+      },
+      {
+          name:'Ben',
+          age:'17'
+      }
+  ];
+  //console.log(arr.some(item => item.age > 20));
+
+  //every
+  // console.log(arr.every(function (item, index, currArr) {
+  //     return item.age >10
+  // }));
+  console.log(arr.some(item => item.age > 1));
+  console.log(arr.every(function (item, index, currArr) {//参数超过1个 不能用箭头函数
+      return item.age > 3
+  }))
+</script>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            position: relative;
+            display: block;
+            float: left;
+            width: 460px;
+        }
+        .bottom a:hover{
+            width: 56px;
+            height: 56px;
+            display: table-cell;
+            border: 2px solid #000;
+            vertical-align: center;
+            text-align: center;
+        }
+        .top{
+            display: table;
+            table-layout: fixed;
+            position: relative;
+            width: 420px;
+            height: 420px;
+            margin: 20px auto 0;
+        }
+        ul{
+            margin-left: 16px;
+            position: absolute;
+            text-align: center;
+            list-style: none;
+            vertical-align: middle;
+            width: 476px;
+            height: 82px;
+        }
+        .item1{
+            float: left;
+            display: inline-block;
+            margin:0 0 0 16px;
+            padding-top: 22px;
+        }
+        .item{
+            float: left;
+            display: inline-block;
+            margin:0 0 0 16px;
+            padding-top: 22px;
+            overflow: hidden;
+        }
+        div.zoomDiv{
+            z-index:999;
+            position:absolute;
+            top:0px;
+            left:0px;
+            width:200px;
+            height:200px;
+            background:#f1f1f1;
+            border:1px solid #CCCCCC;
+            display:none;
+            text-align:center;
+            overflow:hidden;
+        }
+        div.zoomMask{
+            position:absolute;
+            background:url("http://demo.lanrenzhijia.com/2015/jqzoom0225/images/mask.png") repeat scroll 0 0 transparent;
+            cursor:move;
+            z-index:1;
+        }
+        /*.clearfix::after{*/
+            /*content: '';*/
+            /*display: block;*/
+            /*clear: both;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <a href="image/pic1.jpg"><img src="image/pic1-mid.jpg" alt="美女" rel="image/pic1.jpg" class="jqzoom"/></a>
+    </div>
+    <ul class="bottom ">
+        <li class="item1"><div class="item1-a"><a href="#"><img src="image/pic1-small.jpg" mid="image/pic1-mid.jpg" big="image/pic1.jpg" alt=""></a></div></li>
+        <li >
+            <div class="item">
+            <a href="#">
+                <img src="image/pic1-small.jpg" mid="image/pic1-mid.jpg" big="image/pic1.jpg"></a></div></li>
+        <li>
+            <div class="item">
+            <a href="#">
+                <img src="image/pic1-small.jpg" mid="image/pic1-mid.jpg" big="image/pic1.jpg"></a></div></li>
+        <li>
+            <div class="item">
+            <a href="#">
+                <img src="image/pic1-small.jpg" mid="image/pic1-mid.jpg" big="image/pic1.jpg"></a></div></li>
+        <li>
+            <div class="item">
+            <a href="#">
+                <img src="image/pic1-small.jpg" mid="image/pic1-mid.jpg" big="image/pic1.jpg"></a></div></li>
+
+</div>
+</body>
+<script src="JQuery.js"></script>
+<script src="jquery.imagezoom.js"></script>
+<script>
+  $(function () {
+      $(".jqzoom").imagezoom()
+      $(".item1 li a").click(function () {
+          $(this).parents("li").addClass("item1").siblings().removeClass("item1")
+          $(".jqzoom").attr("src",$(this).find("img").attr("mid"))
+          $(".jqzoom").attr("rel",$(this).find("img").attr("big"))
+      })
+  })
+
+
+
+
+
+
+</script>
+</html>

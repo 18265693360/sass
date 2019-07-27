@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    /*
+    *一元运算符，只需要一个操作数
+    * + 正号
+    *   - 正号不会对数字产生任何影响
+    * - 负号
+    *   - 负号可以对数字进行负号取反
+    *
+    *   对于非Number类型的值
+    *       它会将先转换为Number，然后再运算
+    *       可以对一个其他的数据类型使用+ 来讲其转换为Number
+    *       它的原理和Number()函数一样
+    * */
+
+    var a = 123
+
+    a = +a
+
+    a = true
+    // (转为数值时 false为0 true为1)
+    a = true
+    a = -a
+
+    a = 1
+    a = +a
+
+    // console.log("a = "+a)
+    // console.log(typeof a)
+
+    var result = 1 + + '2' + 3
+    var result = 1 + '2' + 3
+
+    // 上面的那个式子为 6  因为+ + '2'变为+ 2  后面的为字符串"123"
+    console.log("result = "+result)
+
+    // +result 为使用+ 来赋值
+
+</script>
+</html>

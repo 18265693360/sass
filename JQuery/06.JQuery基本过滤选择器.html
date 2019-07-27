@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>天气很好</h1>
+<h2>天气好热</h2>
+<ul>
+    <li>今天天气不错</li>
+    <li>今天天气不错</li>
+    <li>今天天气不错</li>
+    <li>今天天气不错</li>
+    <li class="spe">今天天气不错</li>
+    <li>今天天气不错</li>
+    <li>今天天气不错</li>
+    <li>今天天气不错</li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // $("li").css("background","#f00")
+
+
+    //过滤选择器
+    // $("li:nth-child(2)").css("backgroud","#f00")
+    //不能这样用 解析字符串 性能变低  正则表达式去匹配
+
+    //为了增强性能 就用eq eq可正可负 负数就是倒序
+    // $("li").eq(2).css("background","#f00")
+    //取非
+    // $("li").not(".spe").css("background","#f00")
+
+    //取奇数位
+    // $("li:even").css("background","#f00")
+    // $("li:eq(3)").css("background","#f00")
+
+
+    // $("li:first").css("background","#f00")
+    // $("li:last").css("background","#f00")
+
+    //gt:great than 大于
+    //小于 lt:less than
+    // $("li:gt(3)").css("background","#f00")
+    // $("li:lt(3)").css("background","#f00")
+
+    // head选择所有标题标签
+    $(":header").css("color","#ff0")
+
+    //animated选择所有运动的元素
+    //动画
+    setInterval(function () {
+        $("ul").toggle(400);
+    },1000);
+    setTimeout(function () {
+        $(":animated").css("color","#f00")
+    },2000)
+
+
+
+
+</script>
+</html>

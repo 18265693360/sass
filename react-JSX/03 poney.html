@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+//    library:库 小而巧 可以换 仅仅提供特定API  优点船小好调头
+//    eg: jQuery
+//
+//    framework (框架): 大而全 提供了一整套方案 不能换
+//
+//    模块化：是从代码的角度,将可复用的代码，抽离为单个模块
+//    组件化：从UI界面角度进行分析，把一些可复用UI的元素，抽离为单独组件
+//
+//    Vue 如何实现组件化：
+//    通过 .vue文件，来创建对应组件
+//    template  结构 模板
+//    script    行为
+//    style     样式
+//
+//    react中全部是由JS表现 结构 行为 样式 ES6+ES7 （async / await）
+//
+//    移动APP开发体验方面
+//    vue.结合 Weex 这门技术 提供了迁移到APP开发的体验
+//    React 结合ReactNative 也可以无缝对接移动APP
+//
+//    核心概念
+//    虚拟DOM / diff 算法
+//
+//    DOM 文档对象模型（Document Object Model）
+//    DOM 的本质 ：浏览器中的概念 用JS对象来表示页面的元素 并提供了操作DOM对象的API
+//    React中的虚拟DOM 是框架的概念 是程序员用JS来模拟页面上的DOM 和 DOM嵌套
+//    为什么要虚拟DOM 为了页面中DOM元素的快速更新
+
+//    虚拟DOM 框架概念中 1手动使用JS对象 模拟DOM元素和嵌套关系
+//    1本质： 用JS对象 来模拟DOM元素和嵌套关系
+//    2.目的 就是为了实现页面元素的高效更新
+
+
+//    Diff算法(different)
+//    1. tree diff        每一层组件对比
+//    2. component diff   每一层中组件级别的对比
+//    3. element diff     两个组件类型相同，则需要进行元素级别的对比
+
+      const vm = new Vue({
+          data:{},
+          el: '#app',
+          methods:{}
+      })
+</script>
+</html>

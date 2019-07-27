@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            background: deepskyblue;
+            width: 375px;
+        }
+        .box{
+            background: deeppink;
+            height: 202px;
+        }
+    </style>
+</head>
+<body>
+       <!--适配一个iphone6设备怎么办？-->
+       <!--计算公式-->
+       <!-- Markman 可以量尺寸-->
+
+       设计稿 ---> CSS
+        CSS =(设备宽度/设计稿宽度)*设计稿元素尺寸
+       eg:设备宽度在iPhone6下为375
+         如果设计稿宽度为750
+        那就是二分之一 * 设计稿元素尺寸
+
+
+<!--1.加视口
+    2.device-width = 物理像素/设备像素比
+-->
+<div class="box">
+
+</div>
+<h1>适配iphone6</h1>
+<p>
+          先了解iphone6的参数，
+          那么iphone6的物理像素为750*1334
+          iphone6的设备像素比为2
+          iphone6 750/2  1334/2
+          device-width = 375px*667px
+</p>
+</body>
+</html>

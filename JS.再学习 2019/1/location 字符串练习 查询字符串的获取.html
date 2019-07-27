@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    var str = location.search
+    var str1 = str.substring(1)//不要字符串前面的问号
+
+    var arr = str1.split('&')//各项数据分割成数组/
+    var obj = {}
+    arr.forEach(function (item) {
+        console.log(item.split('='))
+        obj[item.split('=')[0]] = item.split('=')[1]
+    })
+
+    console.log(str)
+    console.log(str1)
+
+    console.log(obj)
+
+
+    //查询字符串的获取 封装成一个函数
+    // function getQueryString(){
+    //     var str = location.search
+    //     var str1 = str.substring(1)//不要字符串前面的问号
+    //     var arr = str1.split('&')//各项数据分割成数组
+    //     var obj = {}
+    //     arr.forEach(function (item) {
+    //         console.log(item.split('='))
+    //         obj[item.split('=')[0]] = item.split('=')[1]
+    //     })
+    //     return obj
+    // }
+</script>
+</html>

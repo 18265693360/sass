@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+        #btn{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            position: fixed;
+            right: 100px;
+            top: 100px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <button>动起来</button>
+    <button>取消排队</button>
+    <button>切换</button>
+    <button id="btn">
+        停止队列动画
+    </button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // animate
+    // vt. 使有生气；使活泼；鼓舞；推动
+    // adj. 有生命的
+//     定义和用法
+//     animate() 方法执行 CSS 属性集的自定义动画。
+// 该方法通过 CSS 样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+// 只有数字值可创建动画（比如 "margin:30px"）。字符串值无法创建动画（比如 "background-color:red"）。
+//     $(".box").animate({
+//         marginLeft:500
+//     },3000,"linear",function () {
+//         console.log("动画执行完毕")
+//     })
+//     $(".box").animate({
+//         marginLeft:500
+//     },2000).animate({
+//         marginTop:500
+//     },2000).animate({
+//         marginLeft: 0
+//     },2000).animate({
+//         marginTop: 0
+//     },2000)
+//
+//     $("#btn").click(function () {
+//         $(":animated").stop(true)
+//     })
+
+    $(".box").animate({
+        marginLeft:500
+    },2000,function () {
+        $(this).animate({
+            marginTop:500
+        },2000)
+    })
+
+
+
+</script>
+</html>

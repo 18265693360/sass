@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .high{
+            color: #f00;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+</body>
+<script>
+    // let str1 = '我是';
+    // let str2 = '美国人';
+    //
+    // let str3 = str1 + str2 + ',中国人很会耍小聪明';//还需要在控制台输入str3
+    // let str4 = `${str1}${str2},中国人智商很高`;
+    // console.log(str4)
+    //字符串模板 字符串拼接
+
+    //标签模板字符串
+    let box = document.querySelector("#box")
+    let str1 = "我是"
+    let str2 = "中国人"
+
+    function hilight(string,...values){
+         let myValues = values.map(item => `<span class="high">${item}</span>`)
+        console.log(myValues)
+        return string.reduce((prev,curr,index)=>{
+            console.log(index);
+            return `${prev}${curr}${myValues[index]||''}`
+        },"")
+    }
+
+    let str3 = str1 + str2 + ',中国人会耍小聪明'
+    let str4 = hilight`${str1}${str2},中国人很会吃`
+    console.log(str4);
+    box.innerHTML = str4
+</script>
+</html>

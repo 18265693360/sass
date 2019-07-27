@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <dy-button></dy-button>
+    <dy-button></dy-button>
+    <dy-button></dy-button>
+    <dy-button></dy-button>
+    <dy-button>d</dy-button>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    var obj = {
+        num:1
+    }
+    var count = {
+        template:`
+            <button v-on:click="handleAdd">{{num}}</button>
+        `,
+        data(){
+            return obj //破坏了组件独立性
+
+            // {     没有破坏独立性   //返回一个新的对象 data 必须为一个函数
+            //     num:1
+            // }
+        },
+        methods:{
+            handleAdd(){
+                this.num++;
+            }
+        }
+    }
+    var vm = new Vue({
+        components:{
+          "dy-button":count
+        },
+        el:"#app",
+        data:{
+
+        }
+    })
+</script>
+</html>

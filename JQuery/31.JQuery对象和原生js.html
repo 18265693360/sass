@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>一级标题</h1>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //JQuery专原生
+    // console.log($("h1").get(0));
+    console.log($("h1")[0]);//[0] 前面没有"."
+    console.log(document.querySelector("h1"))
+
+    //原生转JQuery  $包裹
+    console.log($(document.querySelector("h1")).css("color","#ff0"))
+
+
+
+</script>
+</html>

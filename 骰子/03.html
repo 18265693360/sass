@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            border-radius: 9px;
+            border: 5px solid #000;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        span{
+            width: 30px;
+            height: 30px;
+            background: deepskyblue;
+            border-radius:15px;
+        }
+        .box1{
+            justify-content: center;
+            align-items: center;
+        }
+        .box2{
+            justify-content: space-between;
+        }
+        .box .item2{
+            align-self: flex-end;
+        }
+        .box3{
+            justify-content: space-between;
+        }
+        .box3 .item2{
+            align-self: center;
+        }
+        .box3 .item3{
+            align-self: flex-end;
+        }
+        .box4{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .box4 div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box5{
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .box5 div{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box5 .column{
+            justify-content: center;
+        }
+        .box6{
+            justify-content: space-between;
+        }
+        .box6 div{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+<div class="box box1">
+    <span class="item1"></span>
+</div>
+
+<div class="box box2">
+    <span></span>
+    <span class="item2"></span>
+</div>
+
+<div class="box box3">
+    <span class="item1"></span>
+    <span class="item2"></span>
+    <span class="item3"></span>
+</div>
+
+<div class="box box4">
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="box box5">
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="column">
+        <span ></span>
+    </div>
+    <div>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+<div class="box box6">
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+</div>
+</body>
+</html>

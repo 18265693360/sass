@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--v-model绑定监听 双向绑定 -->
+    <div id="app">
+                                       <!--阻止默认事件 页面跳转-->
+        <form action="https://www.baidu.com" v-on:submit.prevent>
+        用户：<input type="text" v-model="formData.username">
+            <br>
+            性别：
+            <br>
+            <input type="radio" value="1" v-model="formData.sex">男人
+            <input type="radio" value="2" v-model="formData.sex">女孩
+            <input type="radio" value="3" v-model="formData.sex">保密
+            <br>
+            密码：<input type="password" v-model="formData.password">
+                         <!--注册后要获取用户信息-->
+            <button v-on:click="getUserData">注册</button>
+        </form>
+    </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            formData:{
+                username:"默认用户名",//体现双向绑定
+                password:"",
+                sex:""
+            }
+        },
+        methods:{
+            getUserData(){
+                console.log(this.formData)
+            }
+        }
+    })
+
+
+
+
+
+
+
+</script>
+</html>

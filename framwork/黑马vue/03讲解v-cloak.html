@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+        /*[v-cloak]{*/
+            /*display: none;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--使用 v-cloak能够解决 插值表达式闪烁的问题-->
+   <p v-cloak>++++++++{{msg}}-------</p>
+    <!--默认v-text是没有闪烁问题的-->
+    <!--v-text 会覆盖元素中原本的内容 但茶之后表达式只替换自己对应的占位符 不会把元素内容清空-->
+    <h4 v-text="msg">===========</h4>
+    <div>{{msg2}}</div>
+    <div v-text="msg2"></div>
+    <!--上面两个 v-cloak v-text 会添加包括标签的所有内容-->
+    <!--v-html只会打印内容-->
+    <div v-html="msg2"></div>
+
+    <input type="button" value="按钮" v-bind:title="mytitle">
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+// 指令全部都是 v-.....
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'123',
+            msg2:'<h1>三等奖各位哦火锅配无人化工</h1>',
+            mytitle: '这是我自己定义的title'
+        }
+    })
+</script>
+</html>

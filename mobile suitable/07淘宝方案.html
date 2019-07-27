@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="taobao.css">
+</head>
+<body>
+    <div class="box">淘宝方案</div>
+</body>
+<script>
+    //  淘宝方案 flexible
+    // sass --watch taobao.scss:taobao.css
+
+    // css = 设备宽度/设计稿宽度*设计稿元素尺寸
+    // x*rem = 设备宽度/设计稿宽度*设计稿元素尺寸
+    // 淘宝方案设定 1rem的大小为 设备宽度的十分之一
+    // X = 10/设计稿宽度*设计稿元素尺寸
+    //
+    // 假设设计稿宽度为750 元素尺寸为宽度88px
+    // width要为多少
+
+    //引入sass 计算相关属性值
+    // X = 10/750 *88 rem
+</script>
+<script>
+    function setRem(){
+        var html = document.documentElement;
+        var deviceWidth = document.body.clientWidth || html.clientWidth;
+        html.style.fontSize = deviceWidth/10 + 'px';
+    }
+
+    setRem()
+    window.onresize = function () {
+        setRem()
+    }
+</script>
+</html>

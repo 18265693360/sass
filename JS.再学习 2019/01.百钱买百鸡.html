@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    //99表
+    // for (var i = 1; i <= 0; i++){
+    //     var str = '';
+    //     for (var n = 1; n<= i; n++){
+    //         str = str + n + '*' + i + '=' + n*i + " ";
+    //     }
+    //     console.log(str);
+    // }
+
+
+
+
+
+    // 公鸡五块钱，母鸡三块钱，小鸡仔三只一元。拿一百块钱买一百只鸡，
+    // 问公鸡和母鸡和小鸡仔各多少只？
+
+    var i , j , k
+    for (var i = 0; i <= 20; i++ ){
+        for(var j = 0; j <= 34; j++ ){
+            for (var k = 0; k <= 300/3; k++){
+                if ((i*5 + j*3 + k/3) == 100&& (i+j+k) == 100){
+                    console.log("公鸡" + i + "只" + "母鸡" + j + '只' + "鸡仔" + k + '只')
+                }
+            }
+        }
+    }
+    //不包括 0 只的可能
+    // for (var a = 1; a <= 20; a++){
+    //     for (var b = 1; b <=34; b++ ){
+    //         for (var c = 1; c <= 300; c++){
+    //             if ((a*5 + b*3 + c/3) == 100 && (a + b +c) == 100){
+    //                 console.log('公鸡' + a + '只' + '母鸡' + b + '只' + '鸡仔' + c + '只')
+    //             }
+    //         }
+    //     }
+    // }
+
+</script>
+</html>

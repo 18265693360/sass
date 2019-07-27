@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //渲染文章步骤
+    var list1 = [
+        '安徒生童话',
+        '一千零一夜'
+    ];
+    var articles = [
+         '安徒生童话的内容',
+        '阿里巴巴与四十大盗',
+    ];
+    var pr = [
+        '美猴王',
+        '挪扎闹海'
+    ];
+   // 回调函数增多 所以不利于代码维护 promise应运而生
+   //  setTimeout(() =>{
+   //      console.log(list1);
+   //      setTimeout(()=>{
+   //          console.log(articles);
+   //          setTimeout(()=>{
+   //              console.log(pr)
+   //          },3000)
+   //      },3000)
+   //  },3000)
+
+    // var step1 = new Promise(function (resolve,reject) {
+    //     setTimeout(() => {
+    //         resolve(list1)  //resolve 就是调出的内容
+    //     },3000)
+    // })
+    //
+    // step1.then(function(result){
+    //     console.log(result);
+    //     return new Promise(resolve => {//第二步
+    //         setTimeout(()=>{
+    //             resolve(articles)
+    //         },3000)
+    //     })
+    // }).then(result =>{
+    //     console.log(result);
+    //     return new Promise(resolve => {//第三步
+    //         setTimeout(()=>{
+    //             resolve(pr)
+    //         },3000)
+    //     })
+    // }).then(res =>{
+    //     console.log(res)
+    // })
+</script>
+</html>

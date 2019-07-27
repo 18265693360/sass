@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <!--//过滤器调用格式-->
+    <p>{{ msg | msgFormat('疯狂+1', '123') | test}}</p>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+/*
+* 过滤器主要用在两个地方 1.{{}} 2.v-bind 表达式
+*
+* 过滤器调用格式 {{name |  过滤器的名称}}
+*  '|' 管道符
+*
+* */
+//过滤器中的 function .第一个参数，已经被规定死了，永远都是过滤器 管道符传过来的数据
+// Vue.filter('过滤器的名称',function (data) {
+//     return data + '123'
+// })
+
+//如何使用过滤器替换一个句子中的内容
+
+//定义一个 Vue 全局的过滤器，名字叫做 msgFormat
+// filter(过滤器)                 这里有参数msg
+// Vue.filter('msgFormat',function (msg) {
+
+//字符串的 replace 方法 第一个参数，除了可以写一个字符串之外，还可以定义一个正则表达式  正则'/待修改内容/'  'g'全局匹配
+//第一个参数不仅可以是字符串还可以是正则
+
+//     return msg.replace(/单纯/g,'邪恶')
+// })
+
+//传两个及以上的修改参数  加参数配合div的改变
+    Vue.filter('msgFormat',function (msg,arg,arg2) {
+        return msg.replace(/单纯/g,arg + arg2)
+    })
+
+    //多次调用过滤器 第二个过滤器叫做 test
+    Vue.filter('test',function (msg) {
+        return msg + '======='
+    })
+
+
+
+    var vm = new Vue({
+        el:'#app',
+        data:{
+            msg:'我曾经，也是一个单纯的少年，单纯的我，傻傻的，问世界上谁是最单纯的男人'
+        },
+        methods:{}
+    })
+
+
+
+
+
+
+</script>
+</html>

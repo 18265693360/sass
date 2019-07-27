@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 函数执行必须有返回值
+
+    // 纯函数
+    // 1.只要输入特定，就会得到稳定的结果
+    // 2.函数不会造成不良后果 不会对之前的变量产生影响 不会改变你的变量
+    function sum(a,b) {
+        return a + b
+    }
+
+    // 非纯函数
+    var object = {
+        name:'刘佳丽',
+        sex:'love'
+    }
+    function demo (person, name){
+        person.name = name;
+        return person
+    }
+    demo(obj, '宋双双')
+    // 刘佳丽变成了宋双双
+
+</script>
+</html>

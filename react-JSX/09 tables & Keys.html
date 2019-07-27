@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    // map() 让数组中每一项翻倍
+    // const numbers = [1,3,4,6];
+    // const doubled = numbers.map((number) => number * 2);
+    // console.log(doubled);
+
+    // {} 在JSX中 构建一个元素集合
+    // map() 遍历numbers
+    // const numbers = [1, 2, 3, 4, 5];
+    // const listItems = numbers.map((number) =>
+    //   <li>{number}</li>
+    // );
+    // //
+    // ReactDOM.render(
+    //     <ul>
+    //         {listItems},
+    //     </ul>,
+    //     document.getElementById('root')
+    // );
+
+
+    // 基础列表组件
+    // 组件接受numbers 数组作为参数，输出无序列表
+
+    function NumberList(props) {
+    const numbers = props.numbers;
+    const listItems = numbers.map((number)=>
+    // <li>{number}</li> 解决索引值问题 增加元素标识 便于元素更新
+            // key ={number.toString()}
+    <li key={number.toString()}>
+        {number}
+    </li>
+    );
+    return(
+        <ul>
+            {listItems}
+        </ul>
+    );
+    }
+
+    const numbers = [1, 2, 3, 4, 5];
+    ReactDOM.render(
+        <NumberList numbers={numbers} />,
+        document.getElementById('root')
+    );
+
+    const numbers = [1, 2, 3, 4, 5];
+    const listItems = numbers.map((number)=>
+      <li key={number.toString()}>
+          {number}
+      </li>
+    );
+    //
+    //
+    // // Keys  就是标识 为了在DOM改变的时候帮助react识别那些元素发生了改变
+    const numbers = [1, 2, 3, 4, 5];
+    const listItems = numbers.map((number)=>
+    <li key={number.toString()}>
+        {number}
+    </li>
+    );
+    // //将来自数据的id作为元素的key
+    // const todoItems = todos.map((todo) =>
+    // <li key={todo.id}>
+    //     {todo.text}
+    // </li>
+    // );
+    //
+    // // 当元素没有确定的id 你可以使用它的序列号人索引index 作为key
+    // //不建议用索引值做键值  会导致性能影响
+    const todoItems = todos.map((todo, index) =>
+        //Only do this if items have no stable IDs
+        <li key={index}>
+            {todo.text}
+        </li>
+    );
+    //
+    //
+    //
+    // // key正确的使用键值的方法
+    function ListItems(props){
+        return <li>{props.value}</li>
+    }
+
+    function NumberList(props) {
+        const numbers = props.numbers;
+        const listItems = numbers.map((number) =>
+        <ListItem key={number.toString()}
+                  value={number} />
+        );
+        return(
+            <ul>
+                <listItem/>
+            </ul>
+        )
+    }
+
+    const numbers = [1, 2, 3, 4, 5];
+    ReactDOM.render(
+        <NumberList numbers={numbers}/>,
+    document.getElementById('root')
+    )
+
+
+</script>
+</html>

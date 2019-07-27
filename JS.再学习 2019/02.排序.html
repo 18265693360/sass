@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    // var arr = [123,345,543,54,54324,3435]
+    //
+    // for (var i = 0; i < arr.length - 1; i++){
+    //     for (var j = i + 1; j < arr.length; j++ ){
+    //         var temp ;
+    //         if (arr[i]<arr[j]){ // < 顺序；>倒叙 这里的大于小于号决定倒序还是顺序
+    //             temp = arr[i]
+    //             arr[i] = arr[j]
+    //             arr[j] = temp
+    //         }
+    //     }
+    // }
+    // console.log(arr)
+    //
+    // // 另一种简单的方法sort
+    //
+    // // 倒序 curr-prev
+    // var arr2 = arr.sort(function (prev,curr) {
+    //     return curr - prev;
+    // })
+    // console.log(arr2)
+    //
+    // // 顺序 prev - curr
+    // var arr2 = arr.sort(function (prev,curr) {
+    //     return prev - curr;
+    // })
+    // console.log(arr2)
+
+var arr = [1,23,34,2435,45,4,1,23,34]
+
+function fn1(arr){
+    var arr1 = []
+    for(var i = 0; i < arr.length; i++){
+        if(arr1.indexOf(arr[i]) == -1){
+            arr1.push(arr[i]);
+        }
+    }
+    return arr1
+}
+
+console.log(arr)
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>我是标题</h1>
+    <ul>
+        <li>
+            百度网
+        </li>
+        <li>
+            淘宝网
+        </li>
+    </ul>
+<iframe src="https://www.baidu.com" frameborder="0" width="800"
+        height="500" id="frame"></iframe>
+</body>
+<script>
+    var lis=Array.from(document.querySelector All('li'))
+    var frome=docment.querySelector('#frame')
+    console.log(lis)
+    console.log(lis[0])
+    lis[0].onclick=function () {
+        frame.src='https://www.baidu.com'
+
+    }
+    lis[1].onclick=function () {
+        frome.src='http://www.taobao.com'
+    }
+</script>
+</html>

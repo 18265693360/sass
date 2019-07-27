@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">按钮</button>
+</body>
+<script>
+    var btn = document.getElementById('btn')
+
+    // btn.attachEvent("onclick",function () {
+    //     console.log(111)
+    // })
+    //
+    // btn.attachEvent('onclick',function () {
+    //     console.log(222)
+    // })
+
+    //IE 和 标准流 怎么兼容 就是能力检测 不能都写一遍
+    function on(dom,type,fn) {
+        if (dom.addEventListener){
+             dom.addEventListener (type,fn);
+        } else{
+            dom.attachEvent("on"+type,fn);
+        }
+    }
+// •	1，在ie事件绑定方式中，事件名称是要加on
+// •	2，在js中，所有事件的名称，都是全小写，有on或没有on都要遵循全小写这个规则。
+
+    on(btn,"click",function(){
+        console.log(11111)
+    })
+
+    on(btn,'click',function () {
+        console.log(2222)
+    })
+
+
+
+
+</script>
+</html>

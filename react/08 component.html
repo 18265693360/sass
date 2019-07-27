@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+    // 组件和元素的不同点
+    // 1.元素偏向于html/css部分
+    //2.组件更加偏向于将html/css/js 逻辑封装到一起
+
+    //     const date = new Date();
+    //     const day = date.getDay();
+    //     const element = (
+    //         <h1>今天是星期{day}</h1>
+    //     )
+    //
+    // ReactDOM.render(element, document.getElementById('app'));
+
+    // function Element() {
+    //     const date = new Date();
+    //     const day = date.getDay();
+    //     return(
+    //         <h1>今天是星期{day}</h1>
+    //     )
+    // }
+    //
+    // function Container (){
+    //     return (
+    //         <div>
+    //             <h1>这是描述时间的页面</h1>
+    //             <Element/>
+    //             <Element/>
+    //         </div>
+    //     )
+    // }
+/*
+*
+*     父子传参
+    function Element(props) {
+        return(
+    //         <h1>今天是星期{props.day}</h1>
+    //     )
+    // }
+    //
+    // function Container (){
+    //     const date = new Date();
+    //     const day = date.getDay();
+    //     return (
+    //         <div>
+    //             <h1>这是描述时间的页面</h1>
+    //             <Element day={day}/>
+    //             <Element day={day}/>
+    //             <Element/>
+    //         </div>
+    //     )
+    // }
+
+* */
+
+
+    function Element(props) {
+        console.log(props);
+        return(
+            <div>
+                <h1>今天是星期{props.day}</h1>
+            </div>
+        )
+    }
+
+    function Container (){
+        const date = new Date();
+        let day = date.getDay();
+        function changeDay (){
+            day = 2;
+            console.log(day);
+        }
+        return (
+            <div>
+                <h1>这是描述时间的页面</h1>
+
+                <button onClick={changeDay}>修改时间</button>
+                <Element day={day} abc="123"/>
+                <Element day={day}/>
+                <Element/>
+            </div>
+        )
+    }
+
+    // ReactDOM.render(element, document.getElementById('app'))
+    ReactDOM.render(<Container/>, document.getElementById('app'))
+</script>
+</html>

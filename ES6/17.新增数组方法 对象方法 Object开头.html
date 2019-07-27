@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 对象方法
+      // Object.assign(); 复制一个对象
+      // Object.keys(); 得到一个对象的所有属性；
+      // Object.values(); 得到一个对象的所有可枚举属性值；
+      // Object.entries(); 得到一个对象的键值对数组；
+      // Object.fromEntries(); entries的逆操作；
+
+    //Object.assign() 将一个对象的属性值
+    // 或者多个对象的属性值拷贝到 一个新的对象上
+    // var obj1 = {
+    //     name:'first',
+    //     desc:'second'
+    // }
+    // var obj2 = {
+    //     color: 'red',
+    //     hop:'go'
+    // }
+    // var obj3 = {
+    //     background:'skyblue'
+    // }
+    //
+    // var obj4 = Object.assign(obj1,obj2,obj3);
+    // console.log(obj4)
+
+    //Object.keys() 返回该对象的所有属性名数组
+    //就是对象的所有属性名成为一个数组
+    // var obj1 = {
+    //     name:'first',
+    //     desc:'beauty'
+    // }
+    // console.log(Object.keys(obj1))
+    //结果
+    // (2) ["name", "desc"]
+    // 0: "name"
+    // 1: "desc"
+
+    //Object.values() 属性值成为一个数组
+    // var obj4 = {
+    //     weight:'54kg',
+    //     height:'180cm'
+    // }
+    // console.log(Object.values(obj4));
+
+    //Object.entries() 键值对数组
+    //就是属性名 与 自身属性值成为一个数组 一个对象中有多少对属性名/值就有多少数组
+    // var obj1 = {
+    //     name:'amazing',
+    //     look:'handsome'
+    //     }
+    //
+    // console.log(Object.entries(obj1))
+    // (2) [Array(2), Array(2)]
+    // 0: (2) ["name", "amazing"]
+    // 1: (2) ["look", "handsome"]
+    // length: 2
+    // __proto__: Array(0)
+
+    // Object.fromEntries()
+    var obj = Object.fromEntries([
+        ['property1','value1'],
+        ['property2','value2'],
+    ])
+    // console.log(obj)//错的
+    //增加Object原型对象方法实现 polyfill
+    Object.defineProperty(Object.prototype,'fromEntries',{
+        enumerable:false,
+            value(arr) {
+            var obj = {};
+            for(var i = 0; i < arr.length; i++){
+                obj[arr[i][0]] = arr[i][1]
+            }
+            return obj;
+        },
+        configurable:true,
+        writable:true
+    })
+    console.log(obj)
+</script>
+</html>

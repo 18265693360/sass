@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>今天天气很热1</li>
+    <li>今天天气很热2</li>
+    <li>今天天气很热3</li>
+    <li>今天天气很热4</li>
+    <li>今天天气很热5</li>
+    <li>今天天气很热6</li>
+    <li>今天天气很热7</li>
+    <li>今天天气很热8</li>
+    <li>今天天气很热9</li>
+    <li>今天天气很热10</li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+
+    var $li = $("<h1>替代者</h1>")
+
+    // 把选中元素替换为参数中的新元素
+    // $("li").eq(4).replaceWith($li);
+
+    // 用新元素替换选中的元素（已存在的元素作为参数，新元素作为主导）
+    $li.replaceAll($("li").eq(8))
+</script>
+</html>

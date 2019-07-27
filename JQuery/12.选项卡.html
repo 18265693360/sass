@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 600px;
+            height: 500px;
+            margin: 50px auto;
+            border: 1px solid #000;
+            border-radius:4px;
+        }
+        ul{
+            list-style: none;
+        }
+        .tab-header{
+            border-bottom: 1px solid #f1f1f1;
+            overflow: hidden;
+        }
+        .tab-header-item{
+            float: left;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        .tab-content-item{
+            padding: 10px;
+            display: none;
+            
+        }
+        .active.tab-header-item{
+            color: #409eff;
+            border-bottom: 1px solid #000;
+        }
+        .active.tab-content-item{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <ul class="tab-header">
+        <li class="tab-header-item active">
+            首页
+        </li>
+        <li class="tab-header-item">
+            详情页
+        </li>
+        <li class="tab-header-item">
+            关于
+        </li>
+        <li class="tab-header-item">
+            帮助
+        </li>
+    </ul>
+    <!--ul.tab-content>li.tab-content-item-->
+    <ul class="tab-content">
+        <li class="tab-content-item active">
+            我是首页内容
+        </li>
+        <li class="tab-content-item">
+            我是详情页面
+        </li>
+        <li class="tab-content-item">
+            我是关于内容
+        </li>
+        <li class="tab-content-item">
+            我是帮助内容
+        </li>
+    </ul>
+</div>
+</body>
+<script src="./JQuery.js"></script>
+<script>
+    $(".tab-header").find("li").click(function () {
+        var index = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active")
+        $(".tab-content-item").eq(index).addClass("active").siblings().removeClass("active")
+    })
+</script>
+</html>

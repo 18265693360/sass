@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    // const {Component} = React;
+
+    // class Clock extends  React.component{
+    // class Clock extends  Component{
+    //     constructor(props){
+    //         super(props)
+    //     }
+    //     render(){
+    //         return(
+    //             <div>
+    //                 <h1>今天是星期{this.props.day}</h1>
+    //             </div>
+    //         )
+    //     }
+    // }
+
+    //state:修改 会触发页面的更新
+    //props:会触发组件的更新
+    //类组件可以更新页面  函数组件不行
+    // class Container extends Component{
+    //     constructor(props){
+    //         super(props)
+    //     }
+
+        // render(){
+        //     const date = new Date();
+        //     let day = date.getDay();
+
+    //         <!--return(-->
+    //             <!--<div>-->
+    //                 <!--<h1>这是一个显示星期几的页面</h1>-->
+    //                 <!--<Clock day={day}/>-->
+    //                 <!--<Clock day={day}/>-->
+    //             <!--</div>-->
+    //         <!--)-->
+    //     <!--}-->
+    // <!--}-->
+    //
+    // <!--ReactDOM.render(<Container/>, document.getElementById('root'))-->
+
+
+    const {Component} = React;
+
+    class Clock extends  Component{
+        constructor(props){
+            super(props)
+        }
+        render(){
+            return(
+                <div>
+                    <h1>今天是星期{this.props.day}</h1>
+                </div>
+            )
+        }
+    }
+
+    //state/props
+    class Container extends Component{
+        constructor(props){
+            super(props)
+            this.state = {
+                day: new Date().getDay()
+            }
+        }
+
+        changeDay (){
+            console.log(this);
+            this.setState({
+                day:2
+            },function () {
+                console.log(this.state);
+            })
+            console.log(this.state);
+            this.state.day = 2;
+        }
+        render(){
+            return(
+                <div>
+                    <h1>这是一个显示星期几的页面</h1>
+                    <button onClick={this.changeDay}>改变时间</button>
+                    <Clock day={this.state.day}/>
+                    <Clock day={this.state.day}/>
+                </div>
+            )
+        }
+    }
+
+    ReactDOM.render(<Container/>, document.getElementById('root'))
+
+</script>
+</html>

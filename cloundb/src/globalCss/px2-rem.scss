@@ -1,0 +1,5 @@
+//淘宝方案
+$rem:1rem;
+@function px-to-rem($n){
+  @return 10/750 * $n*$rem;
+}

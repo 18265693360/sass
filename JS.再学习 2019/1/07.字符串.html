@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    * 数据类型就是指字面量的类型
+    *   在JS中一共6 种数据类型
+    *   String 字符串
+    *   Number 数值
+    *   Boolean 布尔值
+    *   Null 空值
+    *   UNfined 未定义
+    *   Object 对象
+    *
+    *   其中String Number Boolean Null Unfined属于基本数据类型
+    *   而Object属于引用数据类型
+    * */
+
+    /*
+    * String字符串
+    * - 在JS中字符串需要使用引号引起来
+    * - 单双引号都可以 甚至可以上双 下单
+    * - 引号不能嵌套 可以外双内单 内双外单
+    * */
+  var str = "whatever";
+  console.log('hellow')
+
+    /*
+    * 在字符串中我们可以使用 \ 作为转义字符
+    *   当表示一些特殊符号时可以使用\进行转义
+    *
+    *   \" 表示 "
+    *   \' 表示 '
+    *   \n 表示换行
+    *   \t 制表符 表示空格
+    *   \\ 表示 \
+    * */
+    // eg:
+    str = "我说：\"今天\t天气不错！\" "
+    alert (str)
+
+
+    // str = "\"出不来 \" 转义了
+        str = "\\"
+
+        str = "\\\\\\"
+    alert  (str)
+
+    输出字面量 字符串 str
+    alert   ("str")
+
+    输出变量str
+</script>
+</html>

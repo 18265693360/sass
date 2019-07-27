@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <input type="button" value="toggle" @click="flag=!flag">
+    <!--需求：点击按钮让h3显示再点击让h3隐藏H3-->
+    <h3 v-if="flag">这是一个H3</h3>
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    //创建 Vue实例 得到 ViewModel
+    var vm = new Vue ({
+        el:'#app',
+        data:{
+            flag:false
+        },
+        methods:{},
+    });
+</script>
+</html>

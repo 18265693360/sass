@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //ES6的对象字面量拓展
+    // 就是相同的属性值在一个对象中
+    // 允许我们省略属性名相等的变量名。
+
+   // var name = 'Tom';
+   // function logName(){
+   //     console.log(this.name)
+   // }
+   //
+   // var obj = {
+   //     name:name,
+   //     logName:logName
+   // }
+   // // obj.logName();
+   //  console.log(obj);
+   // var name = 'Tom';
+   // function logName(){
+   //     console.log(this.name)
+   // }
+   //
+   // var obj = {
+   //     name,
+   //     logName,
+   // }
+   // // obj.logName();
+   //  console.log(obj);
+
+    //对象字面量拓展 可以用到函数中
+   var name = 'Tom';
+   // function logName(){
+   //     console.log(this.name)
+   // }
+
+   // var obj = {
+   //     name,
+   //     logName: function () {//还是原功能
+   //         console.log(this.name)
+   //     }
+   // };
+   // // obj.logName();
+   //  console.log(obj);
+    var obj = {
+       name,
+       logName () {//还是原功能 删除 ': function' 函数的对象字面量拓展
+           console.log(this.name)
+       }
+   };
+   // obj.logName();
+    console.log(obj);
+
+</script>
+</html>

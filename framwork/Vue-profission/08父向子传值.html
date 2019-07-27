@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<!--IE并不兼容promise 解决办法 使用babel-->
+<div id="app">
+    <!--父向子传值的由来应用-->
+    <!--slot可以改变<button>内容</button>>button中间的内容-->
+    <!--但是不能改变按钮样式 但是父向子传值可以-->
+    <el-button @click="addclass">默认按钮</el-button>
+    <el-button type="primary" @click="isWith"></el-button>
+
+
+
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js"></script>
+<script>
+    // 初始化项目
+    var vm = new Vue({
+        el:"#app",
+        data:{
+
+        }
+    })
+</script>
+</html>

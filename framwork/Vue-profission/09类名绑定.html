@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        .active{
+            background: #f00;
+        }
+        .width{
+            width: 200px;
+        }
+
+    </style>
+</head>
+<body>
+     <div id="app">
+         <el-button @click="addClass">默认按钮</el-button>
+         <el-button type="primary" @click="isWidth = !isWidth">好看的按钮</el-button>
+         <el-button type="primary" size="small">按钮</el-button>
+         <div class="box" v-bind:class="{active: isActive,width: isWidth}">
+
+         </div>
+     </div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js"></script>
+<script>
+    var vm = new Vue({
+        //Vue对象中的要写this
+        el:"#app",
+        data:{
+            isActive:false,
+            isWidth:false
+        },
+        //处理这个添加类名事件
+        methods:{
+            addClass() {
+                this.isActive = !this.isActive;//每次点击取反
+            }
+        },
+        created() {
+        }
+    })
+
+
+
+
+
+</script>
+</html>

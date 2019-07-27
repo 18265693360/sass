@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    const {Component} = React;
+    class Container extends Component{
+        handleDome(){
+            console.log('父组件定义的某个事件处理函数');
+        }
+        render(){
+            return(
+                <div>
+                    <Toast onClick={this.handleDome}/>
+                </div>
+            )
+        }
+    }
+
+    class Toast extends Component{
+            constructor (props) {
+                super(props)
+                this.state = {
+                    str:'事件处理函数当中的this'
+                }
+            }
+            // handleClick (e){
+            //     console.log(this);
+            //     console.log(e.target);
+            // }
+        handleClick = (e)=>{
+            console.log(this);
+            console.log(e.target);
+        }
+        handleJump = (e) =>{
+            e.preventDefault();
+        }
+        render(){
+            return(
+                <div>
+                    <a href="https://www.baidu.com" onClick={this.handleJump}>百度一下，你就知道</a>
+                </div>
+            )
+        }
+    }
+    ReactDOM.render(<Container/>, document.getElementById('root'));
+</script>
+</html>

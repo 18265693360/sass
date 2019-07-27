@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>\
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            position: relative;
+            margin: 20px;
+            border: 1px solid #000;
+            width: 500px;
+            height: 400px;
+        }
+        .box{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            background: #f00;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <!--参数	描述-->
+    <!--offset	可选。规定相对滚动条顶部的偏移，以像素计。-->
+    <div class="box"></div>
+
+</div>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //控制台输出的是相对最左上角的坐标
+    console.log($(".box").offset())
+    //就是top left 相对定位的位置
+    console.log($(".box").position())
+
+</script>
+</html>

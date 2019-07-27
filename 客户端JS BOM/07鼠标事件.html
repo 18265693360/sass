@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            background: #409eff;
+        }
+        .container{
+            width: 500px;
+            height: 500px;
+            background: #ffb400;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="box"></div>
+</div>
+
+</body>
+<script>
+    var container = document.querySelector('.container')
+
+    container.onmouseover = function () {//在子元素内部划过时会触发事件
+        console.log("鼠标滑过")
+    }
+
+    container.onmousedown = function () {
+        console.log("鼠标下")
+    }
+
+    container.onmouseenter = function () {//在子元素内部滑过，不会触发，必须离开整个元素再进入才会触发
+        console.log("鼠标进入")
+    }
+
+    container.onmouseup = function () {
+        console.log("鼠标上")
+    }
+    container.onmouseout = function () {
+        console.log("出")
+    }
+
+
+
+</script>
+</html>

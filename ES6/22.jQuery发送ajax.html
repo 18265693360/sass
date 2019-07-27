@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script src = 'https://cdn.bootcss.com/jquery/3.3.1/jquery.js'></script>
+<script>
+    // $.ajax({
+    //     url:'http://m.yaojunrong.com/book',//域名
+    //     success(res){
+    //         let book = res.data[154];//书名
+    //         let bookID = book._id;//拿到ID
+    //         console.log(book);
+    //
+    //        //拿到ID
+    //         // 去找到相应的目录
+    //         $.ajax({
+    //             url:`https://m.yaojunrong.com/title/${bookID}`,//前面域名不变
+    //             success(res) {
+    //                 let title = res.data[14];
+    //                 let titleID = res.data[14]._id;
+    //                 console.log(title);
+    //
+    //                 //标题上面已经拿到 该取内容
+    //                 $.ajax({
+    //                     url:`https://m.yaojunrong.com/article/${titleId}`,
+    //                     success(res){
+    //                         console.log(res.data.article.content);
+    //
+    //                     }
+    //                 })
+    //             }
+    //
+    //         })
+    //
+    //
+    //
+    //     }
+    // })
+
+    //promise 改写ajax
+    var step1 = new Promise((resolve) => {//获取图书Id
+        $.ajax({
+            url:"https://m.yaojunrong.com/book",
+            success(res){
+                let book = res.data[154];
+                let bookId = book._id;
+                resolve(bookId)
+            }
+        })
+    });
+    let step2 = step1.then(bookId =>{
+        return new Promise(resolve => {//获取所有的目录的id
+            $.ajax({
+                url:`https://m.yaojunrong.com/title/${bookId}`,
+                success(res) {
+                    let title = res.data[14];
+                    let titleId = res.data[14]._id;
+                    resolve(titleId)
+                }
+            })
+        })
+    })
+    let step3 = step2.then(titleId => {
+        return new Promise(resolve => {
+            $.ajax({
+                url:`http://m.yaojunrong.com/article/${titleId}`,
+                success(res){
+                    resolve(res.data.article.content)
+                }
+            })
+        })
+    })
+    step3.then(content =>{
+        console.log(content)
+    })
+</script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //如果出错 一定仔细看报错的红色代码
+    //用setTimeout 模拟 ajax
+    var promise1 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('鸣人到达');
+            resolve(1);
+        },1000)
+    });
+
+    var promise2 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('小樱到达');
+            resolve(2);
+        },2000)
+    });
+
+    var promise3 = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            console.log('卡卡西到达');
+            resolve(3);
+        })
+    })
+
+    // Promise.all([promise1,promise2,promise3]).then(()=>{
+    //     console.log('所有的都完成了')
+    // })
+
+    // Promise.race([promise1,promise2,promise3]).then(()=>{
+    //     console.log('一件事完成')//race第一件事完成所有的都显示完成
+    // })
+
+    // resolve()中有参数
+    // Promise.all([promise1,promise2,promise3]).then((arr)=>{
+    //     console.log(arr);
+    //     console.log('所有任务都完成了')
+    // })
+    //数组结构
+    Promise.all([promise1,promise2,promise3]).then(([first,second,three])=>{
+        console.log(first);
+        console.log(second);
+        console.log(three);
+        console.log('所有任务完成');
+
+    })
+</script>
+</html>

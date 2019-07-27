@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //call作用:将一个新的对象用另一个对象中的函数 并指定了this指向
+    //apply同call一样功能
+
+    // var obj = {
+    //     name:'姚明',
+    //     logName(){
+    //         console.log(this.name)
+    //     }
+    // }
+    // obj.logName();
+
+    var obj = {
+        name:'姚明',
+        logName(something){
+            console.log(something);
+            console.log(this.name)
+        }
+    }
+    var obj1 = {
+        name:'美猴王',
+    }
+    // obj.logName('参数');
+    //call与apply区别
+    // obj.logName.apply(obj1,['参数']);//连接数组
+    obj.logName.call(obj1,'参数');
+
+
+
+
+</script>
+</html>

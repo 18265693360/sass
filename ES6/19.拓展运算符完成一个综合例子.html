@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body,html{
+            height: 100%;
+            /*h100p  p = %*/
+        }
+        body{
+            background: #ff6700;
+            display: flex;
+            align-items: center;
+            justify-content：center;
+        }
+        h1{
+            color: #ffffff;
+            font-size: 60px;
+            text-shadow: 4px 4px 4px rgba(0,0,0,.8);
+        }
+        h1 span{
+            display: inline-block;
+            transition:transfrom .2s;
+        }
+        .hiligh:hover{
+            transform: scale(1.6) rotateZ(-20deg) translateY(-20px);
+        }
+
+    </style>
+</head>
+<body>
+<h1>降价了!</h1>
+</body>
+<script>
+    const h1 = document.getElementsByTagName('h1')[0];
+    let arr = [...h1.innerText];
+    arr = arr.map(item => `<span class='hiligh'>${item}</span>`);
+    console.log(arr.join(''));
+    h1.innerHTML = arr.join('');
+</script>
+</html>

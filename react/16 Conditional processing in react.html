@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background: #409eff;
+        }
+    </style>
+</head>
+<body>
+<!--react中条件处理-->
+<div id="root"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    const {Component} = React;
+
+    class Container extends Component{
+        constructor(props) {
+            super(props);
+            this.state = {
+                isShowBox:true
+            }
+        }
+        handleClick = () => {
+            this.setState({
+                isShowBox: !this.state.isShowBox
+            })
+        }
+        render(){
+            const _this = this;
+            function showBox() {
+                if(_this.state.isShowBox){
+                    return <Demo/>
+                } else{
+                    return null
+                }
+            }
+            return(
+                <div>
+                    <button onClick={this.handleClick}>是否显示红色的盒子</button>
+                    {this.state.isShowBox&& <Demo/>}
+                </div>
+            )
+        }
+    }
+
+    class Demo extends Component{
+        render(){
+            return(
+                <div>
+                    <div className="box"></div>
+                </div>
+            )
+        }
+    }
+    ReactDOM.render(<Container/>, document.getElementById('root'))
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+1、js中innerHTML的用法：
+
+innerHTML可获取或设置指定元素标签内的 html内容，从该元素标签的起始位置到终止位置的全部内容(包含html标签)。
+
+获取元素的内容：element.innerHTML;
+
+给元素设置内容：element.innerHTML =htmlString;
+代码示例为：
+
+<p id="test"><font color="#000">获取段落p的 innerHTML</font></p>
+
+document.getElementById("test").innerHTML
+
+输出内容为:<font color="#000">获取段落p的 innerHTML</font>
+
+
+
+2、js中innerText的用法：
+
+innerText可获取或设置指定元素标签内的文本值，从该元素标签的起始位置到终止位置的全部文本内容(不包含html标签)。
+
+获取元素的内容：element.innerText;给元素设置内容：element.innerText = string;
+代码示例为：
+
+<p id="test"><font color="#000">获取段落p的 innerHTML</font>测试测试</p>
+
+document.getElementById("test").innerHTML
+
+输出内容为:获取段落p的 innerHTML试测试
+
+
+
+3、innerHTML和innerText区别：
+
+innerHTML返回的是标签内的 html内容，包含html标签。
+
+innerText返回的是标签内的文本值，不包含html标签。
+
+代码示例为：
+
+
+<p id="test"><font color="#000">获取段落p</font>测试</p>
+
+document.getElementById("test").innerHTML
+
+输出内容为：<font color="#000">获取段落p</font>测试
+
+document.getElementById("test").innerText
+
+输出内容为：获取段落p测试
+</body>
+</html>

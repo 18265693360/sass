@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //new 四件事
+    //1.一个新的对象 2.将构造器函数内的this指向新生成的对象
+    //3.将新生成的对象通过__proto__指向构造器函数的原型 (节省内存空间)
+    //4.返回新生成的对象
+    function MakePerson(name,sex,height) {
+        this.name = name
+        this.sex = sex
+        this.height = height
+    }
+    MakePerson.prototype.nation = '中国人'
+    console.dir(MakePerson)
+
+
+    var person1 = new MakePerson('王力宏','1','185')
+    var person2 = new MakePerson('柳岩','0','160')
+    console.log(person1.nation)
+    console.log(person2.nation)
+</script>
+</body>
+</html>Person

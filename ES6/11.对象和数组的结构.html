@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // const Tom = {
+    //     name:'Tom Cat',
+    //     age:18,
+    //     family: {
+    //         mother:'Tom ma',
+    //         father:'Tom fa',
+    //         borther:'Tom bro'
+    //     }
+    // }
+
+    //ES6之前 用变量存储属性的值 重复了Tom代码
+    // const name =Tom.name
+    // const age = Tom.age
+
+    //Es6 的对象结构
+    //对象结构完成两件事 1.声明一个变量 2，赋值这个变量
+    // const {name,age} = Tom
+    //
+    // console.log(name)
+    // console.log(age)
+    // let {name,age} = Tom
+    // //let const 一样效果
+    // console.log(name)
+    // console.log(age)
+
+    //数组结构对象
+    // let arr = [2,4]
+    //ES5
+    // let item1 = arr[0]
+    // let item2 = arr[1]
+    //
+    // let [item1,item2] = arr//两行变一行
+    // console.log(item1)
+    // console.log(item2)
+
+    //交换两个变量值 数组结构//加上后面的分号
+
+    // var num1 = 234;
+    // var num2 = 342;
+    // [num2, num1] = [num1, num2]
+    //
+    // console.log(num1);
+    // console.log(num2);
+    //解构 默认值 当你要解构的变量是undefined的时候才会提取默认值
+    var num1 = 234;
+    var num2 = undefined;
+    [num2,num1 = 34] = [num1,num2];
+    console.log(num1);
+    console.log(num2);
+
+
+</script>
+</html>

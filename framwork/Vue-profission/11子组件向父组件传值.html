@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div id="app">
+    <!--<el-checkbox-group v-model="arr">-->
+        <!--<el-checkbox label="复选框 A"></el-checkbox>-->
+        <!--<el-checkbox label="复选框 B"></el-checkbox>-->
+        <!--<el-checkbox label="复选框 C"></el-checkbox>-->
+        <!--<el-checkbox label="禁用" disabled></el-checkbox>-->
+        <!--<el-checkbox label="选中且禁用" disabled></el-checkbox>-->
+    <!--</el-checkbox-group>-->
+    <dy-checkbox v-model="arr" @givValue="give-value"></dy-checkbox>
+    <!--//先引入组件-->
+    <!--<dy-Checkbox></dy-Checkbox>-->
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script src="element-ui.js"></script>
+<script>
+    //传值 用自定义事件
+    // 子组件传父组件应用场景
+    //子组件向父组件传值步骤
+    /*
+    *1.子组件内部的值发生变化
+    *2.通过触发一个$emit（"自定义事件名"，"自定义事件需要传出的值"）
+    *
+    *父组件向子组件传值
+    *1.在子组件内部声明props
+    * props：{
+    *      "传入的值"：String(类型声明)
+    * }
+    * 2.父组件通过在组件的标签属性传值
+    * eg: <button type:"primary"></button> 那么这个type就是传入的属性名
+    *
+    * */
+    var dyCheckbox = {
+        template:`
+            <div>
+                <h1>你喜欢什么样的妹子?</h1>
+                <label>
+                    优雅的
+                    <input type="checkbox" value="优雅的" v-model="currentValue">
+                </label>
+                <label>
+                    缺心眼
+                    <input type="checkbox" value="缺心眼的" v-model="currentValue">
+                </label>
+                <label>
+                    肥肥的
+                    <input type="checkbox" value="肥肥的" v-model="currentValue">
+                </label>
+                <label>
+                    只会吃的
+                    <input type="checkbox" value="只会吃的" v-model="currentValue">
+                </label>
+                <button @click="toValue">传值</button>
+            </div>
+            <!--</div>>多了一个标签号-->
+        `,
+        data(){
+            return{
+                currentValue:[]//拿到这个值
+            }
+        },
+        // watch:{//监控data中的数据
+        //     currentValue(value){
+        //         this.$emit("give-value"value)
+        //     }
+        // },
+        methods:{
+            toValue() {
+                this.$emit("give-value",this.currentValue)
+            }
+        }
+    }
+
+    var vm = new Vue({
+        el:"#app",
+        //组件声明
+        components:{
+            "dy-checkbox":dyCheckbox
+        },
+        data:{
+            isActive:false,
+            isWidth:false,
+            arr:[]
+        },
+        methods:{
+            addClass() {
+                this.isActive = !this.isActive;//每次点击取反
+            },
+            getValue(value){
+                console.log("子组件触发的事件",value)
+            }
+        },
+        created() {
+        }
+    })
+
+
+
+
+
+</script>
+</html>

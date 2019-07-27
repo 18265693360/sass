@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input"><button id="btn">发送</button>
+<br>
+<textarea name="" id="area" cols="30" rows="10"></textarea>
+
+
+<img src="aaaaa/" alt="">
+
+aaaaa/相对路径 会加在资源路径后面 既Search后
+/aaaa 绝对路径 会出现在域名后面
+
+//查询字符串  给后端提供查询信息
+var queryString = '?keyword=psp&enc=utf-8&wq=psp&pvid=9b9143e42a5f48feb931ffb8cfb4d64d'
+
+用户名 提交一般用 POSt 保密
+<form action="http://www.baidu.com">
+    用户名：<input type="text" name="username">
+    <br>
+    密码：<input type="password">
+    <button>提交</button>
+    //不需要写 type='submit' 在form表单中只有一个按钮会默认成提交
+
+
+    拿到地址栏的网址 API
+    location
+    console.log(location)
+</body>
+<script>
+    // replace 替换  输出 弹幕 喷子
+    // function $(id){
+    //     return document.getElementById(id)
+    // }
+    //
+    // var input = $('input')
+    // var btn = $('btn')
+    // var area = $('area')
+    //
+    //
+    // btn.onclick = function () {
+    //     //和谐
+    //     var value = input.value
+    //     // value = value.replace('傻逼','**')
+    //     // value = value.replace('SB','**')
+    //     //正则表达式运用 来和谐数字  (/\d+/和谐开头数字
+    //     // /\d+/g 和谐全局数字)
+    //     value = value.replac(/\d+/g,'**')
+    //     area.value = area.value + '\n' + value
+    //     //换行符 '\n'
+    //     input.value = ''
+    // }
+    //
+    //
+    // var str = 'javascript is kind of computer language'
+    // var str4 = 'I DONT KNOEW'
+    // var arr = ['j','a','v','a']
+    // console.log(arr[0])
+    // console.log(str[1])
+    // //查找
+    // console.log(str.charAt(3))
+    // console.log(str.indexOf(3))
+    // //截取
+    // console.log(str.substring(0,15))//起始坐标，结束坐标
+    // console.log(str.substr(4,6));//起始坐标，截取长度
+    // //大小写转换
+    // console.log(str.toUpperCase())
+    // console.log(str4.toLowerCase())
+
+// split
+    url = 'https:协议  //二级域名search.jd.com 域名  /资源路径Search?keyword=psp&enc=utf-8&wq=psp&pvid=9b9143e42a5f48feb931ffb8cfb4d64d'
+    var str = 'javascript is kind of computer language'
+    var arr = ['j','a','v','a']
+
+    console.log(str.split(''))
+    console.log(str.split(' '))
+    console.log(str.split('-'))
+
+    //应用   对应搜索的东西
+
+
+
+
+</script>
+</html>

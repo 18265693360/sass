@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--ul>li>{内容$}*5 tab 补齐键-->
+<ul>
+    <!--系统默认的类数组-->
+    <li>我是内容1</li>
+    <li>我是内容2</li>
+    <li>我是内容3</li>
+    <li>我是内容4</li>
+    <li>我是内容5</li>
+</ul>
+</body>
+<script>
+    // li 类数组对象
+    //for of 可以在类数组上面执行循环
+    // var lis = document.getElementsByTagName('li');
+    // console.log(lis);
+    //
+    // var arr = [2,4,6];//此处的for of 可以遍历ul li
+    // for(value of lis){
+    //     console.log(value)
+    // }
+    //为什么可以遍历类数组对象  Symble（Symble.iterator）iterator函数
+
+    var lis = document.getElementsByTagName('li');
+    console.log(lis);
+
+    var arr = [2,6,8];//此处的for of 可以遍历ul li
+    var iterator = arr[Symbol.iterator]();
+    // Symbol不能拼错
+    //只有部署了Symbol.iterator 才能执行for of 循环
+    //类数组对象 已经配置了Symbol.iterator
+    console.log(iterator.next());
+    console.log(iterator.next());
+    console.log(iterator.next());
+    console.log(iterator.next());
+    for(value of lis){
+        console.log(value)
+    }
+
+
+    // 制造一个类数组 配备（Symbol iterator）可以遍历
+    function MakeArray() {
+        this[0] = 'Tom';
+        this[1] = 'Jerry';
+        this[2] = 'Rose';
+        this.length = 3;
+        this.index = 0;
+
+        this[Symbol.iterator] = function () {
+            return{
+                next:()=>{
+                    var index = this.index;
+                    this.index++;
+                    if(index<this.length){
+                        return{
+                            done:false,
+                            value:this[index]
+                        }
+                    }else{
+                        return{
+                            done:true,
+                            value:undefined
+                        }
+                    }
+                }
+            }
+        }
+    }
+    var myArr1 = new MakeArray();
+    // console.log(myArr1);
+    // var iterator = myArr1[Symbol.iterator]();
+    // console.log(iterator.next());
+    for(value of myArr1){
+        console.log(value);
+    }
+</script>
+</html>

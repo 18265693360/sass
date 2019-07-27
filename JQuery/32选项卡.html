@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        li{
+            list-style:none;
+        }
+        .container{
+            /*就是要比里面元素宽总和大一点 里面元素也有边框的占据*/
+            width: 452px;
+            height: 400px;
+            border: 1px solid #000;
+            margin: 50px auto;
+            /*该属性允许您为元素添加圆角边框！*/
+            border-radius: 4px;
+        }
+        .top{
+            /*分割线*/
+            border-bottom: 1px solid #f1f11f;
+        }
+        .top li{
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 20px;
+            color: #409eff;
+            font-weight: 700;
+            border-right: 1px solid #f1f1f1;
+            float: left;
+            /*居中文本*/
+            text-align: center;
+        }
+        .top li.active{
+            color:#fff;
+            background: #409eff;
+        }
+        .top li:last-child{
+            border-right: none;
+        }
+        /*清除浮动*/
+        .clearfix::after{
+            content: " ";
+            display: block;
+            clear: both;
+        }
+        .bottom{
+            padding: 10px;
+        }
+        .bottom li{
+            display: none;
+        }
+        .bottom li.active{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul class="top clearfix">
+            <li class="active">首页</li>
+            <li>详情</li>
+            <li>关于</li>
+        </ul>
+        <ul class="bottom">
+            <li class="active">
+                首页内容
+            </li>
+            <li>详情页内容</li>
+            <li>关于帮助内容</li>
+        </ul>
+    </div>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //原生
+    // function $(selector) {
+    //
+    //     var dom = document.querySelectorAll(selector);
+    //     if (dom.length > 1){
+    //         return dom;
+    //     } else if (dom.length == 1){
+    //         return dom[0]
+    //     }
+    // }
+    //
+    // var topLis = $(".top li")
+    //
+    // topLis.forEach((item,index) => {
+    //     item.onclick = function () {
+    //         topLis.forEach((it,idx) =>{
+    //             it.classList.remove("active");
+    //             //remove
+    //             $(".bottom li")[idx].classList.remove("active")
+    //         })
+    //         //add
+    //         this.classList.add("active");
+    //         $(".bottom li")[index].classList.add("active")
+    //     }
+    // })
+
+
+    //jquery
+    //click自动添加给所有
+    $(".top li").click(function () {
+        //存index  获取点击第几个
+        var $index = $(this).index();
+        //$this点击的li add添加     兄弟姐妹
+        $(this).addClass("active").siblings().removeClass("active")
+
+        $(".bottom li").eq($index).addClass("active").siblings().removeClass("active")
+    })
+</script>
+</html>

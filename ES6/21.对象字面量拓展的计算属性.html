@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn" >按钮</button>
+</body>
+<script>
+    // var id = 1;
+    // var btn = document.querySelector('#btn');
+    // btn.onclick = function () {
+    //     persons[`user-${id}`] = id;//注意此处应该用反引号
+    //     //$符应该用反引号 包裹 单引号就不行
+    //     id++;
+    //     console.log(persons)
+    // }；
+
+
+    //ES6 对象计算属性 可以把运算属性写在对象里面 属性可以带计算结果
+    var id = 1;
+    var obj = {
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+        [`user-${id}`]: id++,
+    };
+    var btn = document.querySelector('#btn')
+    console.log(obj)
+    // var id = 1;
+    // var btn = document.querySelector('#btn');
+    // btn.onclick = function () {
+    //     persons[`user-${id}`] = id;//注意此处应该用反引号
+    //     //$符应该用反引号 包裹 单引号就不行
+    //     id++;
+    //     console.log(persons)
+    // }
+
+    //在ES5中将运算代码放在对象外面 属性可以带计算结果
+    var id = 1;
+    var obj = {};
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    obj['user-'+id] = id++;
+    var btn = document.querySelector("#btn")
+    console.log(obj)
+
+
+    //将两个数组拼接
+    // let keys = ['name','age'];
+    // let values = ['Tom','18'];
+    //
+    // var obj = {
+    //     [keys[0]]: values[0],
+    //     [keys[1]]: values[1],
+    // }
+    // console.log(obj);
+
+    //一行代码搞定 不管多少 不用0 1 2 3 4 5来命名
+    let keys = ['name','age'];
+    let values = ['Tom','18'];
+
+    var obj = {
+        [keys.shift()]: values.shift(),
+        [keys.shift()]: values.shift(),
+    }
+    console.log(obj);
+</script>
+</html>

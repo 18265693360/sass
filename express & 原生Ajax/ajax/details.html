@@ -1,0 +1,84 @@
+<!--//加视口-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <style>
+        .container{
+            padding: 10px 14px;
+        }
+        .container h1{
+            font-size: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+
+</div>
+</body>
+<script>
+    let container = document.querySelector(".container");
+   let search = location.search;
+   search = search.substring(1);
+   let id = parseQuery(search).id;
+
+   //发ajax
+   let xhr = new XMLHttpRequest();
+   xhr.open("GET",`http://didi.yaojunrong.com/api/article/get?id=${id}`);
+   xhr.onreadystatechange = function(){
+       if(xhr.readyState == 4&&xhr.status){
+           let res = JSON.parse(xhr.response);
+           let item = res.data[0];
+           let date = new Date(item.createtime*1000);
+           let year = date.getFullYear();
+           let month = date.getMonth()+1;
+           // let day = date.getDay();
+           //不是date.getDay
+           let day = date.getDate();
+           // let formatTime = `${year}-${month}-&{day}`;
+           //上面错了 不是&{day}
+           let formatTime = `${year}-${month}-${day}`;
+           // console.log(res);
+           let template = `
+   <h1>${item.title}</h1>
+   <div class="desc">
+        <span class="desc-item time">${formatTime}</span>
+        <span class="desc-item time">10:21</span>
+        <span class="desc-item author">${item.author}</span>
+   </div>
+   <div class="content">
+         ${item.content}
+   </div>
+    `
+   container.innerHTML = template;
+
+       }
+   }
+   xhr.send();
+
+   //?id=18&auther=yaoming&sex=nan
+   //  let str = '?id=18&author=yaoming&sex=nan';
+   //  str = str.substring(1);
+   //  console.log(str)
+   //id=18&author=yaoming&sex=nan
+    function parseQuery(str){
+        let obj = {};
+       let arr = str.split("&");//分割数据
+        // console.log(arr)
+        arr.forEach(item =>{
+             let innerArr = item.split("=");
+            obj[innerArr[0]] = innerArr[1]
+        });
+        return obj;
+    }
+
+    console.log(parseQuery(search));
+</script>
+</html>

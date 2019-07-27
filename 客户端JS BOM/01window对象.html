@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<textarea name="" id="ta" cols="100" rows="15">
+    <h1 id="time"></h1>
+<script>
+    var dl = new Date();
+    var res = "";
+    var y = dl.getFullYear();
+    var m = dl.getMonth()+1;
+    var d = dl.getDay();
+    var h = dl.getHours();
+    var i = dl.getMinutes();
+    var s = dl.getSeconds();
+    res = "今年是"+y+"年"+m+"月"+d+"日,"+h+":"+i+":"+s;
+    document.getElementById('time').innerHTML = res;
+</script>
+</textarea>
+<br>
+<br>
+<button id="btn">运行代码</button>
+</body>
+<script>
+    //得到这个按键
+    var btn = document.getElementById('btn');
+    //得到文本域
+    var ta = document.getElementById('ta');
+    btn.onclick = function () {
+        //打开一个新窗口
+        var w1 = window.open('','mywindow');
+        w1.document.write(ta.value);
+    }
+</script>
+</html>

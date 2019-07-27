@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            display: none;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background: #f00;
+        }
+        #btn1,#btn2,#btn3,#btn4,#btn5,#btn6,#btn7,#btn8,#btn9{
+            width: 100px;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 200px;
+        }
+        .line{
+            position: absolute;
+            left: 500px;
+            top: 0;
+            width: 1px;
+            height: 300px;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+<!--<div class="line"></div>-->
+<!--<div class="box"></div>-->
+<!--<button id="btn">动起来</button>-->
+<div class="box"></div>
+<button id="btn1">显示</button>
+<button id="btn2">隐藏</button>
+<button id="btn3">切换</button>
+<button id="btn4">滑出去</button>
+<button id="btn5">滑进</button>
+<button id="btn6">滑动切换</button>
+<button id="btn7">淡出</button>
+<button id="btn8">淡入</button>
+<button id="btn9">透明度</button>
+
+
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //原生
+    // var box = document.querySelector(".box")
+    // var btn = document.querySelector("#btn");
+    //
+    // var timer = setInterval(function () {
+    //     box.style.left = box.offsetLeft + Math.ceil((500-box.offsetLeft)/100)
+    //     console.log((500 - box.offsetLeft)/100);
+    //     if (box.offsetLeft >= 500){
+    //         clearInterval(timer);
+    //     }
+    // },1/60)
+    // $("#btn1").click(function () {
+    //     $(".box").show(4000);
+    // $("#btn1").click(function () {
+    //     //show后面可以接回调函数 大多数异步函数都是写在回调函数中的
+    //     $(".box").show(4000,function () {
+    //         $(".box").css("background","#ff0")
+    //     });
+    // })
+    // $("#btn2").click(function () {
+    //     $(".box").hide(4000);
+    // })
+    //toggle切换
+    // $("#btn3").click(function () {
+    //     $(".box").toggle(400);
+    // })
+    // $("#btn4").click(function () {
+    //     $(".box").slideDown(2000,"linear/swing",function () {
+    //         $(".box").css("background","#000")
+    //     })
+    //
+    // $("#btn5").click(function () {
+    //     $(".box").slideUp()
+    // })
+    // //默认400ms动画时间
+    // $("#btn6").click(function () {
+    //     $(".box").slideToggle()
+    // })
+
+    $("#btn7").click(function () {
+        $(".box").fadeOut()
+    })
+    $("#btn8").click(function () {
+        $(".box").fadeIn()
+    })
+    // $("#btn9").click(function () {
+    //     //必须有 时间和 小数透明度
+    //     $(".box").fadeTo(400,.6)
+    // })
+    $("#btn9").click(function () {
+        //必须有 时间和 小数透明度
+        $(".box").fadeToggle(8000,.6)
+    })
+
+</script>
+</html>

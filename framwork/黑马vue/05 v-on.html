@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    v-on            添加动作 click 功能
+    v-bind          绑定属性
+
+
+    <!--这样不对-->
+    <!--<input type="button" value="按钮" :title="mytitle" v-on:click="alert">-->
+    <!--<input type="button" value="按钮" v-on:click="show">-->
+
+
+    <!--v-on 缩写为 @ 后面没有: 冒号-->
+    <input type="button" value="按钮" @mouseover="show">
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    // 一般后面加"s"的都是数组 但是methods后面是对象
+    var vm = new Vue({
+        el:'#app',
+        data:{
+
+        },
+        methods:{//这个 methods 属性中定义了当前Vue实例中所有可用的方法
+            show:function () {
+                alert('Hello')
+            }
+        }
+    })
+
+/*document.getElementById("btn").onclick = function(){
+    alert("Hello")
+}*/
+
+</script>
+</html>

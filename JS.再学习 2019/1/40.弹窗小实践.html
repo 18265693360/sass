@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .blank{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,.5);
+        }
+        .confirm{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 150px;
+            height: 100px;
+            padding: 5px 15px;
+            background: #fff;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="blank">
+    <!--下面的蒙版 就是下面的灰色层-->
+    <div class="confirm">
+        <div>
+            <i>X</i>
+        </div>
+        <div>
+            确认要和我分手吗?
+        </div>
+        <div>
+            <button id="btn">确认</button>
+            <button>取消</button>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    var blank = document.querySelector('.blank')
+    var btn = document.getElementById('btn')
+
+    btn.onclick =function () {
+        blank.style.display = 'none'
+
+    }
+</script>
+</html>

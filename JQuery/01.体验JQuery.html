@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./JQuery.js"></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+        }
+        .active{
+            background: #409eff;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+<button>切换背景色</button>
+
+
+
+<!--<button>点击</button>-->
+</body>
+<script>
+
+//    事件源
+//    JS document.getElementById("id")
+//    JQ $("#id")
+//
+//    事件
+//    JS document.getElementById("id").onclick
+//    JQ $("#id").click
+//
+//    事件处理程序（监听器）
+//    JS document.getElementById("id").onclick = function () {
+//        语句
+//    }
+//
+//    JQ $("#id").click(function () {
+//        语句
+//    })
+</script>
+<script>
+    // $(function () {
+    //     $("button").click(function () {
+    //         alert("我爱你")
+    //     })
+    //
+    // })
+
+     // $("button").click(function () {
+     //     $(".box").toggleClass('active')
+     // })
+
+    // 选中元素toggleClass
+//   定义和用法
+//   toggleClass() 对设置或移除被选元素的一个或多个类进行切换。
+// 该方法检查每个元素中指定的类。如果不存在则添加类，如果已设置则删除之。这就是所谓的切换效果。
+// 不过，通过使用 "switch" 参数，您能够规定只删除或只添加类。
+
+
+    //原生写法
+    // var box = document.querySelector('.box');
+    // var button = documnet.querySelector('button');
+    //
+    // btn.onclick = function () {
+    //     box.classList.toggle("active")
+    // }
+//     定义和用法
+//     classList 属性返回元素的类名，作为 DOMTokenList 对象。
+// 该属性用于在元素中添加，移除及切换 CSS 类。
+// classList 属性是只读的，但你可以使用 add() 和 remove() 方法修改它。
+
+//     toggle() 方法切换元素的可见状态。
+// 如果被选元素可见，则隐藏这些元素，如果被选元素隐藏，则显示这些元素。
+
+    //链式调用 可以一直写下去 不用换行再继续用function
+    //里面的height 数字单位不用加 px
+    $(".box").css({height:456}).addClass("active")
+</script>
+</html>

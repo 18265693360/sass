@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    // const title = <h1>我是标题</h1>
+    //
+    // ReactDOM.render(title, document.getElementById('app'))
+
+    const title = React.createElement('h1',{
+        calssName: 'title',
+        style:{
+            color:'#f00'
+        }
+    },'我是子元素')
+
+    ReactDOM.render(title, document.getElementById('app'))
+</script>
+</html>

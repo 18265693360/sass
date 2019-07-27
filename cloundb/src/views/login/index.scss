@@ -1,0 +1,25 @@
+.login,.register{
+  .logo{
+    text-align: center;
+    padding-top: 116px;
+    .iconfont{
+      font-size: 80px;
+      color: #1083fe;
+    }
+  }
+
+  .router-wrap{
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 8px;
+
+    a{
+      //margin-top: 10px;
+      color: #1083fe;
+      font-size: 16px;
+    }
+
+  }
+}
+
+

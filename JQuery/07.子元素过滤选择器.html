@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    li{
+        height: 50px;
+    }
+
+    </style>
+</head>
+<body>
+<ul>
+    <!--这是空标签-->
+    <li></li>
+    <li>
+<!--这个不是空 空间换行也是内容-->
+    </li>
+    <li>今天很热1</li>
+    <li>今天很热2</li>
+    <li>今天很热3</li>
+    <li>今天很热4</li>
+    <li>今天很热5</li>
+    <li>
+        今天很热6
+        <span>桃花开了</span>
+    </li>
+    <li>
+        今天很热7
+        <a href="https://www.baidu.com">百度</a>
+    </li>
+    <li>今天很热8</li>
+</ul>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    //:root选中html
+    // $(":root").css("fontSize","200px")//选中html
+    // $("li:contains('很热1')").css("color","#f00")
+    //    $("li").has("span").css("color","#f00")
+
+    // $("li:empty").css("background","#f00")
+    $("li:parent").attr("title","我是ul")
+
+
+
+
+
+
+</script>
+</html>

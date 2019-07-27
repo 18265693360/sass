@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // 1.中断程序的运行
+    // 2.传参数的作用
+    // 3.return
+
+    // function* doSomething() {
+    //     console.log(1);
+    //     yield console.log(2);
+    //     yield console.log(3);
+    //     yield console.log(4);
+    // }
+    // var iterator = doSomething();
+    // iterator.next();
+
+    //传入参数作用
+    // function* doSomething() {
+    //     console.log(1);
+    //     let one = yield 'return1';
+    //     console.log(one,'one');
+    //     //在控制台 输入iterator.next("传入的参数") 即可获得传入的参数
+           //代码刚开始执行就执行consol.log(1)
+           // 继续执行就到了 let one = 的右边
+           //let one = one 执行了传入参数的作用
+    //     yield console.log(3);
+    //     yield console.log(4);
+    // }
+    // var iterator = doSomething();
+    // iterator.next();
+
+    //return作用
+    function* doSomething() {
+        console.log(1);
+        let one = yield 'return1';//return1应该输入到iterator中
+        console.log(one,'one');
+        yield console.log(3);
+        yield console.log(4);
+    }
+    var iterator = doSomething();
+    // iterator.next();
+    var first = iterator.next();//有这个才有 return
+    // var second = iterator.next();
+    // var three = iterator.next();
+
+    console.log(first);
+    // console.log(second);
+    // console.log(three);
+
+    //执行genarator函数用 for of
+    function* doSomething() {
+        console.log(1);
+        let one = yield 'return1';//return1应该输入到iterator中
+        yield console.log(one,'one');
+        yield console.log(3);
+        yield console.log(4);
+    }
+    var iterator = doSomething();
+    for(let value of iterator){//都执行了
+        console.log(value);
+    }
+
+
+</script>
+</html>

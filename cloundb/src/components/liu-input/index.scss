@@ -1,0 +1,28 @@
+.liu-input-wrap{
+  margin-top: 20px;
+  display: flex;
+  border-bottom: 1px solid #1083fe;
+  align-items: center;
+  padding: 4px;
+
+  .iconfont{
+    padding-left: 20px;
+    font-size: 46px;
+    color: #888888;
+  }
+  label{
+    flex: 1;
+    padding: 5px;
+    margin-left: 18px;
+  }
+  input{
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    //以上两个实现自动延展输入框
+    box-sizing: border-box;
+    padding-left: 8px;
+    outline: none;
+    border: none;
+  }
+}

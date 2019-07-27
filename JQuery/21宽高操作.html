@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 100px;
+            background: #f00;
+            padding: 10px;
+            border: 5px solid #000;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="box"></div>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    console.log($(".box").outerWidth(true));
+    // width() 访问css的width值
+    // 2*(padding+margin+border)+width
+    // innerWidth 访问 css 的 width + padding
+    // outerWidth 访问 css的 width+padding+border
+    // outerWidth(true) 访问css的width + padding+ margin+boder
+</script>
+</html>

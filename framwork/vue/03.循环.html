@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="app">-->
+    <!--<ul>-->
+        <!--<li v-for="item in arr">-->
+            <!--<h1>{{item.title}}</h1>-->
+            <!--<p>{{item.content}}</p>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+<!--<div id="app4">-->
+    <!--<ul>-->
+        <!--<li v-for="todo in todo">-->
+            <!--{{todo.text}}-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+<!--<div id="app-5">-->
+    <!--<p>{{message}}</p>-->
+    <!--<button v-on:click="reverseMessage">逆转消息</button>-->
+<!--</div>-->
+<div id="app-6">
+    <p>{{message}}</p>
+    <input v-model="message">
+</div>
+</body>
+<script src="Vue.js%20v2.6.9.js"></script>
+<script>
+    // let app = new Vue({
+    //     el: "#app",
+    //     data: {
+    //         arr: [
+    //             {
+    //                 title: "woshibiaoti1",
+    //                 content: "woshizhengwen1"
+    //             },
+    //             {
+    //                 title: "woshibiaoti2",
+    //                 content: "woshizhengwen2"
+    //             },
+    //             {
+    //                 title: "woshibiaoti3",
+    //                 content: "woshizhengwen3"
+    //             }
+    //         ]
+    //     }
+    // })
+
+// var app4 = new Vue({
+//     el:'#app4',
+//     data:{
+//         todo:[
+//             {text:'学习 JavaScript'},
+//             {text:'学习 Vue'},
+//             {text:'整个项目'}
+//         ]
+//     }
+// })
+
+    // 我们可以用 v-on 指令添加一个事件监听器，通过它调用在 Vue 实例中定义的方法：
+    // var app5 = new Vue({
+    //     el:'#app-5',
+    //         data:{
+    //             message:'Hello Vue.js!'
+    //         },
+    //         methods:{
+    //             reverseMessage:function () {
+    //                 this.message = this.message.split('').reverse().join('')
+    //         }
+    //
+    //     }
+    // })
+    // v-model 指令，它能轻松实现表单输入和应用状态之间的双向绑定。
+    var app6 = new Vue({
+        el:'#app-6',
+        data:{
+            message:'Hello Vue!'
+        }
+    })
+
+</script>
+</html>

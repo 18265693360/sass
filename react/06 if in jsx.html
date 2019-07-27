@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+</body>
+<script src="tips%20about%20react%20(Comment%20&%20some%20basic%20tips)/js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+    const sexNum = 0;
+    let str = '';
+
+
+    if (sexNum == 1){
+        str = '我是男孩子'
+    } else{
+        str = '我是女孩'
+    }
+
+    const element = (
+        <div>
+            {str}
+            // {sexNum == 1 ? '我是男孩': '我是女孩'}
+        </div>
+    )
+
+    ReactDOM.render(element, document.getElementById('app'))
+</script>
+</html>

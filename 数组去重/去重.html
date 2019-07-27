@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function uniq(array){
+        var  temp= []; //一个新的临时数组
+        for(var i = 0; i < array.length; i++){
+            if(temp.indexOf(array[i]) == -1){
+                temp.push(array[i]);
+            }
+
+        }
+        return temp;
+//         一般return语句用于函数返回值，当外界调用该函数需要知道函数执行情况的时候，就需要用返回值来告诉调用者，而当调用者不需要知道执行情况，只需要去执行该函数的时候，那就不需要返回值。
+// 给你举两个相对生动点的例子：
+// 1. 当你去给别人转账的时候，银行要告诉你是不是转成功了，这种模式就需要返回值。
+// 2. 养鱼场喂鱼的时候，只需要把食物丢到池塘就可以了，不需要管那只鱼吃了那只鱼没吃，这种情况就可以不用设计返回值
+    }
+    var temp = []
+    var aa = [1,2,2,4,9,6,7,5,2,3,5,6,5];
+    console.log(uniq(aa));
+    console.log(temp);
+</script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+</body>
+<script src="js/babel.js"></script>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+<script type="text/babel">
+
+    eg: const element = <h1>Hello, world</h1>;
+    // 一种JavaScript的语法扩展 推荐在React中使用JSX描述用户界面
+    //也就是 js+html js+标签 就是JSX
+    // JSX用来声明React当中的元素
+
+    // JSX中的表达式要包含在大括号里面
+
+    function formatName(user){
+       return user.firstName + ' ' + user.lastName;
+    }
+
+    const user = {
+        firstName: 'Harper',
+        lastName: 'perez'
+    };
+
+
+    // total wrong 应该用小括号
+    // const element = {
+    //     <h1>
+    //         Hello,{formatName(user)}!
+    //     </h1>
+    // };
+
+
+
+    // JSX  语法用小括号可以防止 分号自动插入的bug.
+    const element = (
+        <h1>
+            Hello, {formatName(user)}!
+        </h1>
+    )
+
+    // 编译之后JSX会被转换为普通的JS JSX做变量 IF FOR 中使用
+
+    function getGreeting(user){
+        if (user){
+            return <h1>Hello, {formatName(user)}!</h1>
+        }
+        return <h1>Hello, Stranger</h1>
+    }
+
+    //JSX 会将引号当中的内容识别为字符串而不是表达式
+//属性  用引号来定义以字符串为值得函数
+    const element = <div tabIndex="0"></div>;
+//也可以使用大括号 定义JS表达式为值的函数
+    const element = <img src={user.avatarUrl} />;
+    // JSX标签是闭合的
+    const element = <img src={user.avatarUrl}  />
+
+    // JSX 可以嵌套
+    const  element = (
+        <div>
+            <h1>今天又是晴天</h1>
+            <h2>Dood for you </h2>
+        </div>
+    )
+    //tabIndex
+    // 带有指定的 tab 键导航顺序的链接：
+    // <a href="//www.runoob.com//" tabIndex="2"> runoob.com 菜鸟教程</a> < br / >
+    // < a
+    // href = "//www.google.com/"
+    // tabIndex = "1" > Google < /a><br / >
+    //     < a
+    // href = "//www.microsoft.com/"
+    // tabIndex = "3" > Microsoft < /a>
+
+    const title = response.potentiallyMaliciousInput;
+    const element = <h1>{title}</h1>
+
+
+    // JSX代表OBjects
+
+    const element = (
+        <h1 className="greeting">
+            今天好美
+        </h1>
+    )
+
+    const element = React.createElement(
+        'h1',
+        {className: 'greeting'},
+        'Hello, word!'
+    )
+
+</script>
+</html>

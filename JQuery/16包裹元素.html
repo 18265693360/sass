@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>我是标题</h1>
+<span>我是行内元素1</span>
+<span>我是行内元素2</span>
+<button>包裹</button>
+<button>整个包裹</button>
+<button>包裹选中元素内部</button>
+</body>
+<script src="JQuery.js"></script>
+<script>
+    // 用新创建的元素，分别包裹选中元素
+    $("button").eq(0).click(function () {
+        $("span").wrap("<h1>新建的第一级标题</h1>")
+    })
+    $("button").eq(1).click(function () {
+        $("span").wrapAll("<h1>第二个标题</h1>")
+    })
+    $("button").eq(2).click(function () {
+        $("span").wrapInner("<h1>第三个标题</h1>")
+    })
+
+
+
+
+
+
+
+</script>
+</html>
