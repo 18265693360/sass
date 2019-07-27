@@ -9,87 +9,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4efaf86-8450-4c12-bf92-ae34b5f59c26" name="Default Changelist" comment="Merge branch 'master' of https://github.com/dyyaoGit/cloud-book-html-teach&#10;&#10;# Conflicts:&#10;#&#9;config/index.js&#10;#&#9;src/components/dy-input/index.scss&#10;#&#9;src/components/dy-input/index.vue&#10;#&#9;src/main.js&#10;#&#9;src/router/index.js&#10;#&#9;src/store/index.js&#10;#&#9;src/utils/api.js&#10;#&#9;src/utils/index.js&#10;#&#9;src/views/login/index.scss&#10;#&#9;src/views/login/index.vue&#10;#&#9;src/views/person/index.scss&#10;#&#9;src/views/person/index.vue&#10;#&#9;src/views/register/index.vue">
-      <change afterPath="$PROJECT_DIR$/Bootstrap/01 install.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/02 初体验.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/03 view port css and git normalize.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/dist/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Bootstrap/viewport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS.再学习 2019/new/04 99表.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS.再学习 2019/new/position.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/VUe-cli/01脚手架.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/CSS + CSS3/css.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/ES6/es6.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/HTML/html.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/JS/js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/MongDB/mongdb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/Node-js/node-js.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/React/react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/Vue/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/express/express.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/git/git.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/jQuery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/npm &amp; yarn/npm &amp; yarn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/World  List of Web Develoment/sass/sass.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/catagory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/collection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/msg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/getData.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/catagory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/collection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/msg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/model/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/article.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/book.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/catagory.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/collection.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/msg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/swiper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/title.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/routes/user.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/msgutils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-book-backside/cloundb-background/model/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clound-book-backside/getbook.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/assets/avatar1.jpeg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/src/components/liu-header/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/axios.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/fortruth.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/lovelifereading.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/assets/pic2spirtfood.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/demo.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/demo_index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.css" afterDir="false" />
@@ -99,113 +20,11 @@
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.ttf" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.woff" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/cloundb/src/cloundb-icon/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/components/Logo/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/components/liu-input/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/components/liu-input/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/components/my-swiper/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/components/tab-bar/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/globalCss/init.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/globalCss/px2-rem.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/demo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/demo_index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/iconfont/iconfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/utils/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/utils/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/article/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/article/markdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/changemsg/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/changemsg/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/details/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/details/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/empty/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/contentItem.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/index/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/layout/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/login/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/login/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/personal/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/personal/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/register/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/study/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/study/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test post photo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/custom-assertions/elementCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/nightwatch.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/runner.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/e2e/specs/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/.eslintrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/jest.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/setup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloundb/test/unit/specs/HelloWorld.spec.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framwork/vue/14 v-bind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/framwork/黑马vue/28路由传参-路由规则中定义参数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/components/Count.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/components/ReduxWithCount.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/reducer/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/views/todoList/components/TodoHeader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learn-router-redux/src/views/todoList/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/01移动端适配起源.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/02设备像素比.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/03iPhone 3gs为例.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/04 iphone如何适配.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/05适配多个设备.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/06网易方案应用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/07淘宝方案.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/taobao.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mobile suitable/视口.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/practice/03.Vue 中的 jsx.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/01 what is JSX.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/02 Element rendering.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/03 poney.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/js/babel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/js/react-dom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react-JSX/js/react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/02 dataset.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/03 jsx in Vue.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/04 the native of jsx.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/06 if in jsx.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/07 element render.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/09 similar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/js/babel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/js/react-dom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/js/react.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/react/js/vue.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/repaire-system/src/components/upload/index.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/repaire-system/src/components/upload/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/repaire-system/src/views/UploadPhoto/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/骰子/01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01sass-01.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01sass-01.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01sass-01.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/01sass初始.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02嵌套规则.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03子元素选择器.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/04sass的模块化.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/05函数.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/controller/book.js" afterDir="false" />
@@ -261,6 +80,7 @@
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/signToken.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/utils/uploadUtil.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-background/cloundb-back/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/clound-background/cloundb-back/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/dev.env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/clound-book-html-teach/cloud-book-html-teach/config/prod.env.js" afterDir="false" />
@@ -293,12 +113,16 @@
       <change beforePath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/index/components/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/src/views/titles/index.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloundb/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/cloundb/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-by-yourself" beforeDir="false" afterPath="$PROJECT_DIR$/learn-by-yourself" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/learn-by-yourself/01.formData.html" beforeDir="false" afterPath="$PROJECT_DIR$/learn-by-yourself/01.formData.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/m-repair-react" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/CustomerCenter/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/CustomerCenter/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/Layout/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/Layout/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/m-repair-react/src/views/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/m-repair-react/src/views/Login/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/react-router-learn" beforeDir="false" afterPath="$PROJECT_DIR$/react-router-learn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-router-learn/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router-learn/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react-router-learn/src/views/NotFound/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/react-router-learn/src/views/NotFound/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/repaire-system" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repaire-system/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repaire-system/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repaire-system/src/utils/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/repaire-system/src/utils/index.js" afterDir="false" />
@@ -952,12 +776,12 @@
       <workItem from="1564059096637" duration="1698000" />
       <workItem from="1564067516711" duration="95000" />
       <workItem from="1564067642644" duration="601000" />
-      <workItem from="1564213806566" duration="316000" />
+      <workItem from="1564213806566" duration="714000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2094575000" />
+    <option name="totallyTimeSpent" value="2094973000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -969,7 +793,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="770" y="23" width="1150" height="1057" extended-state="0" />
+    <frame x="1000" y="23" width="1150" height="1057" extended-state="0" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5049365" side_tool="true" weight="0.27186146" />
       <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49506348" visible="true" weight="0.34100974" />
